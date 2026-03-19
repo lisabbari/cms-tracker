@@ -14,7 +14,6 @@ body {
 }
 .container { max-width: 1000px; margin: 0 auto; padding: 24px; }
 
-/* Header */
 .header {
     background: linear-gradient(135deg, #1a365d 0%, #2a4a7f 100%);
     color: white;
@@ -26,7 +25,6 @@ body {
 .header .subtitle { opacity: 0.85; font-size: 14px; }
 .header .timestamp { opacity: 0.7; font-size: 13px; margin-top: 8px; }
 
-/* Summary bar */
 .summary-bar {
     display: flex;
     gap: 12px;
@@ -38,20 +36,20 @@ body {
     border-radius: 8px;
     padding: 16px 20px;
     flex: 1;
-    min-width: 140px;
+    min-width: 120px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 .summary-stat .stat-value { font-size: 28px; font-weight: 700; }
 .summary-stat .stat-label { font-size: 13px; color: #666; margin-top: 2px; }
 .summary-stat.has-changes .stat-value { color: #c53030; }
 .summary-stat.all-clear .stat-value { color: #276749; }
+.summary-stat.has-new-resources .stat-value { color: #d69e2e; }
 
-/* Model cards */
 .model-card {
     background: white;
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     border-left: 4px solid #cbd5e0;
     transition: box-shadow 0.2s;
@@ -81,6 +79,81 @@ body {
 .status-badge.unchanged { background: #c6f6d5; color: #276749; }
 .status-badge.error { background: #feebc8; color: #9c4221; }
 
+/* Resource alerts */
+.resource-alert {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+.resource-alert.added {
+    background: #f0fff4;
+    border: 1px solid #9ae6b4;
+}
+.resource-alert.added strong { color: #276749; }
+.resource-alert.removed {
+    background: #fff5f5;
+    border: 1px solid #feb2b2;
+}
+.resource-alert.removed strong { color: #9b2c2c; }
+.resource-alert ul {
+    margin-top: 6px;
+    padding-left: 20px;
+    color: #4a5568;
+}
+.resource-alert li { margin-bottom: 2px; }
+
+/* Resources section */
+.resources-section {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+}
+.resources-section h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+.resources-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.resource-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    padding: 4px 0;
+}
+.resource-row.new-resource {
+    background: #fffff0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #fefcbf;
+}
+.resource-type-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.resource-row a { color: #2b6cb0; text-decoration: none; }
+.resource-row a:hover { text-decoration: underline; }
+.new-badge {
+    background: #f6e05e;
+    color: #744210;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+}
+
+/* Page content changes */
 .change-detail {
     margin-top: 12px;
     padding: 10px;
@@ -106,6 +179,7 @@ body {
 }
 .change-preview li { margin-bottom: 2px; }
 
+/* News */
 .news-section {
     margin-top: 12px;
     padding-top: 10px;
@@ -131,12 +205,14 @@ body {
     font-size: 13px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.06);
 }
+.timeline-entry.has-resource-change {
+    border-left: 3px solid #d69e2e;
+}
 .timeline-date { color: #999; white-space: nowrap; min-width: 85px; }
-.timeline-model { font-weight: 600; min-width: 140px; }
+.timeline-model { font-weight: 600; min-width: 160px; }
 .timeline-summary { color: #666; }
 .no-history { color: #999; font-size: 14px; padding: 16px 0; }
 
-/* Footer */
 .footer {
     text-align: center;
     font-size: 12px;
@@ -152,8 +228,8 @@ body {
 
 <div class="header">
     <h1>CMS Innovation Model Monitor</h1>
-    <div class="subtitle">Tracking changes to CMMI model pages</div>
-    <div class="timestamp">Last checked: March 19, 2026 at 03:47 PM</div>
+    <div class="subtitle">Tracking changes to CMMI model pages, resources, and news</div>
+    <div class="timestamp">Last checked: March 19, 2026 at 04:28 PM</div>
 </div>
 
 <div class="summary-bar">
@@ -163,11 +239,15 @@ body {
     </div>
     <div class="summary-stat all-clear">
         <div class="stat-value">0</div>
-        <div class="stat-label">Changes Detected</div>
+        <div class="stat-label">Pages Changed</div>
+    </div>
+    <div class="summary-stat ">
+        <div class="stat-value">0</div>
+        <div class="stat-label">New Resources</div>
     </div>
     <div class="summary-stat">
-        <div class="stat-value">0</div>
-        <div class="stat-label">Fetch Errors</div>
+        <div class="stat-value">95</div>
+        <div class="stat-label">Total Resources</div>
     </div>
     <div class="summary-stat">
         <div class="stat-value">40</div>
@@ -187,7 +267,38 @@ body {
                 </div>
             </div>
             
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPenRqaDhzN2ZJZDh5ODFlYVg3cE9hNEtEVUZHV0lnSXE3aGRVRU5uMEhUVlQxbkNFOURnb0lOZnlzU3d3ZWw1QmdXaHktTmNpSlc0bWFVUEs5eHdoNDQwUlhjdzJWenE1RHVKZ21vQXVpakJ1cTJ4NE9RQzJ1eUdwaHNSV2ZXY0lvZTl0VVM3d3h5Mk9kRnc4NE1XSzgzOFMxaURGNm5JWGRqU3p6Tld3VGV4enlXWEU3QlFMSnFn?oc=5" target="_blank">CMS Innovation Center Unveils ACCESS Model to Expand Technology-Supported Care for Chronic Disease -</a> <span class="news-source">ArentFox Schiff</span> <span class="news-date">Tue, 23 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTHowREx5R2FsYUE4M21UTzhybHg1aEtDekZRNHRiMU5BYThReXNualBmMldVd3hMcHVFMzRBWnU0aVlPcmpIaWJDWVFYbEtxaTVWampBOU9HMlF1Q0RncE5pLWJRNFBlYks5UnFaMFpMYzJER0ZtMWZoUzJxQUNrVWVjaG5vME5XSFN6SE4tTEx4ZjluNkpIZUxwUndhTDJqV0wwelp4eEE4aGhtQm9JX0tUbUl6VnptQ2Y1ZzM1SE1KWERpS25ibjlFM3BfQTQwblF6bV9XZ3dfSktFbGZhUWdhdDFGbVhrdC1sZF9Lb08tZw?oc=5" target="_blank">CMS Launches Five New Models at the End of 2025: Looks to Advance ACCESS, BALANCE, MAHA ELEVATE, GLO</a> <span class="news-source">Akin</span> <span class="news-date">Wed, 07 Jan 2026</span></li></ul></div>
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (6)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/priorities/innovation/access-technical-frequently-asked-questions" target="_blank">Detailed FAQs</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/access-rfa.pdf" target="_blank">ACCESS Model Request for Applications</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #805ad515; color: #805ad5; border: 1px solid #805ad540;">🎥 Webinar</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/access-fin-structure-clin-perf-webinar-slides.pdf" target="_blank">ACCESS Model Financial Structure and Clinical Performance Webinar Slides - March 4, 2026</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/access-payments-amts-perf-targets.pdf" target="_blank">Model Payment Amounts and Performance Targets (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://app.innovation.cms.gov/ACCESS/IDMLogin" target="_blank">ACCESS Application</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPenRqaDhzN2ZJZDh5ODFlYVg3cE9hNEtEVUZHV0lnSXE3aGRVRU5uMEhUVlQxbkNFOURnb0lOZnlzU3d3ZWw1QmdXaHktTmNpSlc0bWFVUEs5eHdoNDQwUlhjdzJWenE1RHVKZ21vQXVpakJ1cTJ4NE9RQzJ1eUdwaHNSV2ZXY0lvZTl0VVM3d3h5Mk9kRnc4NE1XSzgzOFMxaURGNm5JWGRqU3p6Tld3VGV4enlXWEU3QlFMSnFn?oc=5" target="_blank">CMS Innovation Center Unveils ACCESS Model to Expand Technology-Supported Care for Chronic Disease -</a> <span class="news-source">ArentFox Schiff</span> <span class="news-date">Tue, 23 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNT1FfcmlvSnl3V3lKNjU3ZlJWbDJFZG5QQWgybTNocXpUakdaem03NzNyNk82c2lQUF8tdFVqZENzWndMaW93TXdFdFFyeks2Qm9TZEFFZUhUWkpzczVYYVhxa3RIb1F4ZmkybFFUSENpWmt4R3ZUd05kbl91Z0NDSHlHTEgyQ1diR0l0aU5RRFlEZllFWDBQZW10WEk3ZzA?oc=5" target="_blank">CMS unveils ACCESS model to expand digital care for Medicare patients - MobiHealthNews</a> <span class="news-source">MobiHealthNews</span> <span class="news-date">Tue, 02 Dec 2025</span></li></ul></div>
         </div>
         
         <div class="model-card new">
@@ -201,6 +312,45 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (8)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/asm-model-fact-sheet.pdf" target="_blank">ASM Model Fact Sheet (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/priorities/innovation/asm-ambulatory-specialty-model-frequently-asked-questions" target="_blank">Frequently Asked Questions</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/d/2025-19787" target="_blank">2026 PFS Final Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/documents/2025/07/16/2025-13271/medicare-and-medicaid-programs-cy-2026-payment-policies-under-the-physician-fee-schedule-and-other" target="_blank">2026 PFS Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #dd6b2015; color: #dd6b20; border: 1px solid #dd6b2040;">📢 Announcement</span>
+                <a href="https://www.cms.gov/newsroom/press-releases/cms-modernizes-payment-accuracy-significantly-cuts-spending-waste" target="_blank">Press Release: 2026 PFS Final Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #dd6b2015; color: #dd6b20; border: 1px solid #dd6b2040;">📢 Announcement</span>
+                <a href="https://www.cms.gov/newsroom/press-releases/cms-proposes-physician-payment-rule-significantly-cut-spending-waste-enhance-quality-measures-and" target="_blank">Press Release: 2026 PFS Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/asm-participant-readiness-rm.pdf" target="_blank">ASM Participant Roadmap</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/asm-infographic.pdf" target="_blank">ASM Model Infographic (PDF)</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOY3Y1ZUotS0FucW94M0pudHBSMmxBSk1ZamdMSHFNQ1FQVHFDT1pmWTkxbDNTU1RUanhHc21yLW5iRHJvMHRlVzZTWWZSUnlnWWFINnRyVkRZSlN5cFhtNFc3ZVlwYzhvOFBqcjZ6R0pYZklKWF8zVHk5X3c0Wm1YTGhFOUtIbVpZZDczNVZRSEFGajdhTWUzTFNjVDV2WThBd3NDLXg3OFR0Zm5xdFNJ?oc=5" target="_blank">What Physicians Should Know About CMS’ Ambulatory Specialty Model - Forvis Mazars US</a> <span class="news-source">Forvis Mazars US</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNMzJVM09BZ25GMk51QjJWcnNNRTBOMmw3S2NSTUF3T0VvTkRYUjNkTE9RX3lWYk5JWFdBZ2JEV2hzYXMteF9sSUczeXUtUHFGaW1Fa2xDWlhUczRsOXVxcFV3eTBWdXo3YmRKNDRFWXloNWtpbkVBMjZWVzZ3YmpLNGhnWHNLZ2JWcmxuYXpwTUxYTk5mSTBLV2F1eHNDZU9paUhUWXBKeDJQN2N4NjdIeXA5M1V2YnJfM1NQVFZNcGVUS1BlNWFrVzFyTFI?oc=5" target="_blank">MGMA outlines path and pitfalls in CMS 2030 value-based care push - HealthExec</a> <span class="news-source">HealthExec</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMimgJBVV95cUxOR0RSeGtiMmtCSERKU3B3SWowTDU1dzFpblZYNS1IaEh2WlpEU1RjRzEyb1RPM2Qwb3VVZmhtS1c4NFJmM3FMWF96dUxJVVZOWkFrZnh2VWdIZE53VTJWNWJVNExHQXN6ZzhHVnlLUTJ3a2JQWWtlOTd4YVdqNlJMNTBZTk1hUERBYlQyb2RkWmREZ0gxU0ktb29OMWdmdjBkUXRQdEVFeVBCVXVVR2QwQklqN0xocHZ4dVNoUVJZTjlOVnNMZkU3MXJrWURzOGpLTG9rM3pRRVpBQU1OdmpBaUJ1OTIxZEtsSnhUV1RiZGo2aDhrZ1JUYXBkNXFyQ1puTlR3US1PSWVFZG1BWXlScHZaLWU5dDNOSkE?oc=5" target="_blank">Ambulatory Specialty Model For Heart Failure - American College of Cardiology</a> <span class="news-source">American College of Cardiology</span> <span class="news-date">Sun, 08 Feb 2026</span></li></ul></div>
         </div>
         
@@ -215,7 +365,38 @@ body {
                 </div>
             </div>
             
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUJnd040VllVd3FFYnRiU3p1RENGcUtoVi11THlfamc1ZF90NmdrYXJwMmxZVGNod1dYdVo5c3RHNmlaZDA3ZndiQ2lxSmhzU3Q4c0U1eFU5ZVJqd1dOX3psZDhpVnpOZlBPVjJXRVhvUE1VazF5MGRaeEhFcmZjcVdiQW5Pbm5rR21rdldHUW1yZXBEMXNFbHVKVFBsRGhFdUZjQkllN2hqZlR3aGJoZlRubThrRjFWLU9ILVNIbW1Edw?oc=5" target="_blank">LEAD: What doctors need to know about the new CMS payment model - American Medical Association</a> <span class="news-source">American Medical Association</span> <span class="news-date">Fri, 19 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNNnFBNXJ3dlhKX0pUb0FNQ29MbXlWWVp2amFLeUtKZjdfOFFQcE4tUGNlN3BMRDFMRGZBUDhIcHhqOUdocUlRRGZGemtwdlNkUDFnUlJtRHQ3OHMzZ3lGX1VWeVJHUDlMZUlkRWtqWUkxVnl6WkUyNDRmZVA5N1NnaW9vaWMxOEU?oc=5" target="_blank">How CMS’ decision to end a primary care program shook rural clinics - Modern Healthcare</a> <span class="news-source">Modern Healthcare</span> <span class="news-date">Fri, 20 Feb 2026</span></li></ul></div>
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (6)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/lead-model-value-fs.pdf" target="_blank">LEAD Model Value Factsheet (pdf)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/lead-model-overview-slides.pdf" target="_blank">LEAD Model Overview Webinar Slides (pdf)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/lead-model-overview-trans.pdf" target="_blank">LEAD Model Overview Webinar Transcript (pdf)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/lead-model-overview.pdf" target="_blank">LEAD Model Overview (pdf)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13400" target="_blank">LEAD Model listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUJnd040VllVd3FFYnRiU3p1RENGcUtoVi11THlfamc1ZF90NmdrYXJwMmxZVGNod1dYdVo5c3RHNmlaZDA3ZndiQ2lxSmhzU3Q4c0U1eFU5ZVJqd1dOX3psZDhpVnpOZlBPVjJXRVhvUE1VazF5MGRaeEhFcmZjcVdiQW5Pbm5rR21rdldHUW1yZXBEMXNFbHVKVFBsRGhFdUZjQkllN2hqZlR3aGJoZlRubThrRjFWLU9ILVNIbW1Edw?oc=5" target="_blank">LEAD: What doctors need to know about the new CMS payment model - American Medical Association</a> <span class="news-source">American Medical Association</span> <span class="news-date">Fri, 19 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNMHhYYVNvaWJKZXJ3Nnd2Q3hod2FnS2l4QXNBc0FwTjNZMkFLaTN5MEhPV1BfY3dCM2lRc2NMTG9HYThWdXQwWElCMmRFTkR5b0pfd1o4ZWJGNTdwZTFkWWdGazg3REhicUZVT0FKc1o4U1dqNFJPeGtvbGM4RW9FUnZSUWZIY0E?oc=5" target="_blank">Looking back to look forward: Recap of the CMS Innovation Center’s 2025 announcements - JD Supra</a> <span class="news-source">JD Supra</span> <span class="news-date">Thu, 08 Jan 2026</span></li></ul></div>
         </div>
         
         <div class="model-card new">
@@ -229,6 +410,21 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (2)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13395" target="_blank">MAHA ELEVATE listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxON1NXUUJtNUFXRzYwV0c5dXdJblROcFRSZGp1QkhMaHQzeHpSS3Y3VEJVRF9YMFZRNGl5VEFYV2dlUW02WjFaV3FGNXpNM1FQNFR4NGRlazFWLWZ4dEF0bVNxR1dCbmlqOUpjUm5FalhFb3cwZHV1NGpOUWJlUU16S3BtWE93NHlIQ25MVGdBVzV4eFJwUTB6WE9kMTExZDNjZFNDRllmdXViczBJNEQ3YlFxMHhxNTZpUDJVLXZWdkROT1dKc3ZXbWdSMHVxMHRmZnhmcmdndzJDSmlYdXY3LWV3?oc=5" target="_blank">CMS opens applications for $100M MAHA ELEVATE lifestyle medicine model; senior living communities el</a> <span class="news-source">McKnight's Senior Living</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOU1GcnZHVWxTXzVwdVE2Y1BCQWZaTDZCaDNoMU5wMWZRRHcxVXVzMjVuN0hPanU5UEJNZGdVVDY2Tk9zOUJOYzNsR2plTnlDa1g0WHJoS0ozZ3A1b2lFOUtDLUhHbHFKWFVDSjl5OFVBZnlVb1UyaVhsdVJBeFBpcUEwVUJZTGktakNiRDA1ZU1SeDhqTVVZRElCVEgyNFIxTnpvdnhMT2FJckNnSXpLbS1OR1ZudFM5dnUyekxMRTVpNUk?oc=5" target="_blank">CMS All-In On Using ‘Big Stick’ To Make Value-Based Care New Paradigm - Forbes</a> <span class="news-source">Forbes</span> <span class="news-date">Thu, 19 Mar 2026</span></li></ul></div>
         </div>
         
@@ -243,6 +439,41 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (7)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/geo-ahead-fs.pdf" target="_blank">Geo AHEAD Fact Sheet (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/priorities/innovation/ahead/faqs" target="_blank">Frequently Asked Questions</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #dd6b2015; color: #dd6b20; border: 1px solid #dd6b2040;">📢 Announcement</span>
+                <a href="https://www.cms.gov/priorities/innovation/innovation-insight-cms-announces-changes-achieving-healthcare-efficiency-through-accountable-design" target="_blank">Innovation Insight</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://www.cms.gov/ahead-model-participant-resources" target="_blank">AHEAD Model Participant Resources</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://www.cms.gov/priorities/innovation/ahead-model-participant-resources" target="_blank">AHEAD Model Participant Resources</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13147" target="_blank">AHEAD Model listserv</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQV0lNMWptNENNRmlhRURiajlZTmNTR3FIdWxicXZvWk11d2IzMEI4VFFXYnJRZzVNalNUT2lKZnNQZmtUMUhVOWhueW1zSFRyeHpya0JrM0pwV0VITnU0dHhMcG8xWGVMbnJKU1h0ZlFub2RwN21felhpTHRkWko0bXNVQl9mSktLdHNDOTRR?oc=5" target="_blank">CMS announces changes to AHEAD Model for states - American Hospital Association</a> <span class="news-source">American Hospital Association</span> <span class="news-date">Wed, 03 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMV9LdDRnVlBhMVZBMkZxOHg5Nlc0c3dhZUx1Z3BlUlpaMjFDTG9lYUtpd05lZEpGdEV3anVUWU5hc1NFRTk0ZWhKV2FfNzF2ZGhwM1dKYVZBUzJyUTFyd1hYR3o5RDZIVm83c01xQWtGUk5JUUlMdGRFNklyY09TUTl1R1B5b2wxbzBz?oc=5" target="_blank">CMS tweaks AHEAD all-payer model for states - Healthcare Dive</a> <span class="news-source">Healthcare Dive</span> <span class="news-date">Thu, 04 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNMHhYYVNvaWJKZXJ3Nnd2Q3hod2FnS2l4QXNBc0FwTjNZMkFLaTN5MEhPV1BfY3dCM2lRc2NMTG9HYThWdXQwWElCMmRFTkR5b0pfd1o4ZWJGNTdwZTFkWWdGazg3REhicUZVT0FKc1o4U1dqNFJPeGtvbGM4RW9FUnZSUWZIY0E?oc=5" target="_blank">Looking back to look forward: Recap of the CMS Innovation Center’s 2025 announcements - JD Supra</a> <span class="news-source">JD Supra</span> <span class="news-date">Thu, 08 Jan 2026</span></li></ul></div>
         </div>
         
@@ -257,6 +488,137 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (31)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-and-long-term-care-hospital-prospective" target="_blank">2026 Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/team-model-fs.pdf" target="_blank">Fact Sheet (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-and-long-term-care-hospital-prospective-0" target="_blank">2026 Final Rule Fact Sheet</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/team-participation-tracks-fact-sheet.pdf" target="_blank">Participation Tracks Fact Sheet</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/team-qualityscoring-fs.pdf" target="_blank">Quality Scoring Fact Sheet</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/team-safetynet-rural-fs.pdf" target="_blank">Safety Net/Rural Hospital Fact Sheet</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-prelim-target-fs.pdf" target="_blank">Preliminary Target Price Fact Sheet</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
+                <a href="https://www.cms.gov/files/document/team-intro-qm-fs.pdf" target="_blank">Quality Measures Fact Sheet (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/priorities/innovation/team-frequently-asked-questions" target="_blank">Frequently Asked Questions</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/team-frequently-asked-questions" target="_blank">Frequently Asked Questions</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/d/2025-14681" target="_blank">FY 2026 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment </a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/public-inspection/2025-14681/medicare-program-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals-ipps-and" target="_blank">2026 Final Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/public-inspection/current" target="_blank">2026 Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/public-inspection/2024-17021/medicare-medicaid-and-childrens-health-insurance-programs-hospital-inpatient-prospective-payment" target="_blank">2025 Final Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #2f855a15; color: #2f855a; border: 1px solid #2f855a40;">⚖️ Guidance</span>
+                <a href="https://www.federalregister.gov/public-inspection/2024-07567/medicare-and-medicaid-programs-and-the-childrens-health-insurance-program-hospital-inpatient" target="_blank">2025 Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #dd6b2015; color: #dd6b20; border: 1px solid #dd6b2040;">📢 Announcement</span>
+                <a href="https://www.cms.gov/newsroom/press-releases/cms-seeks-public-input-inpatient-hospital-whole-person-care-proposes-updates-medicare-payments" target="_blank">2026 Proposed Rule</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/files/document/team-overview-updated.pdf" target="_blank">TEAM Overview Slides</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #805ad515; color: #805ad5; border: 1px solid #805ad540;">🎥 Webinar</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-ovw-webinar-slides.pdf" target="_blank">Slides (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #805ad515; color: #805ad5; border: 1px solid #805ad540;">🎥 Webinar</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-ovw-webinar-transcript.pdf" target="_blank">Transcript (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #805ad515; color: #805ad5; border: 1px solid #805ad540;">🎥 Webinar</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-ovw-webinar-recording.mp4" target="_blank">Recording (MP4)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-portal-user-guide.pdf" target="_blank">TEAM Portal User Guide (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-cet-portal-user-guide.pdf" target="_blank">Custom Export Tool User Guide (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-risk-adj-prelim-target-specs.pdf" target="_blank">Risk Adjustment and Preliminary Target Price Specifications (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-cdi-ep-constr-specs.pdf" target="_blank">Clinical Episode Construction Specifications (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-cdi-calc-specs.pdf" target="_blank">Community Deprivation Index Calculation Specifications (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-model-infographic.pdf" target="_blank">Infographic (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/team-patient-journey-map.pdf" target="_blank">Example Patient Journey (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-bene-collab-notification-letter.pdf" target="_blank">Beneficiary Collaborators Notification Letter (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/team-bene-notification-letter.pdf" target="_blank">Beneficiary Notification Letter (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13204" target="_blank">TEAM Listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUJnd040VllVd3FFYnRiU3p1RENGcUtoVi11THlfamc1ZF90NmdrYXJwMmxZVGNod1dYdVo5c3RHNmlaZDA3ZndiQ2lxSmhzU3Q4c0U1eFU5ZVJqd1dOX3psZDhpVnpOZlBPVjJXRVhvUE1VazF5MGRaeEhFcmZjcVdiQW5Pbm5rR21rdldHUW1yZXBEMXNFbHVKVFBsRGhFdUZjQkllN2hqZlR3aGJoZlRubThrRjFWLU9ILVNIbW1Edw?oc=5" target="_blank">LEAD: What doctors need to know about the new CMS payment model - American Medical Association</a> <span class="news-source">American Medical Association</span> <span class="news-date">Fri, 19 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ3V5LWVZaW1fWV9HQVdfR25YNEthZ2xldHVZZDFNcDNwWklSb1N4WEszWkRNbFd3bWdxajNjLTU5d3RSSFMxbGc2dWNCdExkR0p1ODZYdWY4Z1FTaHNFaU9MZTlPQllxeS1qZFFUOVAySDNpZHE4S0d5VzNzdmNmak95SExrdTQzaFdKMmJjNjhmMVEtcUIyVkh5T3NLVFhlZnlkM1VySlRMRUYtek01aTlBbw?oc=5" target="_blank">The Cigna Group works to strengthen chronic care management by signing CMS Innovation Center’s ACCES</a> <span class="news-source">The Cigna Group Newsroom</span> <span class="news-date">Thu, 12 Feb 2026</span></li></ul></div>
         </div>
         
@@ -271,6 +633,37 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (6)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
+                <a href="https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model/faqs" target="_blank">Frequently Asked Questions</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-pc-flex-fin-meth-ratebook-dev.pdf" target="_blank">Financial Paper: Rate Book Development (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-pc-flex-participants-py26.pdf" target="_blank">PY26 Model Participants (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-pc-flex-participants.pdf" target="_blank">PY25 Model Participants (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13195" target="_blank">ACO PC Flex listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOLVJyTTBacU1wQU5uODlhRDMwM2dxVGRzWTVQaW4xcFprZkVhUjlyeUYxRXZHZkRaSktHdG50a1RLMW03cDlNWkdvX21qdFlENnlFQjlnWVRmRWtiSnVGVFZKWGtwbmxiT2thWHl0bnFUVnVYeTdoaVFfbkkza2xabkp5NXhzV1VENG1QX2JVaXpiWTFBdEpNOHNENA?oc=5" target="_blank">CMS Announces LEAD Model, Focusing On Homebound Patients - Home Health Care News</a> <span class="news-source">Home Health Care News</span> <span class="news-date">Thu, 18 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPT05nV1pHeE9OT1hNQzM0N0xZaWNwNW80QXhBM0w3WjdqempxZkxPVkJ4SGxEel9BdVJEbFRrTGk0VmUxWlZfcVBPMFlpbThIcVl2Vl9rcGpraDhIVExKeVl0dzVaZ0RXV2ZfREQ4WUJXX1F5c2Z0TXd3Vm0wZkhlZTA4dTl5cHNQc1lsNmpRTlZSUjJaWmQ0N3lWUQ?oc=5" target="_blank">An Overview of the ACO Primary Care Flex (ACO PC Flex) Model - cmhealthlaw.com</a> <span class="news-source">cmhealthlaw.com</span> <span class="news-date">Fri, 31 May 2024</span></li><li><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWIxQ2FnTjhmbUh5YjhUWWhLS0dQc3gtMmpJZzJucGVodzVkUkphamdEd1V1cC1mQ2lQMDZZb1pvRDk5cEp3NnFvN1k1eDBuaUdtdXVUQnZiWHIxODhyU2l5ajh4aDFBRzNKd00wTUtCeHpCOVBJczdVR1ZVR05iaEFpaUlPZnhvME42cUU0cF9CZEZ4OGVMSFRRSTE?oc=5" target="_blank">Medicare to launch primary care model for low-revenue ACOs - American Hospital Association</a> <span class="news-source">American Hospital Association</span> <span class="news-date">Tue, 19 Mar 2024</span></li></ul></div>
         </div>
         
@@ -285,6 +678,129 @@ body {
                 </div>
             </div>
             
+            
+            
+    <div class="resources-section">
+        <h4>Resources & Documents (29)</h4>
+        <div class="resources-list">
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-model-py23-financial-settlement-overview.pdf" target="_blank">2023 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-model-py24-financial-settlement-overview.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/priorities/innovation/data-and-reports/2025/aco-reach-preview-py2023-evaluation" target="_blank">PY 2023 Evaluation Report</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/files/document/py25-reach-qual-meas-meth-report.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-py26-qual-meas-meth-report.pdf" target="_blank">2026</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/priorities/innovation/data-and-reports/2026/aco-telehealth-rtc" target="_blank">ACO Telehealth Report to Congress</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-qrty-trans-rpt.pdf" target="_blank">ACO REACH Quarterly Transparency Report - updated August 2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #4a556815; color: #4a5568; border: 1px solid #4a556840;">📊 Report</span>
+                <a href="https://www.cms.gov/priorities/innovation/evaluation-research-reports" target="_blank">Evaluations &amp; Research Reports webpage</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py2024-participants.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py2025-participants.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-py2026-participants.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py24-part-pref-provider-mgmt-guide.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py25-part-pref-provider-mgmt-guide.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py26-part-pref-provider-mgmt-guide.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py23-financial-ops-capitation-and-payment-mechanisms.pdf" target="_blank">2023 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py24-fin-ops-capitation-and-payment.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py25-financial-ops-capitation-and-payment-mechanisms.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-py26-financial-ops-capitation-payment-mechanisms.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py23-financial-operating-guide.pdf" target="_blank">2023 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py24-financial-operating-guide.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-py25-fin-op-ovw.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-py26-financial-ops-guide-ovw.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-py26-financial-ops-settlement-guide.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-and-kcc-models-py23-rate-book-development.pdf" target="_blank">2023 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-kcc-py24-rate-book-development.pdf" target="_blank">2024 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/files/document/aco-reach-and-kcc-models-py25-rate-book-development.pdf" target="_blank">2025 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #71809615; color: #718096; border: 1px solid #71809640;">📎 Document</span>
+                <a href="https://www.cms.gov/priorities/innovation/files/aco-reach-kcc-models-py26-rate-book-development.pdf" target="_blank">2026 (PDF)</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_12882" target="_blank">ACO REACH Model listserv</a>
+            </div>
+            <div class="resource-row">
+                <span class="resource-type-tag" style="background: #a0aec015; color: #a0aec0; border: 1px solid #a0aec040;">🔗 Resource</span>
+                <a href="https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617" target="_blank">CMS Innovation Center listserv</a>
+            </div>
+        </div>
+    </div>
             <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUVldzJBOFRXVGpOdGJDdGFITUpWemppQUc3RW5pRHl2YWk1OElMWkpnR0N6TEJqd1BLbXZCZlJxTlVpTkkxVW5HQmFoZnZlVXRIOHZDX3RTWFNpcE9WSVZ3QWh0Ni1fUFl5Um5MdGl6c3l6VXl6dHV1cjlmSGUyZWZ5aURESTVSdk5IT3NNUkhtbmMzd0VBaXFHdTgwUGdIUGhPZGtUTzdOTTZL?oc=5" target="_blank">Contributor: REACH Is Delivering Savings—RTA Risk Corridors Put Those Gains at Risk - The American J</a> <span class="news-source">The American Journal of Managed Care® (AJMC®)</span> <span class="news-date">Tue, 24 Feb 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYnM1NUhKZWs0UjV4RjdvQXV0OTJlU2pYdGc0eGNNM0Q4VkVaQ3Q1QndVTG56M3NTZm44aWl3aWlzOWM5anpfc0FIVnhfRXRoemFaeHVxalFEaTBzZmxuWGdyTnh5WkNEa1BIZHFhV1RZLUloOE82R3RtT3gzR29rckJaQ1dnZ2FwUjFKT2tPWkJ5RDZfX2k2VTg1MEVzOHdSdTQ5TlpDWmg?oc=5" target="_blank">Potential end of ACO REACH brings ‘question mark’ to value-based care - Healthcare Brew</a> <span class="news-source">Healthcare Brew</span> <span class="news-date">Mon, 22 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxORWZhTGhfRzA2UnA5VUUyY0N1SVpfcGY5Nm5pRDJxVVpaZ1hJeVNQZzNpV3UxX1ZGUWktd1dBUExmSkNjem1oZWZOdWRDYkxqb3F5M0JXMC1TWVdubVI3bE5EbTlLS256ejEyZjZFTC1ZV01zS1ZKOHYxdVBTTzhGN2RBbTJNaHA4aDV2S1J2NUVFVDk2bVVVSFVFcHduc3ZG?oc=5" target="_blank">CMS unveils LEAD, its new 10-year accountable care model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Thu, 18 Dec 2025</span></li></ul></div>
         </div>
         
