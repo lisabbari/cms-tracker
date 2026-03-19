@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMS Innovation Model Monitor</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a2e;
+    line-height: 1.5;
+}
+.container { max-width: 1000px; margin: 0 auto; padding: 24px; }
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a365d 0%, #2a4a7f 100%);
+    color: white;
+    padding: 32px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.header h1 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; }
+.header .timestamp { opacity: 0.7; font-size: 13px; margin-top: 8px; }
+
+/* Summary bar */
+.summary-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.summary-stat {
+    background: white;
+    border-radius: 8px;
+    padding: 16px 20px;
+    flex: 1;
+    min-width: 140px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.summary-stat .stat-value { font-size: 28px; font-weight: 700; }
+.summary-stat .stat-label { font-size: 13px; color: #666; margin-top: 2px; }
+.summary-stat.has-changes .stat-value { color: #c53030; }
+.summary-stat.all-clear .stat-value { color: #276749; }
+
+/* Model cards */
+.model-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-left: 4px solid #cbd5e0;
+    transition: box-shadow 0.2s;
+}
+.model-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+.model-card.changed { border-left-color: #c53030; background: #fff5f5; }
+.model-card.new { border-left-color: #d69e2e; }
+.model-card.error { border-left-color: #ed8936; }
+.model-card.unchanged { border-left-color: #48bb78; }
+
+.card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.card-header h3 { font-size: 16px; font-weight: 600; }
+.card-header h3 a { color: #1a365d; text-decoration: none; }
+.card-header h3 a:hover { text-decoration: underline; }
+.description { font-size: 13px; color: #666; margin-top: 2px; }
+
+.status-badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.status-badge.changed { background: #fed7d7; color: #9b2c2c; }
+.status-badge.new { background: #fefcbf; color: #975a16; }
+.status-badge.unchanged { background: #c6f6d5; color: #276749; }
+.status-badge.error { background: #feebc8; color: #9c4221; }
+
+.change-detail {
+    margin-top: 12px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #fed7d7;
+    border-radius: 6px;
+}
+.change-type {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.change-type.added { background: #c6f6d5; color: #276749; }
+.change-type.removed { background: #fed7d7; color: #9b2c2c; }
+.change-count { font-size: 12px; color: #666; margin-left: 8px; }
+.change-preview {
+    margin-top: 8px;
+    padding-left: 18px;
+    font-size: 12px;
+    color: #4a5568;
+}
+.change-preview li { margin-bottom: 2px; }
+
+.news-section {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #e2e8f0;
+}
+.news-section h4 { font-size: 13px; font-weight: 600; color: #4a5568; margin-bottom: 6px; }
+.news-section ul { list-style: none; padding: 0; }
+.news-section li { font-size: 13px; margin-bottom: 4px; }
+.news-section a { color: #2b6cb0; text-decoration: none; }
+.news-section a:hover { text-decoration: underline; }
+.news-source { font-size: 11px; color: #999; }
+.news-date { font-size: 11px; color: #999; }
+
+/* Timeline */
+.section-title { font-size: 18px; font-weight: 700; margin: 28px 0 12px; color: #1a365d; }
+.timeline-entry {
+    display: flex;
+    gap: 12px;
+    padding: 10px 14px;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.timeline-date { color: #999; white-space: nowrap; min-width: 85px; }
+.timeline-model { font-weight: 600; min-width: 140px; }
+.timeline-summary { color: #666; }
+.no-history { color: #999; font-size: 14px; padding: 16px 0; }
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>CMS Innovation Model Monitor</h1>
+    <div class="subtitle">Tracking changes to CMMI model pages</div>
+    <div class="timestamp">Last checked: March 19, 2026 at 03:47 PM</div>
+</div>
+
+<div class="summary-bar">
+    <div class="summary-stat">
+        <div class="stat-value">8</div>
+        <div class="stat-label">Models Tracked</div>
+    </div>
+    <div class="summary-stat all-clear">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Changes Detected</div>
+    </div>
+    <div class="summary-stat">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Fetch Errors</div>
+    </div>
+    <div class="summary-stat">
+        <div class="stat-value">40</div>
+        <div class="stat-label">News Items</div>
+    </div>
+</div>
+
+
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/access" target="_blank">ACCESS</a></h3>
+                    <p class="description">ACCESS (Advancing Chronic Care with Effective, Scalable Solutions) Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPenRqaDhzN2ZJZDh5ODFlYVg3cE9hNEtEVUZHV0lnSXE3aGRVRU5uMEhUVlQxbkNFOURnb0lOZnlzU3d3ZWw1QmdXaHktTmNpSlc0bWFVUEs5eHdoNDQwUlhjdzJWenE1RHVKZ21vQXVpakJ1cTJ4NE9RQzJ1eUdwaHNSV2ZXY0lvZTl0VVM3d3h5Mk9kRnc4NE1XSzgzOFMxaURGNm5JWGRqU3p6Tld3VGV4enlXWEU3QlFMSnFn?oc=5" target="_blank">CMS Innovation Center Unveils ACCESS Model to Expand Technology-Supported Care for Chronic Disease -</a> <span class="news-source">ArentFox Schiff</span> <span class="news-date">Tue, 23 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTHowREx5R2FsYUE4M21UTzhybHg1aEtDekZRNHRiMU5BYThReXNualBmMldVd3hMcHVFMzRBWnU0aVlPcmpIaWJDWVFYbEtxaTVWampBOU9HMlF1Q0RncE5pLWJRNFBlYks5UnFaMFpMYzJER0ZtMWZoUzJxQUNrVWVjaG5vME5XSFN6SE4tTEx4ZjluNkpIZUxwUndhTDJqV0wwelp4eEE4aGhtQm9JX0tUbUl6VnptQ2Y1ZzM1SE1KWERpS25ibjlFM3BfQTQwblF6bV9XZ3dfSktFbGZhUWdhdDFGbVhrdC1sZF9Lb08tZw?oc=5" target="_blank">CMS Launches Five New Models at the End of 2025: Looks to Advance ACCESS, BALANCE, MAHA ELEVATE, GLO</a> <span class="news-source">Akin</span> <span class="news-date">Wed, 07 Jan 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/asm" target="_blank">ASM</a></h3>
+                    <p class="description">ASM (Ambulatory Specialty Model)</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOY3Y1ZUotS0FucW94M0pudHBSMmxBSk1ZamdMSHFNQ1FQVHFDT1pmWTkxbDNTU1RUanhHc21yLW5iRHJvMHRlVzZTWWZSUnlnWWFINnRyVkRZSlN5cFhtNFc3ZVlwYzhvOFBqcjZ6R0pYZklKWF8zVHk5X3c0Wm1YTGhFOUtIbVpZZDczNVZRSEFGajdhTWUzTFNjVDV2WThBd3NDLXg3OFR0Zm5xdFNJ?oc=5" target="_blank">What Physicians Should Know About CMS’ Ambulatory Specialty Model - Forvis Mazars US</a> <span class="news-source">Forvis Mazars US</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNMzJVM09BZ25GMk51QjJWcnNNRTBOMmw3S2NSTUF3T0VvTkRYUjNkTE9RX3lWYk5JWFdBZ2JEV2hzYXMteF9sSUczeXUtUHFGaW1Fa2xDWlhUczRsOXVxcFV3eTBWdXo3YmRKNDRFWXloNWtpbkVBMjZWVzZ3YmpLNGhnWHNLZ2JWcmxuYXpwTUxYTk5mSTBLV2F1eHNDZU9paUhUWXBKeDJQN2N4NjdIeXA5M1V2YnJfM1NQVFZNcGVUS1BlNWFrVzFyTFI?oc=5" target="_blank">MGMA outlines path and pitfalls in CMS 2030 value-based care push - HealthExec</a> <span class="news-source">HealthExec</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMimgJBVV95cUxOR0RSeGtiMmtCSERKU3B3SWowTDU1dzFpblZYNS1IaEh2WlpEU1RjRzEyb1RPM2Qwb3VVZmhtS1c4NFJmM3FMWF96dUxJVVZOWkFrZnh2VWdIZE53VTJWNWJVNExHQXN6ZzhHVnlLUTJ3a2JQWWtlOTd4YVdqNlJMNTBZTk1hUERBYlQyb2RkWmREZ0gxU0ktb29OMWdmdjBkUXRQdEVFeVBCVXVVR2QwQklqN0xocHZ4dVNoUVJZTjlOVnNMZkU3MXJrWURzOGpLTG9rM3pRRVpBQU1OdmpBaUJ1OTIxZEtsSnhUV1RiZGo2aDhrZ1JUYXBkNXFyQ1puTlR3US1PSWVFZG1BWXlScHZaLWU5dDNOSkE?oc=5" target="_blank">Ambulatory Specialty Model For Heart Failure - American College of Cardiology</a> <span class="news-source">American College of Cardiology</span> <span class="news-date">Sun, 08 Feb 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/lead" target="_blank">LEAD</a></h3>
+                    <p class="description">LEAD (Long-term Enhanced ACO Design) Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUJnd040VllVd3FFYnRiU3p1RENGcUtoVi11THlfamc1ZF90NmdrYXJwMmxZVGNod1dYdVo5c3RHNmlaZDA3ZndiQ2lxSmhzU3Q4c0U1eFU5ZVJqd1dOX3psZDhpVnpOZlBPVjJXRVhvUE1VazF5MGRaeEhFcmZjcVdiQW5Pbm5rR21rdldHUW1yZXBEMXNFbHVKVFBsRGhFdUZjQkllN2hqZlR3aGJoZlRubThrRjFWLU9ILVNIbW1Edw?oc=5" target="_blank">LEAD: What doctors need to know about the new CMS payment model - American Medical Association</a> <span class="news-source">American Medical Association</span> <span class="news-date">Fri, 19 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNNnFBNXJ3dlhKX0pUb0FNQ29MbXlWWVp2amFLeUtKZjdfOFFQcE4tUGNlN3BMRDFMRGZBUDhIcHhqOUdocUlRRGZGemtwdlNkUDFnUlJtRHQ3OHMzZ3lGX1VWeVJHUDlMZUlkRWtqWUkxVnl6WkUyNDRmZVA5N1NnaW9vaWMxOEU?oc=5" target="_blank">How CMS’ decision to end a primary care program shook rural clinics - Modern Healthcare</a> <span class="news-source">Modern Healthcare</span> <span class="news-date">Fri, 20 Feb 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate" target="_blank">MAHA ELEVATE</a></h3>
+                    <p class="description">MAHA ELEVATE (Make America Healthy Again: Enhancing Lifestyle and Evaluating Value-based Approaches Through Evidence) Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxON1NXUUJtNUFXRzYwV0c5dXdJblROcFRSZGp1QkhMaHQzeHpSS3Y3VEJVRF9YMFZRNGl5VEFYV2dlUW02WjFaV3FGNXpNM1FQNFR4NGRlazFWLWZ4dEF0bVNxR1dCbmlqOUpjUm5FalhFb3cwZHV1NGpOUWJlUU16S3BtWE93NHlIQ25MVGdBVzV4eFJwUTB6WE9kMTExZDNjZFNDRllmdXViczBJNEQ3YlFxMHhxNTZpUDJVLXZWdkROT1dKc3ZXbWdSMHVxMHRmZnhmcmdndzJDSmlYdXY3LWV3?oc=5" target="_blank">CMS opens applications for $100M MAHA ELEVATE lifestyle medicine model; senior living communities el</a> <span class="news-source">McKnight's Senior Living</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNOU1GcnZHVWxTXzVwdVE2Y1BCQWZaTDZCaDNoMU5wMWZRRHcxVXVzMjVuN0hPanU5UEJNZGdVVDY2Tk9zOUJOYzNsR2plTnlDa1g0WHJoS0ozZ3A1b2lFOUtDLUhHbHFKWFVDSjl5OFVBZnlVb1UyaVhsdVJBeFBpcUEwVUJZTGktakNiRDA1ZU1SeDhqTVVZRElCVEgyNFIxTnpvdnhMT2FJckNnSXpLbS1OR1ZudFM5dnUyekxMRTVpNUk?oc=5" target="_blank">CMS All-In On Using ‘Big Stick’ To Make Value-Based Care New Paradigm - Forbes</a> <span class="news-source">Forbes</span> <span class="news-date">Thu, 19 Mar 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/ahead" target="_blank">AHEAD</a></h3>
+                    <p class="description">AHEAD (Achieving Healthcare Efficiency through Accountable Design) Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQV0lNMWptNENNRmlhRURiajlZTmNTR3FIdWxicXZvWk11d2IzMEI4VFFXYnJRZzVNalNUT2lKZnNQZmtUMUhVOWhueW1zSFRyeHpya0JrM0pwV0VITnU0dHhMcG8xWGVMbnJKU1h0ZlFub2RwN21felhpTHRkWko0bXNVQl9mSktLdHNDOTRR?oc=5" target="_blank">CMS announces changes to AHEAD Model for states - American Hospital Association</a> <span class="news-source">American Hospital Association</span> <span class="news-date">Wed, 03 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMV9LdDRnVlBhMVZBMkZxOHg5Nlc0c3dhZUx1Z3BlUlpaMjFDTG9lYUtpd05lZEpGdEV3anVUWU5hc1NFRTk0ZWhKV2FfNzF2ZGhwM1dKYVZBUzJyUTFyd1hYR3o5RDZIVm83c01xQWtGUk5JUUlMdGRFNklyY09TUTl1R1B5b2wxbzBz?oc=5" target="_blank">CMS tweaks AHEAD all-payer model for states - Healthcare Dive</a> <span class="news-source">Healthcare Dive</span> <span class="news-date">Thu, 04 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNMHhYYVNvaWJKZXJ3Nnd2Q3hod2FnS2l4QXNBc0FwTjNZMkFLaTN5MEhPV1BfY3dCM2lRc2NMTG9HYThWdXQwWElCMmRFTkR5b0pfd1o4ZWJGNTdwZTFkWWdGazg3REhicUZVT0FKc1o4U1dqNFJPeGtvbGM4RW9FUnZSUWZIY0E?oc=5" target="_blank">Looking back to look forward: Recap of the CMS Innovation Center’s 2025 announcements - JD Supra</a> <span class="news-source">JD Supra</span> <span class="news-date">Thu, 08 Jan 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/team-model" target="_blank">TEAM</a></h3>
+                    <p class="description">TEAM (Transforming Episode Accountability Model)</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbUJnd040VllVd3FFYnRiU3p1RENGcUtoVi11THlfamc1ZF90NmdrYXJwMmxZVGNod1dYdVo5c3RHNmlaZDA3ZndiQ2lxSmhzU3Q4c0U1eFU5ZVJqd1dOX3psZDhpVnpOZlBPVjJXRVhvUE1VazF5MGRaeEhFcmZjcVdiQW5Pbm5rR21rdldHUW1yZXBEMXNFbHVKVFBsRGhFdUZjQkllN2hqZlR3aGJoZlRubThrRjFWLU9ILVNIbW1Edw?oc=5" target="_blank">LEAD: What doctors need to know about the new CMS payment model - American Medical Association</a> <span class="news-source">American Medical Association</span> <span class="news-date">Fri, 19 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ3V5LWVZaW1fWV9HQVdfR25YNEthZ2xldHVZZDFNcDNwWklSb1N4WEszWkRNbFd3bWdxajNjLTU5d3RSSFMxbGc2dWNCdExkR0p1ODZYdWY4Z1FTaHNFaU9MZTlPQllxeS1qZFFUOVAySDNpZHE4S0d5VzNzdmNmak95SExrdTQzaFdKMmJjNjhmMVEtcUIyVkh5T3NLVFhlZnlkM1VySlRMRUYtek01aTlBbw?oc=5" target="_blank">The Cigna Group works to strengthen chronic care management by signing CMS Innovation Center’s ACCES</a> <span class="news-source">The Cigna Group Newsroom</span> <span class="news-date">Thu, 12 Feb 2026</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model" target="_blank">ACO Primary Care Flex</a></h3>
+                    <p class="description">ACO PC Flex (ACO Primary Care Flex) Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOLVJyTTBacU1wQU5uODlhRDMwM2dxVGRzWTVQaW4xcFprZkVhUjlyeUYxRXZHZkRaSktHdG50a1RLMW03cDlNWkdvX21qdFlENnlFQjlnWVRmRWtiSnVGVFZKWGtwbmxiT2thWHl0bnFUVnVYeTdoaVFfbkkza2xabkp5NXhzV1VENG1QX2JVaXpiWTFBdEpNOHNENA?oc=5" target="_blank">CMS Announces LEAD Model, Focusing On Homebound Patients - Home Health Care News</a> <span class="news-source">Home Health Care News</span> <span class="news-date">Thu, 18 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPT05nV1pHeE9OT1hNQzM0N0xZaWNwNW80QXhBM0w3WjdqempxZkxPVkJ4SGxEel9BdVJEbFRrTGk0VmUxWlZfcVBPMFlpbThIcVl2Vl9rcGpraDhIVExKeVl0dzVaZ0RXV2ZfREQ4WUJXX1F5c2Z0TXd3Vm0wZkhlZTA4dTl5cHNQc1lsNmpRTlZSUjJaWmQ0N3lWUQ?oc=5" target="_blank">An Overview of the ACO Primary Care Flex (ACO PC Flex) Model - cmhealthlaw.com</a> <span class="news-source">cmhealthlaw.com</span> <span class="news-date">Fri, 31 May 2024</span></li><li><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWIxQ2FnTjhmbUh5YjhUWWhLS0dQc3gtMmpJZzJucGVodzVkUkphamdEd1V1cC1mQ2lQMDZZb1pvRDk5cEp3NnFvN1k1eDBuaUdtdXVUQnZiWHIxODhyU2l5ajh4aDFBRzNKd00wTUtCeHpCOVBJczdVR1ZVR05iaEFpaUlPZnhvME42cUU0cF9CZEZ4OGVMSFRRSTE?oc=5" target="_blank">Medicare to launch primary care model for low-revenue ACOs - American Hospital Association</a> <span class="news-source">American Hospital Association</span> <span class="news-date">Tue, 19 Mar 2024</span></li></ul></div>
+        </div>
+        
+        <div class="model-card new">
+            <div class="card-header">
+                <div>
+                    <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/aco-reach" target="_blank">ACO REACH</a></h3>
+                    <p class="description">ACO REACH Model</p>
+                </div>
+                <div class="status-badge new">
+                    🟡 First Scan (Baseline)
+                </div>
+            </div>
+            
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUVldzJBOFRXVGpOdGJDdGFITUpWemppQUc3RW5pRHl2YWk1OElMWkpnR0N6TEJqd1BLbXZCZlJxTlVpTkkxVW5HQmFoZnZlVXRIOHZDX3RTWFNpcE9WSVZ3QWh0Ni1fUFl5Um5MdGl6c3l6VXl6dHV1cjlmSGUyZWZ5aURESTVSdk5IT3NNUkhtbmMzd0VBaXFHdTgwUGdIUGhPZGtUTzdOTTZL?oc=5" target="_blank">Contributor: REACH Is Delivering Savings—RTA Risk Corridors Put Those Gains at Risk - The American J</a> <span class="news-source">The American Journal of Managed Care® (AJMC®)</span> <span class="news-date">Tue, 24 Feb 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYnM1NUhKZWs0UjV4RjdvQXV0OTJlU2pYdGc0eGNNM0Q4VkVaQ3Q1QndVTG56M3NTZm44aWl3aWlzOWM5anpfc0FIVnhfRXRoemFaeHVxalFEaTBzZmxuWGdyTnh5WkNEa1BIZHFhV1RZLUloOE82R3RtT3gzR29rckJaQ1dnZ2FwUjFKT2tPWkJ5RDZfX2k2VTg1MEVzOHdSdTQ5TlpDWmg?oc=5" target="_blank">Potential end of ACO REACH brings ‘question mark’ to value-based care - Healthcare Brew</a> <span class="news-source">Healthcare Brew</span> <span class="news-date">Mon, 22 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxORWZhTGhfRzA2UnA5VUUyY0N1SVpfcGY5Nm5pRDJxVVpaZ1hJeVNQZzNpV3UxX1ZGUWktd1dBUExmSkNjem1oZWZOdWRDYkxqb3F5M0JXMC1TWVdubVI3bE5EbTlLS256ejEyZjZFTC1ZV01zS1ZKOHYxdVBTTzhGN2RBbTJNaHA4aDV2S1J2NUVFVDk2bVVVSFVFcHduc3ZG?oc=5" target="_blank">CMS unveils LEAD, its new 10-year accountable care model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Thu, 18 Dec 2025</span></li></ul></div>
+        </div>
+        
+
+<h2 class="section-title">Change History</h2>
+<p class="no-history">No changes recorded yet. History will build over time as the monitor runs daily.</p>
+
+<div class="footer">
+    CMS Innovation Model Monitor &middot; Data sourced from cms.gov
+</div>
+
+</div>
+</body>
+</html>
