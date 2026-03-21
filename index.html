@@ -170,7 +170,9 @@ body {
 }
 .change-type.added { background: #c6f6d5; color: #276749; }
 .change-type.removed { background: #fed7d7; color: #9b2c2c; }
+.change-date { font-size: 11px; color: #999; margin-right: 4px; }
 .change-count { font-size: 12px; color: #666; margin-left: 8px; }
+.more-changes { font-size: 11px; color: #999; font-style: italic; }
 .change-preview {
     margin-top: 8px;
     padding-left: 18px;
@@ -178,6 +180,11 @@ body {
     color: #4a5568;
 }
 .change-preview li { margin-bottom: 2px; }
+.resource-type-inline {
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+}
 
 /* News */
 .news-section {
@@ -209,6 +216,7 @@ body {
     border-left: 3px solid #d69e2e;
 }
 .timeline-date { color: #999; white-space: nowrap; min-width: 85px; }
+.timeline-ago { color: #b0b0b0; font-size: 12px; white-space: nowrap; min-width: 80px; }
 .timeline-model { font-weight: 600; min-width: 160px; }
 .timeline-summary { color: #666; }
 .no-history { color: #999; font-size: 14px; padding: 16px 0; }
@@ -229,7 +237,7 @@ body {
 <div class="header">
     <h1>CMS Innovation Model Monitor</h1>
     <div class="subtitle">Tracking changes to CMMI model pages, resources, and news</div>
-    <div class="timestamp">Last checked: March 21, 2026 at 11:16 AM</div>
+    <div class="timestamp">Last checked: March 20, 2026 at 10:47 PM</div>
 </div>
 
 <div class="summary-bar">
@@ -237,13 +245,13 @@ body {
         <div class="stat-value">8</div>
         <div class="stat-label">Models Tracked</div>
     </div>
-    <div class="summary-stat all-clear">
-        <div class="stat-value">0</div>
-        <div class="stat-label">Pages Changed</div>
+    <div class="summary-stat has-changes">
+        <div class="stat-value">2</div>
+        <div class="stat-label">Changed (7 days)</div>
     </div>
-    <div class="summary-stat ">
-        <div class="stat-value">0</div>
-        <div class="stat-label">New Resources</div>
+    <div class="summary-stat has-new-resources">
+        <div class="stat-value">2</div>
+        <div class="stat-label">New Resources (7 days)</div>
     </div>
     <div class="summary-stat">
         <div class="stat-value">97</div>
@@ -263,10 +271,9 @@ body {
                     <p class="description">ACCESS (Advancing Chronic Care with Effective, Scalable Solutions) Model</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -298,7 +305,7 @@ body {
             </div>
         </div>
     </div>
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPenRqaDhzN2ZJZDh5ODFlYVg3cE9hNEtEVUZHV0lnSXE3aGRVRU5uMEhUVlQxbkNFOURnb0lOZnlzU3d3ZWw1QmdXaHktTmNpSlc0bWFVUEs5eHdoNDQwUlhjdzJWenE1RHVKZ21vQXVpakJ1cTJ4NE9RQzJ1eUdwaHNSV2ZXY0lvZTl0VVM3d3h5Mk9kRnc4NE1XSzgzOFMxaURGNm5JWGRqU3p6Tld3VGV4enlXWEU3QlFMSnFn?oc=5" target="_blank">CMS Innovation Center Unveils ACCESS Model to Expand Technology-Supported Care for Chronic Disease -</a> <span class="news-source">ArentFox Schiff</span> <span class="news-date">Tue, 23 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTHowREx5R2FsYUE4M21UTzhybHg1aEtDekZRNHRiMU5BYThReXNualBmMldVd3hMcHVFMzRBWnU0aVlPcmpIaWJDWVFYbEtxaTVWampBOU9HMlF1Q0RncE5pLWJRNFBlYks5UnFaMFpMYzJER0ZtMWZoUzJxQUNrVWVjaG5vME5XSFN6SE4tTEx4ZjluNkpIZUxwUndhTDJqV0wwelp4eEE4aGhtQm9JX0tUbUl6VnptQ2Y1ZzM1SE1KWERpS25ibjlFM3BfQTQwblF6bV9XZ3dfSktFbGZhUWdhdDFGbVhrdC1sZF9Lb08tZw?oc=5" target="_blank">CMS Launches Five New Models at the End of 2025: Looks to Advance ACCESS, BALANCE, MAHA ELEVATE, GLO</a> <span class="news-source">Akin</span> <span class="news-date">Wed, 07 Jan 2026</span></li></ul></div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxPODZGM25XVmk4MFZHZ21vTVU1ZENJMkpmbzl3bWt6M0l1MXg3Qjg5LUE0eEtTdjZ1aVlCZ056aUpRcGRXRGUxd1VDRktnMkpXVnNKakhBRElsOUZpeU1GQzJ3SVhjbkgzQm9URE91OXUySjJzV0xNNGFlLTlVbzlodzV0TE1mVEprbnAtcHVVWS1CZHFqNVJzMHAzclFfazU2WDh4N0xPcnpSVmZGQ190TGhxU1VOUnhCVzBkUDA0Z2JWRndZck1lRW44MldqQ0l5UlJqNHpQbkhodnBxRmlpbHQwQ1B1bXc?oc=5" target="_blank">Charlotte's Web Welcomes New CMS Guidance, Advancing Access to Eligible Full‑Spectrum Hemp Products </a> <span class="news-source">PR Newswire</span> <span class="news-date">Sat, 21 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPallMVnBOM0o3U25UUjQtd21mb2VEOHZYN1hTX01uQ0JwSDduVTdtY3pOZnU2Y1NyNDFiaVFYdG15dWNJeW1VZnVra21UdG1jOEp1ZDMyY1ZyTm93c0VFTUFrSkVaaUZHdkx6bDROcExGamlUS2ZjZlpBdlY3R1RBNUxDQTdDWlFwYzhJ?oc=5" target="_blank">CMS innovation center to expand staff with focus on drug pricing, director says - Endpoints News</a> <span class="news-source">Endpoints News</span> <span class="news-date">Tue, 17 Mar 2026</span></li></ul></div>
         </div>
         
         <div class="model-card unchanged">
@@ -308,10 +315,9 @@ body {
                     <p class="description">ASM (Ambulatory Specialty Model)</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -351,21 +357,38 @@ body {
             </div>
         </div>
     </div>
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOY3Y1ZUotS0FucW94M0pudHBSMmxBSk1ZamdMSHFNQ1FQVHFDT1pmWTkxbDNTU1RUanhHc21yLW5iRHJvMHRlVzZTWWZSUnlnWWFINnRyVkRZSlN5cFhtNFc3ZVlwYzhvOFBqcjZ6R0pYZklKWF8zVHk5X3c0Wm1YTGhFOUtIbVpZZDczNVZRSEFGajdhTWUzTFNjVDV2WThBd3NDLXg3OFR0Zm5xdFNJ?oc=5" target="_blank">What Physicians Should Know About CMS’ Ambulatory Specialty Model - Forvis Mazars US</a> <span class="news-source">Forvis Mazars US</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxNMzJVM09BZ25GMk51QjJWcnNNRTBOMmw3S2NSTUF3T0VvTkRYUjNkTE9RX3lWYk5JWFdBZ2JEV2hzYXMteF9sSUczeXUtUHFGaW1Fa2xDWlhUczRsOXVxcFV3eTBWdXo3YmRKNDRFWXloNWtpbkVBMjZWVzZ3YmpLNGhnWHNLZ2JWcmxuYXpwTUxYTk5mSTBLV2F1eHNDZU9paUhUWXBKeDJQN2N4NjdIeXA5M1V2YnJfM1NQVFZNcGVUS1BlNWFrVzFyTFI?oc=5" target="_blank">MGMA outlines path and pitfalls in CMS 2030 value-based care push - HealthExec</a> <span class="news-source">HealthExec</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMimgJBVV95cUxOR0RSeGtiMmtCSERKU3B3SWowTDU1dzFpblZYNS1IaEh2WlpEU1RjRzEyb1RPM2Qwb3VVZmhtS1c4NFJmM3FMWF96dUxJVVZOWkFrZnh2VWdIZE53VTJWNWJVNExHQXN6ZzhHVnlLUTJ3a2JQWWtlOTd4YVdqNlJMNTBZTk1hUERBYlQyb2RkWmREZ0gxU0ktb29OMWdmdjBkUXRQdEVFeVBCVXVVR2QwQklqN0xocHZ4dVNoUVJZTjlOVnNMZkU3MXJrWURzOGpLTG9rM3pRRVpBQU1OdmpBaUJ1OTIxZEtsSnhUV1RiZGo2aDhrZ1JUYXBkNXFyQ1puTlR3US1PSWVFZG1BWXlScHZaLWU5dDNOSkE?oc=5" target="_blank">Ambulatory Specialty Model For Heart Failure - American College of Cardiology</a> <span class="news-source">American College of Cardiology</span> <span class="news-date">Sun, 08 Feb 2026</span></li></ul></div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOY3Y1ZUotS0FucW94M0pudHBSMmxBSk1ZamdMSHFNQ1FQVHFDT1pmWTkxbDNTU1RUanhHc21yLW5iRHJvMHRlVzZTWWZSUnlnWWFINnRyVkRZSlN5cFhtNFc3ZVlwYzhvOFBqcjZ6R0pYZklKWF8zVHk5X3c0Wm1YTGhFOUtIbVpZZDczNVZRSEFGajdhTWUzTFNjVDV2WThBd3NDLXg3OFR0Zm5xdFNJ?oc=5" target="_blank">What Physicians Should Know About CMS’ Ambulatory Specialty Model - Forvis Mazars US</a> <span class="news-source">Forvis Mazars US</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMimgJBVV95cUxOR0RSeGtiMmtCSERKU3B3SWowTDU1dzFpblZYNS1IaEh2WlpEU1RjRzEyb1RPM2Qwb3VVZmhtS1c4NFJmM3FMWF96dUxJVVZOWkFrZnh2VWdIZE53VTJWNWJVNExHQXN6ZzhHVnlLUTJ3a2JQWWtlOTd4YVdqNlJMNTBZTk1hUERBYlQyb2RkWmREZ0gxU0ktb29OMWdmdjBkUXRQdEVFeVBCVXVVR2QwQklqN0xocHZ4dVNoUVJZTjlOVnNMZkU3MXJrWURzOGpLTG9rM3pRRVpBQU1OdmpBaUJ1OTIxZEtsSnhUV1RiZGo2aDhrZ1JUYXBkNXFyQ1puTlR3US1PSWVFZG1BWXlScHZaLWU5dDNOSkE?oc=5" target="_blank">Ambulatory Specialty Model For Heart Failure - American College of Cardiology</a> <span class="news-source">American College of Cardiology</span> <span class="news-date">Sun, 08 Feb 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxQd01EQnBkNEd2bkIxX2QxLWZxTUtJU210YWVJRlVxYVUtN214eDlLUEVPR1VLY0hVb1RDN2hqZWVqbGFkdWY5dEtJOGFlRmtyV1lPVDNSTDBRajBZZ3ZtQ0d4OVFZMVoyZkptakpwb0lZUUdjcnlXUTJ4TEVkU1o1eUJGTXV0MlU5cGlLMkhlWldFa0tiRHZYV3BXTHRidkl2ZThHWVpMTU5KWF9uVDV2cDBPY29BM2NEQlBRcWRfc1ZwWmZoWGx4VGhnWk5KTzBO?oc=5" target="_blank">Did you make the list? CMS targets cardiologists for new heart failure payment model - Cardiovascula</a> <span class="news-source">Cardiovascular Business</span> <span class="news-date">Tue, 03 Mar 2026</span></li></ul></div>
         </div>
         
-        <div class="model-card unchanged">
+        <div class="model-card changed">
             <div class="card-header">
                 <div>
                     <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/lead" target="_blank">LEAD</a></h3>
                     <p class="description">LEAD (Long-term Enhanced ACO Design) Model</p>
                 </div>
-                <div class="status-badge unchanged">
-                    🟢 No Changes
+                <div class="status-badge changed">
+                    🔴 Changed 1h ago
                 </div>
             </div>
             
-            
+                    <div class="resource-alert added">
+                        <strong>New Resources (2026-03-21, 1h ago)</strong>
+                        <ul><li><a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="resource-type-inline">FAQ</span></li></ul>
+                    </div>
+                    <div class="change-detail">
+                        <span class="change-date">2026-03-21</span>
+                        <span class="change-type added">ADDED</span>
+                        <span class="change-count">5 lines <span class="more-changes">+ 2 more lines</span></span>
+                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries claims-based aligned in at least on</li><li>starting in performance period 6. More information is available in the</li><li>Substance Access BEI Frequently Asked Questions</li></ul>
+                    </div>
+                    
+                    <div class="change-detail">
+                        <span class="change-date">2026-03-21</span>
+                        <span class="change-type removed">REMOVED</span>
+                        <span class="change-count">3 lines</span>
+                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries aligned in at least one of the Base</li><li>starting in performance period 6.</li><li>03/19/2026 02:25 PM</li></ul>
+                    </div>
+                    
             
     <div class="resources-section">
         <h4>Resources & Documents (7)</h4>
@@ -374,9 +397,9 @@ body {
                 <span class="resource-type-tag" style="background: #e53e3e15; color: #e53e3e; border: 1px solid #e53e3e40;">📄 Fact Sheet</span>
                 <a href="https://www.cms.gov/priorities/innovation/files/lead-model-value-fs.pdf" target="_blank">LEAD Model Value Factsheet (pdf)</a>
             </div>
-            <div class="resource-row">
+            <div class="resource-row new-resource">
                 <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
-                <a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a>
+                <a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="new-badge">NEW</span>
             </div>
             <div class="resource-row">
                 <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
@@ -410,10 +433,9 @@ body {
                     <p class="description">MAHA ELEVATE (Make America Healthy Again: Enhancing Lifestyle and Evaluating Value-based Approaches Through Evidence) Model</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -429,7 +451,7 @@ body {
             </div>
         </div>
     </div>
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxON1NXUUJtNUFXRzYwV0c5dXdJblROcFRSZGp1QkhMaHQzeHpSS3Y3VEJVRF9YMFZRNGl5VEFYV2dlUW02WjFaV3FGNXpNM1FQNFR4NGRlazFWLWZ4dEF0bVNxR1dCbmlqOUpjUm5FalhFb3cwZHV1NGpOUWJlUU16S3BtWE93NHlIQ25MVGdBVzV4eFJwUTB6WE9kMTExZDNjZFNDRllmdXViczBJNEQ3YlFxMHhxNTZpUDJVLXZWdkROT1dKc3ZXbWdSMHVxMHRmZnhmcmdndzJDSmlYdXY3LWV3?oc=5" target="_blank">CMS opens applications for $100M MAHA ELEVATE lifestyle medicine model; senior living communities el</a> <span class="news-source">McKnight's Senior Living</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxOcEhmTThhTW5JdXFfVHRzUjVaSThWcVlaM1E1RFdrV0RVT1FlLVZjRlFQc3dBNEdsUVhSdFFHZUdvalJWMlVDUU5PaVNwNjRzSUFOa2YzZEZiX0lIcDBIZVRucmRBeEphWldRWU5GcFFFTkYwN3MzMGtuY0t2eHpBRFkxQXlsSjZ1NUo3Nw?oc=5" target="_blank">McDermott+ Check-Up: March 20, 2026 - McDermott+</a> <span class="news-source">McDermott+</span> <span class="news-date">Fri, 20 Mar 2026</span></li></ul></div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxOenFXSU01c2tPM1o3Z2pkNE5tNGE3MzUyNzVablBOUy1KT1F3OEttNUUzcGNGLU1ZRGdGU09ROVQ2OVFBQ2JiQzduSGFNU0l2bTlqYUw5TVpIMEtfYVQ2SVZkVmVGcHhtc3plM3p0QzB0eDJkRjV5emlVWGV2ZWRVcmdHWFd4STV4ZDVwNjVIVk5XSVJodEtLelJPaTVGUWF2M1lr?oc=5" target="_blank">CMS opens grant applications for MAHA ELEVATE lifestyle medicine model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Mon, 16 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxON1NXUUJtNUFXRzYwV0c5dXdJblROcFRSZGp1QkhMaHQzeHpSS3Y3VEJVRF9YMFZRNGl5VEFYV2dlUW02WjFaV3FGNXpNM1FQNFR4NGRlazFWLWZ4dEF0bVNxR1dCbmlqOUpjUm5FalhFb3cwZHV1NGpOUWJlUU16S3BtWE93NHlIQ25MVGdBVzV4eFJwUTB6WE9kMTExZDNjZFNDRllmdXViczBJNEQ3YlFxMHhxNTZpUDJVLXZWdkROT1dKc3ZXbWdSMHVxMHRmZnhmcmdndzJDSmlYdXY3LWV3?oc=5" target="_blank">CMS opens applications for $100M MAHA ELEVATE lifestyle medicine model; senior living communities el</a> <span class="news-source">McKnight's Senior Living</span> <span class="news-date">Wed, 18 Mar 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxPd1dSODI1NjlrN3Bsa284MVVocVdMZU5NRGphakVnYXNWdEFMUDdGMWp6T2dIZVNLVzFzV0QwM1kzeGFpX1ZRUnJQOG12dzctbnE3dzFTSzRZbUFObE1wa3JGWWpOQXlPcXlQYzN3bUJ0dmFEcjZ4eUMwSFo2YWdVRjFDWFVRUQ?oc=5" target="_blank">CMS’ new MAHA ELEVATE innovation model has a fundamental flaw - statnews.com</a> <span class="news-source">statnews.com</span> <span class="news-date">Fri, 16 Jan 2026</span></li></ul></div>
         </div>
         
         <div class="model-card unchanged">
@@ -439,10 +461,9 @@ body {
                     <p class="description">AHEAD (Achieving Healthcare Efficiency through Accountable Design) Model</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -488,10 +509,9 @@ body {
                     <p class="description">TEAM (Transforming Episode Accountability Model)</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -633,10 +653,9 @@ body {
                     <p class="description">ACO PC Flex (ACO Primary Care Flex) Model</p>
                 </div>
                 <div class="status-badge unchanged">
-                    🟢 No Changes
+                    🟢 No Recent Changes
                 </div>
             </div>
-            
             
             
     <div class="resources-section">
@@ -668,28 +687,45 @@ body {
             </div>
         </div>
     </div>
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPT05nV1pHeE9OT1hNQzM0N0xZaWNwNW80QXhBM0w3WjdqempxZkxPVkJ4SGxEel9BdVJEbFRrTGk0VmUxWlZfcVBPMFlpbThIcVl2Vl9rcGpraDhIVExKeVl0dzVaZ0RXV2ZfREQ4WUJXX1F5c2Z0TXd3Vm0wZkhlZTA4dTl5cHNQc1lsNmpRTlZSUjJaWmQ0N3lWUQ?oc=5" target="_blank">An Overview of the ACO Primary Care Flex (ACO PC Flex) Model - cmhealthlaw.com</a> <span class="news-source">cmhealthlaw.com</span> <span class="news-date">Fri, 31 May 2024</span></li><li><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQYWIxQ2FnTjhmbUh5YjhUWWhLS0dQc3gtMmpJZzJucGVodzVkUkphamdEd1V1cC1mQ2lQMDZZb1pvRDk5cEp3NnFvN1k1eDBuaUdtdXVUQnZiWHIxODhyU2l5ajh4aDFBRzNKd00wTUtCeHpCOVBJczdVR1ZVR05iaEFpaUlPZnhvME42cUU0cF9CZEZ4OGVMSFRRSTE?oc=5" target="_blank">Medicare to launch primary care model for low-revenue ACOs - American Hospital Association</a> <span class="news-source">American Hospital Association</span> <span class="news-date">Tue, 19 Mar 2024</span></li><li><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNZnAwWm1mQXdLR2V4blBkLTFkWEpVWkR0c2JVUW9OQ1REOEJFcU9iNHo0bVpfQVoyU3JMTGE1TTV1a1VfUnA1YnVJUkc5M3FmU2RHRnJ3cVJJaTFhZEZUbzZuSXBzRmhDLXBOSnNFS3gwRjNhWG1SZ0tCa2Jna0RBbng0N201emtfdk1RY01KQ1pmR2lzSEJfSw?oc=5" target="_blank">CMS Updates ACO REACH As Program Enters ‘Pivotal Phase’ - Home Health Care News</a> <span class="news-source">Home Health Care News</span> <span class="news-date">Wed, 11 Jun 2025</span></li></ul></div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNZnAwWm1mQXdLR2V4blBkLTFkWEpVWkR0c2JVUW9OQ1REOEJFcU9iNHo0bVpfQVoyU3JMTGE1TTV1a1VfUnA1YnVJUkc5M3FmU2RHRnJ3cVJJaTFhZEZUbzZuSXBzRmhDLXBOSnNFS3gwRjNhWG1SZ0tCa2Jna0RBbng0N201emtfdk1RY01KQ1pmR2lzSEJfSw?oc=5" target="_blank">CMS Updates ACO REACH As Program Enters ‘Pivotal Phase’ - Home Health Care News</a> <span class="news-source">Home Health Care News</span> <span class="news-date">Wed, 11 Jun 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPT05nV1pHeE9OT1hNQzM0N0xZaWNwNW80QXhBM0w3WjdqempxZkxPVkJ4SGxEel9BdVJEbFRrTGk0VmUxWlZfcVBPMFlpbThIcVl2Vl9rcGpraDhIVExKeVl0dzVaZ0RXV2ZfREQ4WUJXX1F5c2Z0TXd3Vm0wZkhlZTA4dTl5cHNQc1lsNmpRTlZSUjJaWmQ0N3lWUQ?oc=5" target="_blank">An Overview of the ACO Primary Care Flex (ACO PC Flex) Model - cmhealthlaw.com</a> <span class="news-source">cmhealthlaw.com</span> <span class="news-date">Fri, 31 May 2024</span></li><li><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQRjBtT3k0dzBZdlR5cl9rREp6Z2NFb3UxUnNmM1lZUzZSeWotMl9ueS1YX28zelM3SlJFb2FXRFdYODZuS1JGcUZxd0xoSC1LSkhrRmlYVWt3QXZNcVNzZEFjVlN3QUF5b2UyMlExemlXSVN6c01fNFNNYnJ5UmZyZTVUa2lUVU0?oc=5" target="_blank">Downside risk, upside payment highlight new CMS innovation agenda - Modern Healthcare</a> <span class="news-source">Modern Healthcare</span> <span class="news-date">Tue, 13 May 2025</span></li></ul></div>
         </div>
         
-        <div class="model-card unchanged">
+        <div class="model-card changed">
             <div class="card-header">
                 <div>
                     <h3><a href="https://www.cms.gov/priorities/innovation/innovation-models/aco-reach" target="_blank">ACO REACH</a></h3>
                     <p class="description">ACO REACH Model</p>
                 </div>
-                <div class="status-badge unchanged">
-                    🟢 No Changes
+                <div class="status-badge changed">
+                    🔴 Changed 1h ago
                 </div>
             </div>
             
-            
+                    <div class="resource-alert added">
+                        <strong>New Resources (2026-03-21, 1h ago)</strong>
+                        <ul><li><a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="resource-type-inline">FAQ</span></li></ul>
+                    </div>
+                    <div class="change-detail">
+                        <span class="change-date">2026-03-21</span>
+                        <span class="change-type added">ADDED</span>
+                        <span class="change-count">7 lines <span class="more-changes">+ 4 more lines</span></span>
+                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn m</li><li>Substance Access BEI Frequently Asked Questions</li><li>.</li></ul>
+                    </div>
+                    
+                    <div class="change-detail">
+                        <span class="change-date">2026-03-21</span>
+                        <span class="change-type removed">REMOVED</span>
+                        <span class="change-count">3 lines</span>
+                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn m</li><li>, which begins on January 1, 2027.</li><li>02/04/2026 04:30 PM</li></ul>
+                    </div>
+                    
             
     <div class="resources-section">
         <h4>Resources & Documents (30)</h4>
         <div class="resources-list">
-            <div class="resource-row">
+            <div class="resource-row new-resource">
                 <span class="resource-type-tag" style="background: #d69e2e15; color: #d69e2e; border: 1px solid #d69e2e40;">❓ FAQ</span>
-                <a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a>
+                <a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="new-badge">NEW</span>
             </div>
             <div class="resource-row">
                 <span class="resource-type-tag" style="background: #3182ce15; color: #3182ce; border: 1px solid #3182ce40;">📋 Overview</span>
@@ -809,7 +845,7 @@ body {
             </div>
         </div>
     </div>
-            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUVldzJBOFRXVGpOdGJDdGFITUpWemppQUc3RW5pRHl2YWk1OElMWkpnR0N6TEJqd1BLbXZCZlJxTlVpTkkxVW5HQmFoZnZlVXRIOHZDX3RTWFNpcE9WSVZ3QWh0Ni1fUFl5Um5MdGl6c3l6VXl6dHV1cjlmSGUyZWZ5aURESTVSdk5IT3NNUkhtbmMzd0VBaXFHdTgwUGdIUGhPZGtUTzdOTTZL?oc=5" target="_blank">Contributor: REACH Is Delivering Savings—RTA Risk Corridors Put Those Gains at Risk - The American J</a> <span class="news-source">The American Journal of Managed Care® (AJMC®)</span> <span class="news-date">Tue, 24 Feb 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYnM1NUhKZWs0UjV4RjdvQXV0OTJlU2pYdGc0eGNNM0Q4VkVaQ3Q1QndVTG56M3NTZm44aWl3aWlzOWM5anpfc0FIVnhfRXRoemFaeHVxalFEaTBzZmxuWGdyTnh5WkNEa1BIZHFhV1RZLUloOE82R3RtT3gzR29rckJaQ1dnZ2FwUjFKT2tPWkJ5RDZfX2k2VTg1MEVzOHdSdTQ5TlpDWmg?oc=5" target="_blank">Potential end of ACO REACH brings ‘question mark’ to value-based care - Healthcare Brew</a> <span class="news-source">Healthcare Brew</span> <span class="news-date">Mon, 22 Sep 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxORWZhTGhfRzA2UnA5VUUyY0N1SVpfcGY5Nm5pRDJxVVpaZ1hJeVNQZzNpV3UxX1ZGUWktd1dBUExmSkNjem1oZWZOdWRDYkxqb3F5M0JXMC1TWVdubVI3bE5EbTlLS256ejEyZjZFTC1ZV01zS1ZKOHYxdVBTTzhGN2RBbTJNaHA4aDV2S1J2NUVFVDk2bVVVSFVFcHduc3ZG?oc=5" target="_blank">CMS unveils LEAD, its new 10-year accountable care model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Thu, 18 Dec 2025</span></li></ul></div>
+            <div class="news-section"><h4>Recent News</h4><ul><li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNMUVldzJBOFRXVGpOdGJDdGFITUpWemppQUc3RW5pRHl2YWk1OElMWkpnR0N6TEJqd1BLbXZCZlJxTlVpTkkxVW5HQmFoZnZlVXRIOHZDX3RTWFNpcE9WSVZ3QWh0Ni1fUFl5Um5MdGl6c3l6VXl6dHV1cjlmSGUyZWZ5aURESTVSdk5IT3NNUkhtbmMzd0VBaXFHdTgwUGdIUGhPZGtUTzdOTTZL?oc=5" target="_blank">Contributor: REACH Is Delivering Savings—RTA Risk Corridors Put Those Gains at Risk - The American J</a> <span class="news-source">The American Journal of Managed Care® (AJMC®)</span> <span class="news-date">Tue, 24 Feb 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxORWZhTGhfRzA2UnA5VUUyY0N1SVpfcGY5Nm5pRDJxVVpaZ1hJeVNQZzNpV3UxX1ZGUWktd1dBUExmSkNjem1oZWZOdWRDYkxqb3F5M0JXMC1TWVdubVI3bE5EbTlLS256ejEyZjZFTC1ZV01zS1ZKOHYxdVBTTzhGN2RBbTJNaHA4aDV2S1J2NUVFVDk2bVVVSFVFcHduc3ZG?oc=5" target="_blank">CMS unveils LEAD, its new 10-year accountable care model - Fierce Healthcare</a> <span class="news-source">Fierce Healthcare</span> <span class="news-date">Thu, 18 Dec 2025</span></li><li><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxNR3ZyQkNwTnoyaWdQc2NKMHRNSEFkRy1kTXp3SjBVUWY0T3Z6d3pCdk5qLTR5bmxpOE4wT0hZMFlWd1pDZHplaldTdWdkR0hLRHM2RkNfZWJweWRpQnZMT3FUVEg3Nmw0OXM0cURFU2ZGYkVHXzd0dGx0ZGNXbWgtRVRxQ01QQUJjM3UzWkQ2ZG1PT0dTMGlERWE5d0laVDliRzY4Yw?oc=5" target="_blank">CMS announces new ACO model as REACH ends - TechTarget</a> <span class="news-source">TechTarget</span> <span class="news-date">Mon, 22 Dec 2025</span></li></ul></div>
         </div>
         
 
@@ -817,12 +853,14 @@ body {
 
         <div class="timeline-entry has-resource-change">
             <span class="timeline-date">2026-03-21</span>
+            <span class="timeline-ago">1h ago</span>
             <span class="timeline-model">ACO REACH</span>
             <span class="timeline-summary">7 lines added, 3 lines removed, 1 new resource(s)</span>
         </div>
         
         <div class="timeline-entry has-resource-change">
             <span class="timeline-date">2026-03-21</span>
+            <span class="timeline-ago">1h ago</span>
             <span class="timeline-model">LEAD</span>
             <span class="timeline-summary">5 lines added, 3 lines removed, 1 new resource(s)</span>
         </div>

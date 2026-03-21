@@ -11,7 +11,7 @@ import os
 import re
 import sys
 import difflib
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -458,80 +458,147 @@ def build_resource_html(resources: list[dict], new_urls: set | None = None) -> s
     </div>"""
 
 
+def get_recent_changes_for_model(model_key: str, change_log: list[dict], days: int = 7) -> list[dict]:
+    """Get all change log entries for a model within the last N days."""
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+    recent = []
+    for entry in change_log:
+        if entry["model"] != model_key:
+            continue
+        try:
+            detected = datetime.fromisoformat(entry["detected_at"])
+            if detected >= cutoff:
+                recent.append(entry)
+        except (ValueError, KeyError):
+            continue
+    return recent
+
+
+def days_ago_label(iso_timestamp: str) -> str:
+    """Convert an ISO timestamp to a human-readable 'X days ago' string."""
+    try:
+        detected = datetime.fromisoformat(iso_timestamp)
+        now = datetime.now(timezone.utc)
+        delta = now - detected
+        if delta.days == 0:
+            hours = delta.seconds // 3600
+            if hours == 0:
+                return "just now"
+            return f"{hours}h ago"
+        elif delta.days == 1:
+            return "1 day ago"
+        else:
+            return f"{delta.days} days ago"
+    except (ValueError, KeyError):
+        return ""
+
+
 def generate_dashboard(results: list[dict], news: dict[str, list[dict]]):
-    """Generate an HTML dashboard from monitoring results."""
+    """Generate an HTML dashboard from monitoring results.
+
+    Uses the change log to show changes from the last 7 days in each model
+    card, not just the most recent run."""
     now = datetime.now().strftime("%B %d, %Y at %I:%M %p")
     change_log = load_change_log()
 
     total_resources = sum(len(r.get("resources", [])) for r in results)
-    new_resource_count = sum(
-        len(r.get("resource_changes", {}).get("added", []))
-        for r in results
-    )
+
+    # Count models with recent changes (last 7 days) from the log
+    models_with_recent_changes = set()
+    recent_new_resource_count = 0
+    for entry in change_log:
+        try:
+            detected = datetime.fromisoformat(entry["detected_at"])
+            if datetime.now(timezone.utc) - detected <= timedelta(days=7):
+                models_with_recent_changes.add(entry["model"])
+                rc = entry.get("resource_changes", {})
+                recent_new_resource_count += len(rc.get("added", []))
+        except (ValueError, KeyError):
+            continue
 
     # Build model cards
     model_cards_html = ""
     for r in results:
-        status_class = "changed" if r["status"] == "changed" else (
-            "new" if r["status"] == "new_baseline" else (
-                "error" if r["status"] == "error" else "unchanged"
-            )
-        )
-        status_label = {
-            "changed": "Changes Detected",
-            "new_baseline": "First Scan (Baseline)",
-            "unchanged": "No Changes",
-            "error": "Fetch Error",
-        }.get(r["status"], r["status"])
+        model_key = r["model"]
+        recent_changes = get_recent_changes_for_model(model_key, change_log, days=7)
+        has_recent = len(recent_changes) > 0
 
-        status_icon = {
-            "changed": "🔴",
-            "new_baseline": "🟡",
-            "unchanged": "🟢",
-            "error": "⚠️",
-        }.get(r["status"], "")
+        # Status is based on 7-day window, not just latest run
+        if r["status"] == "error":
+            status_class = "error"
+            status_label = "Fetch Error"
+            status_icon = "⚠️"
+        elif r["status"] == "new_baseline":
+            status_class = "new"
+            status_label = "First Scan (Baseline)"
+            status_icon = "🟡"
+        elif has_recent:
+            most_recent_ts = recent_changes[0]["detected_at"]
+            ago = days_ago_label(most_recent_ts)
+            status_class = "changed"
+            status_label = f"Changed {ago}"
+            status_icon = "🔴"
+        else:
+            status_class = "unchanged"
+            status_label = "No Recent Changes"
+            status_icon = "🟢"
 
-        # Page content changes
-        changes_html = ""
-        if r.get("changes"):
-            for c in r["changes"]:
-                preview_items = "".join(
-                    f'<li>{escape_html(line[:120])}</li>' for line in c.get("preview", [])
-                )
-                changes_html += f"""
-                <div class="change-detail">
-                    <span class="change-type {c['type']}">{c['type'].upper()}</span>
-                    <span class="change-count">{c['count']} lines</span>
-                    <ul class="change-preview">{preview_items}</ul>
-                </div>
-                """
+        # Build recent changes section from the 7-day log
+        recent_changes_html = ""
+        if has_recent:
+            for entry in recent_changes:
+                entry_date = entry["detected_at"][:10]
+                entry_ago = days_ago_label(entry["detected_at"])
 
-        # Resource changes callout
-        rc = r.get("resource_changes", {})
-        resource_alert_html = ""
-        if rc.get("added"):
-            added_items = "".join(
-                f'<li>{escape_html(res["title"][:100])}</li>' for res in rc["added"]
-            )
-            resource_alert_html += f"""
-            <div class="resource-alert added">
-                <strong>New Resources Added ({len(rc['added'])})</strong>
-                <ul>{added_items}</ul>
-            </div>"""
-        if rc.get("removed"):
-            removed_items = "".join(
-                f'<li>{escape_html(res["title"][:100])}</li>' for res in rc["removed"]
-            )
-            resource_alert_html += f"""
-            <div class="resource-alert removed">
-                <strong>Resources Removed ({len(rc['removed'])})</strong>
-                <ul>{removed_items}</ul>
-            </div>"""
+                # Resource changes
+                rc = entry.get("resource_changes", {})
+                if rc.get("added"):
+                    added_items = "".join(
+                        f'<li><a href="{escape_html(res["url"])}" target="_blank">{escape_html(res["title"][:100])}</a> '
+                        f'<span class="resource-type-inline">{RESOURCE_TYPE_LABELS.get(res.get("type", "resource"), ("Resource","",""))[0]}</span></li>'
+                        for res in rc["added"]
+                    )
+                    recent_changes_html += f"""
+                    <div class="resource-alert added">
+                        <strong>New Resources ({entry_date}, {entry_ago})</strong>
+                        <ul>{added_items}</ul>
+                    </div>"""
+
+                if rc.get("removed"):
+                    removed_items = "".join(
+                        f'<li>{escape_html(res["title"][:100])}</li>' for res in rc["removed"]
+                    )
+                    recent_changes_html += f"""
+                    <div class="resource-alert removed">
+                        <strong>Resources Removed ({entry_date}, {entry_ago})</strong>
+                        <ul>{removed_items}</ul>
+                    </div>"""
+
+                # Text changes
+                for c in entry.get("changes", []):
+                    preview_items = "".join(
+                        f'<li>{escape_html(line[:150])}</li>' for line in c.get("preview", [])[:3]
+                    )
+                    more_count = c["count"] - min(3, len(c.get("preview", [])))
+                    more_link = f' <span class="more-changes">+ {more_count} more lines</span>' if more_count > 0 else ""
+                    recent_changes_html += f"""
+                    <div class="change-detail">
+                        <span class="change-date">{entry_date}</span>
+                        <span class="change-type {c['type']}">{c['type'].upper()}</span>
+                        <span class="change-count">{c['count']} lines{more_link}</span>
+                        <ul class="change-preview">{preview_items}</ul>
+                    </div>
+                    """
 
         # Resources section
         resources = r.get("resources", [])
-        new_urls = {res["url"] for res in rc.get("added", [])} if rc else None
-        resources_html = build_resource_html(resources, new_urls)
+        # Collect all new resource URLs from the 7-day window
+        recent_new_urls = set()
+        for entry in recent_changes:
+            rc = entry.get("resource_changes", {})
+            for res in rc.get("added", []):
+                recent_new_urls.add(res["url"])
+        resources_html = build_resource_html(resources, recent_new_urls if recent_new_urls else None)
 
         # News for this model
         model_news = news.get(r["model"], [])
@@ -555,17 +622,17 @@ def generate_dashboard(results: list[dict], news: dict[str, list[dict]]):
                     {status_icon} {status_label}
                 </div>
             </div>
-            {resource_alert_html}
-            {changes_html}
+            {recent_changes_html}
             {resources_html}
             {news_html}
         </div>
         """
 
-    # Recent changes timeline
+    # Full change history timeline
     timeline_html = ""
-    for entry in change_log[:20]:
+    for entry in change_log[:30]:
         ts = entry["detected_at"][:10]
+        ago = days_ago_label(entry["detected_at"])
         model = entry["model"]
         summary_parts = []
         for c in entry.get("changes", []):
@@ -582,6 +649,7 @@ def generate_dashboard(results: list[dict], news: dict[str, list[dict]]):
         timeline_html += f"""
         <div class="{entry_class}">
             <span class="timeline-date">{ts}</span>
+            <span class="timeline-ago">{ago}</span>
             <span class="timeline-model">{escape_html(model)}</span>
             <span class="timeline-summary">{escape_html(summary)}</span>
         </div>
@@ -762,7 +830,9 @@ body {{
 }}
 .change-type.added {{ background: #c6f6d5; color: #276749; }}
 .change-type.removed {{ background: #fed7d7; color: #9b2c2c; }}
+.change-date {{ font-size: 11px; color: #999; margin-right: 4px; }}
 .change-count {{ font-size: 12px; color: #666; margin-left: 8px; }}
+.more-changes {{ font-size: 11px; color: #999; font-style: italic; }}
 .change-preview {{
     margin-top: 8px;
     padding-left: 18px;
@@ -770,6 +840,11 @@ body {{
     color: #4a5568;
 }}
 .change-preview li {{ margin-bottom: 2px; }}
+.resource-type-inline {{
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+}}
 
 /* News */
 .news-section {{
@@ -801,6 +876,7 @@ body {{
     border-left: 3px solid #d69e2e;
 }}
 .timeline-date {{ color: #999; white-space: nowrap; min-width: 85px; }}
+.timeline-ago {{ color: #b0b0b0; font-size: 12px; white-space: nowrap; min-width: 80px; }}
 .timeline-model {{ font-weight: 600; min-width: 160px; }}
 .timeline-summary {{ color: #666; }}
 .no-history {{ color: #999; font-size: 14px; padding: 16px 0; }}
@@ -829,13 +905,13 @@ body {{
         <div class="stat-value">{len(results)}</div>
         <div class="stat-label">Models Tracked</div>
     </div>
-    <div class="summary-stat {'has-changes' if any(r['status'] == 'changed' for r in results) else 'all-clear'}">
-        <div class="stat-value">{sum(1 for r in results if r['status'] == 'changed')}</div>
-        <div class="stat-label">Pages Changed</div>
+    <div class="summary-stat {'has-changes' if len(models_with_recent_changes) > 0 else 'all-clear'}">
+        <div class="stat-value">{len(models_with_recent_changes)}</div>
+        <div class="stat-label">Changed (7 days)</div>
     </div>
-    <div class="summary-stat {'has-new-resources' if new_resource_count > 0 else ''}">
-        <div class="stat-value">{new_resource_count}</div>
-        <div class="stat-label">New Resources</div>
+    <div class="summary-stat {'has-new-resources' if recent_new_resource_count > 0 else ''}">
+        <div class="stat-value">{recent_new_resource_count}</div>
+        <div class="stat-label">New Resources (7 days)</div>
     </div>
     <div class="summary-stat">
         <div class="stat-value">{total_resources}</div>
