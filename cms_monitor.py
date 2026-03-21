@@ -1005,6 +1005,59 @@ def run_check():
     if not changed and not errors:
         print("\nAll models unchanged.")
 
+    # Write a markdown summary for GitHub Issues notification
+    # Only created when there are actual changes (not on first baseline scan)
+    write_changes_summary(results)
+
+
+def write_changes_summary(results: list[dict]):
+    """Write a changes_summary.md file if any models have changes.
+
+    This file is picked up by GitHub Actions to create an Issue notification.
+    Only written when real changes are detected (not first-time baselines)."""
+    changed_results = [r for r in results if r["status"] == "changed"]
+    if not changed_results:
+        # No summary file = no issue created
+        summary_path = SCRIPT_DIR / "changes_summary.md"
+        if summary_path.exists():
+            summary_path.unlink()
+        return
+
+    lines = []
+    lines.append("Changes were detected on the following CMS Innovation Model pages:\n")
+    lines.append(f"[View the full dashboard](https://lisabbari.github.io/cms-tracker/)\n")
+
+    for r in changed_results:
+        lines.append(f"## [{r['model']}]({r['url']})\n")
+
+        # Resource changes (most important)
+        rc = r.get("resource_changes", {})
+        if rc.get("added"):
+            lines.append(f"**New Resources ({len(rc['added'])}):**\n")
+            for res in rc["added"]:
+                rtype = RESOURCE_TYPE_LABELS.get(res.get("type", "resource"), ("Resource", "", ""))[0]
+                lines.append(f"- [{res['title']}]({res['url']}) ({rtype})")
+            lines.append("")
+
+        if rc.get("removed"):
+            lines.append(f"**Removed Resources ({len(rc['removed'])}):**\n")
+            for res in rc["removed"]:
+                lines.append(f"- {res['title']}")
+            lines.append("")
+
+        # Page content changes
+        if r.get("changes"):
+            for c in r["changes"]:
+                lines.append(f"**Page content: {c['count']} lines {c['type']}**\n")
+                for preview_line in c.get("preview", [])[:3]:
+                    lines.append(f"> {preview_line[:120]}")
+                lines.append("")
+
+    summary_path = SCRIPT_DIR / "changes_summary.md"
+    with open(summary_path, "w") as f:
+        f.write("\n".join(lines))
+    print(f"Changes summary written to {summary_path}")
+
 
 if __name__ == "__main__":
     run_check()

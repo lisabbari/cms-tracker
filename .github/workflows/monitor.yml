@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   monitor:
@@ -26,15 +27,34 @@ jobs:
         run: pip install requests beautifulsoup4 lxml
 
       - name: Run CMS monitor
-        run: python cms_monitor.py
+        id: monitor
+        run: |
+          python cms_monitor.py
+          # Check if the monitor flagged changes
+          if [ -f changes_summary.md ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit and push updated dashboard
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html data/
-          # change_log.json may not exist on first run (no changes yet)
           [ -f change_log.json ] && git add change_log.json || true
-          # Only commit if there are changes
           git diff --staged --quiet || git commit -m "Daily update: $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Create GitHub Issue for changes
+        if: steps.monitor.outputs.has_changes == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="CMS Model Changes Detected - $(date -u +%Y-%m-%d)"
+          BODY=$(cat changes_summary.md)
+          gh issue create --title "$TITLE" --body "$BODY" --label "change-detected"
+
+      - name: Clean up summary file
+        if: always()
+        run: rm -f changes_summary.md
