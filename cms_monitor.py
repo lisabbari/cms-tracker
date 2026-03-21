@@ -312,12 +312,14 @@ def detect_changes(old_text: str, new_text: str) -> list[dict]:
             "type": "added",
             "count": len(added),
             "preview": added[:5],
+            "full": added,  # complete list for expandable diff view
         })
     if removed:
         changes.append({
             "type": "removed",
             "count": len(removed),
             "preview": removed[:5],
+            "full": removed,
         })
 
     return changes
@@ -576,17 +578,33 @@ def generate_dashboard(results: list[dict], news: dict[str, list[dict]]):
 
                 # Text changes
                 for c in entry.get("changes", []):
+                    full_lines = c.get("full", c.get("preview", []))
+                    preview_lines = full_lines[:3]
+                    remaining_lines = full_lines[3:]
+
                     preview_items = "".join(
-                        f'<li>{escape_html(line[:150])}</li>' for line in c.get("preview", [])[:3]
+                        f'<li>{escape_html(line[:200])}</li>' for line in preview_lines
                     )
-                    more_count = c["count"] - min(3, len(c.get("preview", [])))
-                    more_link = f' <span class="more-changes">+ {more_count} more lines</span>' if more_count > 0 else ""
+
+                    # Build expandable full diff if there are more lines
+                    expand_html = ""
+                    if remaining_lines:
+                        full_items = "".join(
+                            f'<li>{escape_html(line[:300])}</li>' for line in remaining_lines
+                        )
+                        expand_html = f"""
+                        <details class="full-diff">
+                            <summary>Show all {len(full_lines)} lines</summary>
+                            <ul class="change-preview full-diff-content">{full_items}</ul>
+                        </details>"""
+
                     recent_changes_html += f"""
                     <div class="change-detail">
                         <span class="change-date">{entry_date}</span>
                         <span class="change-type {c['type']}">{c['type'].upper()}</span>
-                        <span class="change-count">{c['count']} lines{more_link}</span>
+                        <span class="change-count">{c['count']} lines</span>
                         <ul class="change-preview">{preview_items}</ul>
+                        {expand_html}
                     </div>
                     """
 
@@ -840,6 +858,30 @@ body {{
     color: #4a5568;
 }}
 .change-preview li {{ margin-bottom: 2px; }}
+
+/* Expandable full diff */
+.full-diff {{
+    margin-top: 8px;
+}}
+.full-diff summary {{
+    font-size: 12px;
+    color: #2b6cb0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 0;
+}}
+.full-diff summary:hover {{ text-decoration: underline; }}
+.full-diff-content {{
+    max-height: 400px;
+    overflow-y: auto;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 8px 8px 24px;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+}}
 .resource-type-inline {{
     font-size: 10px;
     color: #999;

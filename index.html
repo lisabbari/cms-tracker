@@ -180,6 +180,30 @@ body {
     color: #4a5568;
 }
 .change-preview li { margin-bottom: 2px; }
+
+/* Expandable full diff */
+.full-diff {
+    margin-top: 8px;
+}
+.full-diff summary {
+    font-size: 12px;
+    color: #2b6cb0;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 0;
+}
+.full-diff summary:hover { text-decoration: underline; }
+.full-diff-content {
+    max-height: 400px;
+    overflow-y: auto;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 8px 8px 8px 24px;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+}
 .resource-type-inline {
     font-size: 10px;
     color: #999;
@@ -237,7 +261,7 @@ body {
 <div class="header">
     <h1>CMS Innovation Model Monitor</h1>
     <div class="subtitle">Tracking changes to CMMI model pages, resources, and news</div>
-    <div class="timestamp">Last checked: March 20, 2026 at 10:47 PM</div>
+    <div class="timestamp">Last checked: March 21, 2026 at 10:30 AM</div>
 </div>
 
 <div class="summary-bar">
@@ -367,26 +391,32 @@ body {
                     <p class="description">LEAD (Long-term Enhanced ACO Design) Model</p>
                 </div>
                 <div class="status-badge changed">
-                    🔴 Changed 1h ago
+                    🔴 Changed 12h ago
                 </div>
             </div>
             
                     <div class="resource-alert added">
-                        <strong>New Resources (2026-03-21, 1h ago)</strong>
+                        <strong>New Resources (2026-03-21, 12h ago)</strong>
                         <ul><li><a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="resource-type-inline">FAQ</span></li></ul>
                     </div>
                     <div class="change-detail">
                         <span class="change-date">2026-03-21</span>
                         <span class="change-type added">ADDED</span>
-                        <span class="change-count">5 lines <span class="more-changes">+ 2 more lines</span></span>
-                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries claims-based aligned in at least on</li><li>starting in performance period 6. More information is available in the</li><li>Substance Access BEI Frequently Asked Questions</li></ul>
+                        <span class="change-count">5 lines</span>
+                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries claims-based aligned in at least one of the Base Years. If an ACO has a high proporti</li><li>starting in performance period 6. More information is available in the</li><li>Substance Access BEI Frequently Asked Questions</li></ul>
+                        
+                        <details class="full-diff">
+                            <summary>Show all 5 lines</summary>
+                            <ul class="change-preview full-diff-content"><li>.</li><li>03/20/2026 12:22 PM</li></ul>
+                        </details>
                     </div>
                     
                     <div class="change-detail">
                         <span class="change-date">2026-03-21</span>
                         <span class="change-type removed">REMOVED</span>
                         <span class="change-count">3 lines</span>
-                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries aligned in at least one of the Base</li><li>starting in performance period 6.</li><li>03/19/2026 02:25 PM</li></ul>
+                        <ul class="change-preview"><li>To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries aligned in at least one of the Base Years. If an ACO has a high proportion of High Ne</li><li>starting in performance period 6.</li><li>03/19/2026 02:25 PM</li></ul>
+                        
                     </div>
                     
             
@@ -697,26 +727,32 @@ body {
                     <p class="description">ACO REACH Model</p>
                 </div>
                 <div class="status-badge changed">
-                    🔴 Changed 1h ago
+                    🔴 Changed 12h ago
                 </div>
             </div>
             
                     <div class="resource-alert added">
-                        <strong>New Resources (2026-03-21, 1h ago)</strong>
+                        <strong>New Resources (2026-03-21, 12h ago)</strong>
                         <ul><li><a href="https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive" target="_blank">Substance Access BEI Frequently Asked Questions</a> <span class="resource-type-inline">FAQ</span></li></ul>
                     </div>
                     <div class="change-detail">
                         <span class="change-date">2026-03-21</span>
                         <span class="change-type added">ADDED</span>
-                        <span class="change-count">7 lines <span class="more-changes">+ 4 more lines</span></span>
-                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn m</li><li>Substance Access BEI Frequently Asked Questions</li><li>.</li></ul>
+                        <span class="change-count">7 lines</span>
+                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn more in the Model Details section below and by visi</li><li>Substance Access BEI Frequently Asked Questions</li><li>.</li></ul>
+                        
+                        <details class="full-diff">
+                            <summary>Show all 5 lines</summary>
+                            <ul class="change-preview full-diff-content"><li>, which begins on January 1, 2027. More information is available in the</li><li>Substance Access BEI Frequently Asked Questions</li></ul>
+                        </details>
                     </div>
                     
                     <div class="change-detail">
                         <span class="change-date">2026-03-21</span>
                         <span class="change-type removed">REMOVED</span>
                         <span class="change-count">3 lines</span>
-                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn m</li><li>, which begins on January 1, 2027.</li><li>02/04/2026 04:30 PM</li></ul>
+                        <ul class="change-preview"><li>As part of ACO REACH’s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn more in the Model Details section below.</li><li>, which begins on January 1, 2027.</li><li>02/04/2026 04:30 PM</li></ul>
+                        
                     </div>
                     
             
@@ -853,14 +889,14 @@ body {
 
         <div class="timeline-entry has-resource-change">
             <span class="timeline-date">2026-03-21</span>
-            <span class="timeline-ago">1h ago</span>
+            <span class="timeline-ago">12h ago</span>
             <span class="timeline-model">ACO REACH</span>
             <span class="timeline-summary">7 lines added, 3 lines removed, 1 new resource(s)</span>
         </div>
         
         <div class="timeline-entry has-resource-change">
             <span class="timeline-date">2026-03-21</span>
-            <span class="timeline-ago">1h ago</span>
+            <span class="timeline-ago">12h ago</span>
             <span class="timeline-model">LEAD</span>
             <span class="timeline-summary">5 lines added, 3 lines removed, 1 new resource(s)</span>
         </div>
