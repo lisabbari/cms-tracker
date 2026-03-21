@@ -1,0 +1,78 @@
+[
+  {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-03-21T04:38:05.373793+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 7,
+        "preview": [
+          "As part of ACO REACH\u2019s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn more in the Model Details section below and by visiting the",
+          "Substance Access BEI Frequently Asked Questions",
+          ".",
+          ", which begins on January 1, 2027. More information is available in the",
+          "Substance Access BEI Frequently Asked Questions"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "As part of ACO REACH\u2019s PY 2026 updates, a new Substance Access Beneficiary Engagement Incentive is being made available to model participants. Learn more in the Model Details section below.",
+          ", which begins on January 1, 2027.",
+          "02/04/2026 04:30 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Substance Access BEI Frequently Asked Questions",
+          "url": "https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive",
+          "type": "faq"
+        }
+      ],
+      "removed": [],
+      "total_current": 30
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-03-21T04:38:01.376588+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries claims-based aligned in at least one of the Base Years. If an ACO has a high proportion of High Needs beneficiaries (defined as more than 40% of their aligned beneficiaries meeting the High Needs Eligibility criteria), the ACO will be permitted to participate at lowered alignment minimums of 800 in Performance Year 1, with at least 500 beneficiaries claims-based aligned in one of the Base Years. For Newly Entering ACOs, the ACO must have 1,000 beneficiaries in Performance Year 1, with 600 beneficiaries claims-based aligned in at least one of the Base Years. Alignment minimums for Newly Entering and ACOs with a large proportion of High Needs beneficiaries will slowly grow over the course of the model. More details will be included in the Request for Applications.",
+          "starting in performance period 6. More information is available in the",
+          "Substance Access BEI Frequently Asked Questions",
+          ".",
+          "03/20/2026 12:22 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "To participate in LEAD, ACOs must have 5,000 aligned beneficiaries in Performance Year 1, with 3,000 beneficiaries aligned in at least one of the Base Years. If an ACO has a high proportion of High Needs beneficiaries (defined as more than 40% of their aligned beneficiaries meeting the High Needs Eligibility criteria), the ACO will be permitted to participate at lowered alignment minimums of 800 in Performance Year 1, with at least 500 beneficiaries claims-based aligned in one of the Base Years. For Newly Entering ACOs, the ACO must have 1,000 beneficiaries in Performance Year 1, with 600 beneficiaries claims-based aligned in at least one of the Base Years. Alignment minimums for Newly Entering and ACOs with a large proportion of High Needs beneficiaries will slowly grow over the course of the model. More details will be included in the Request for Applications.",
+          "starting in performance period 6.",
+          "03/19/2026 02:25 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Substance Access BEI Frequently Asked Questions",
+          "url": "https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive",
+          "type": "faq"
+        }
+      ],
+      "removed": [],
+      "total_current": 7
+    }
+  }
+]
