@@ -2,8 +2,9 @@ name: CMS Model Monitor
 
 on:
   schedule:
-    # Runs weekdays at 12:00 UTC (8am ET / 5am PT)
-    - cron: "0 12 * * 1-5"
+    # Runs daily at 6am ET (11:00 UTC) and 5pm ET (22:00 UTC)
+    - cron: "0 11 * * *"
+    - cron: "0 22 * * *"
   workflow_dispatch: # Allows manual trigger from GitHub UI
 
 permissions:
