@@ -1,5 +1,53 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-03-25T22:25:21.191947+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "ACCESS API Implementation and Data Submission Office Hour Slides \u2013 March 18, 2026 (PDF)",
+          "ACCESS Model Financial Structure and Clinical Performance Webinar Slides - March 4, 2026 (PDF)",
+          "Modernizing America's Care for Better Health - December 4, 2025 (PDF)",
+          "03/25/2026 02:22 PM"
+        ],
+        "full": [
+          "ACCESS API Implementation and Data Submission Office Hour Slides \u2013 March 18, 2026 (PDF)",
+          "ACCESS Model Financial Structure and Clinical Performance Webinar Slides - March 4, 2026 (PDF)",
+          "Modernizing America's Care for Better Health - December 4, 2025 (PDF)",
+          "03/25/2026 02:22 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "ACCESS Model Financial Structure and Clinical Performance Webinar Slides - March 4, 2026",
+          "Modernizing America's Care for Better Health - December 4, 2025",
+          "03/18/2026 10:16 AM"
+        ],
+        "full": [
+          "ACCESS Model Financial Structure and Clinical Performance Webinar Slides - March 4, 2026",
+          "Modernizing America's Care for Better Health - December 4, 2025",
+          "03/18/2026 10:16 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS API Implementation and Data Submission Office Hour Slides \u2013 March 18, 2026 (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/access-api-imp-data-sub-tech-oh-slides.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 7
+    }
+  },
+  {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-03-23T22:20:42.044836+00:00",
