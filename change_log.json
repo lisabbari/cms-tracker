@@ -1,5 +1,49 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-03-26T22:17:54.083366+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "Risk-standardized all-condition readmission rates (claims-based)",
+          "Similar to ACO REACH, LEAD will include a Continuous Improvement/Sustained Exceptional Performance (CI/SEP) component and a High Performers Pool to reward ACOs that attain statistically significant improvement year-over-year and high overall performance. ACOs will also be able to attain additional quality points by submitting a Prevention Quality Plan detailing a prevention intervention being implemented to enhance the wellbeing of aligned beneficiaries.",
+          "The High Needs beneficiary category will have its own historical benchmark calculation reflecting a separate trend factor, and risk adjustment methodology. Concurrent risk adjustment\u2014first implemented for High Needs beneficiaries in ACO REACH\u2014will be applied to all High Needs beneficiaries in LEAD. High Needs individuals often experience more rapid changes in health status than the average Medicare beneficiary. Compared to a purely prospective risk adjustment approach, a concurrent methodology that incorporates diagnoses documented during the performance year more accurately reflects shifts in health status for this population.\u00a0To support participation by organizations that disproportionately serve complex patients, LEAD will provide lower beneficiary alignment minimums for ACOs whose aligned population includes more than 40 percent High Needs beneficiaries, in recognition of the fact that organizations that specialize in High Needs care typically have smaller patient panels.",
+          "03/26/2026 04:15 PM"
+        ],
+        "full": [
+          "Risk-standardized all-condition readmission rates (claims-based)",
+          "Similar to ACO REACH, LEAD will include a Continuous Improvement/Sustained Exceptional Performance (CI/SEP) component and a High Performers Pool to reward ACOs that attain statistically significant improvement year-over-year and high overall performance. ACOs will also be able to attain additional quality points by submitting a Prevention Quality Plan detailing a prevention intervention being implemented to enhance the wellbeing of aligned beneficiaries.",
+          "The High Needs beneficiary category will have its own historical benchmark calculation reflecting a separate trend factor, and risk adjustment methodology. Concurrent risk adjustment\u2014first implemented for High Needs beneficiaries in ACO REACH\u2014will be applied to all High Needs beneficiaries in LEAD. High Needs individuals often experience more rapid changes in health status than the average Medicare beneficiary. Compared to a purely prospective risk adjustment approach, a concurrent methodology that incorporates diagnoses documented during the performance year more accurately reflects shifts in health status for this population.\u00a0To support participation by organizations that disproportionately serve complex patients, LEAD will provide lower beneficiary alignment minimums for ACOs whose aligned population includes more than 40 percent High Needs beneficiaries, in recognition of the fact that organizations that specialize in High Needs care typically have smaller patient panels.",
+          "03/26/2026 04:15 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 4,
+        "preview": [
+          "Similar to ACO REACH, LEAD will include a Continuous Improvement/ Sustained Exceptional Performance (CI/SEP) component and a High Performers Pool to reward ACOs that attain statistically significant improvement year-over-year and high overall performance. ACOs will also be able to attain additional quality points by submitting a Prevention Quality Plan detailing a prevention intervention being implemented to enhance the wellbeing of aligned beneficiaries.",
+          "The High Needs beneficiary category will have its own historical benchmark calculation reflecting a separate trend factor, and risk adjustment methodology. Concurrent risk adjustment\u2014first implemented for High Needs beneficiaries in ACO REACH\u2014will be applied to all High Needs beneficiaries in LEAD. High Needs individuals often experience more rapid changes in health status than the average Medicare beneficiary. Compared to a purely prospective risk adjustment approach, a concurrent methodology that incorporates diagnoses documented during the performance year more accurately reflects shifts in health status for this population.",
+          "To support participation by organizations that disproportionately serve complex patients, LEAD will provide lower beneficiary alignment minimums for ACOs whose aligned population includes more than 40 percent High Needs beneficiaries, in recognition of the fact that organizations that specialize in High Needs care typically have smaller patient panels.",
+          "03/20/2026 12:22 PM"
+        ],
+        "full": [
+          "Similar to ACO REACH, LEAD will include a Continuous Improvement/ Sustained Exceptional Performance (CI/SEP) component and a High Performers Pool to reward ACOs that attain statistically significant improvement year-over-year and high overall performance. ACOs will also be able to attain additional quality points by submitting a Prevention Quality Plan detailing a prevention intervention being implemented to enhance the wellbeing of aligned beneficiaries.",
+          "The High Needs beneficiary category will have its own historical benchmark calculation reflecting a separate trend factor, and risk adjustment methodology. Concurrent risk adjustment\u2014first implemented for High Needs beneficiaries in ACO REACH\u2014will be applied to all High Needs beneficiaries in LEAD. High Needs individuals often experience more rapid changes in health status than the average Medicare beneficiary. Compared to a purely prospective risk adjustment approach, a concurrent methodology that incorporates diagnoses documented during the performance year more accurately reflects shifts in health status for this population.",
+          "To support participation by organizations that disproportionately serve complex patients, LEAD will provide lower beneficiary alignment minimums for ACOs whose aligned population includes more than 40 percent High Needs beneficiaries, in recognition of the fact that organizations that specialize in High Needs care typically have smaller patient panels.",
+          "03/20/2026 12:22 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 7
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-03-25T22:25:21.191947+00:00",
