@@ -1,5 +1,98 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-03-30T22:24:33.401589+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "ASM Overview Webcast:",
+          "Slides",
+          "|",
+          "Recording",
+          "03/30/2026 10:16 AM"
+        ],
+        "full": [
+          "ASM Overview Webcast:",
+          "Slides",
+          "|",
+          "Recording",
+          "03/30/2026 10:16 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "02/04/2026 10:04 AM"
+        ],
+        "full": [
+          "02/04/2026 10:04 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-overview-webcast-slides.pdf",
+          "type": "overview"
+        },
+        {
+          "title": "Recording",
+          "url": "https://youtu.be/_mbvnTaVuVU",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 10
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-03-30T22:24:32.513030+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "|",
+          "ACCESS API Operations Manual",
+          "03/30/2026 08:17 AM"
+        ],
+        "full": [
+          "|",
+          "ACCESS API Operations Manual",
+          "03/30/2026 08:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "03/27/2026 12:21 PM"
+        ],
+        "full": [
+          "03/27/2026 12:21 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS API Operations Manual",
+          "url": "https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS API Operations Manual v0.9.1.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 8
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-03-27T22:21:20.842024+00:00",
