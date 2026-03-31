@@ -1,5 +1,103 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-03-31T22:24:26.605358+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 25,
+        "preview": [
+          "The LEAD Model",
+          "Request for Applications",
+          "is now available. Accountable care organizations interested in participating in LEAD have until May 17, 2026, to submit an application at",
+          "https://app.innovation.cms.gov/LEAD/IDMLogin",
+          "."
+        ],
+        "full": [
+          "The LEAD Model",
+          "Request for Applications",
+          "is now available. Accountable care organizations interested in participating in LEAD have until May 17, 2026, to submit an application at",
+          "https://app.innovation.cms.gov/LEAD/IDMLogin",
+          ".",
+          "Application Checklist",
+          "|",
+          "Payment Factsheet",
+          "|",
+          "LEAD Model Overview Webinar Slides",
+          "|",
+          "LEAD Model Overview Webinar Transcript",
+          "|",
+          "LEAD Model Overview Factsheet",
+          "|",
+          "LEAD Model Value Factsheet",
+          "|",
+          "CMS-Administered Risk Arrangements Factsheet",
+          "LEAD is a 10-year voluntary model that runs from January 1, 2027, through December 31, 2036. ACOs can apply to participate in the model by responding to a",
+          "Request for Applications",
+          ".",
+          "Request for Applications (RFA)",
+          "LEAD Model Application",
+          "LEAD Model Checklist",
+          "03/31/2026 02:04 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 9,
+        "preview": [
+          "LEAD Model Overview Webinar Slides (pdf)",
+          "|",
+          "LEAD Model Overview Webinar Transcript (pdf)",
+          "|",
+          "LEAD Model Overview (pdf)"
+        ],
+        "full": [
+          "LEAD Model Overview Webinar Slides (pdf)",
+          "|",
+          "LEAD Model Overview Webinar Transcript (pdf)",
+          "|",
+          "LEAD Model Overview (pdf)",
+          "|",
+          "LEAD Model Value Factsheet (pdf)",
+          "LEAD is a 10-year voluntary model that runs from January 1, 2027, through December 31, 2036. ACOs can apply to participate in the model by responding to a Request for Applications beginning in March 2026.",
+          "03/26/2026 04:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Request for Applications",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-rfa.pdf",
+          "type": "guidance"
+        },
+        {
+          "title": "Application Checklist",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-app-checklist.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Payment Factsheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-payment-fs.pdf",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "CMS-Administered Risk Arrangements Factsheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-cara-fs.pdf",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "LEAD Model Application",
+          "url": "https://app.innovation.cms.gov/LEAD/IDMLogin",
+          "type": "resource"
+        }
+      ],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-03-30T22:24:33.401589+00:00",
