@@ -1,5 +1,43 @@
 [
   {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-04-02T22:22:22.819907+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "Please complete this",
+          "MAHA ELEVATE NOFO webcast survey",
+          ".",
+          "04/02/2026 02:19 PM"
+        ],
+        "full": [
+          "Please complete this",
+          "MAHA ELEVATE NOFO webcast survey",
+          ".",
+          "04/02/2026 02:19 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "03/23/2026 08:34 AM"
+        ],
+        "full": [
+          "03/23/2026 08:34 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 3
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-03-31T22:24:26.605358+00:00",
