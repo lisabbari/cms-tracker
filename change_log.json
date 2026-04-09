@@ -2,6 +2,54 @@
   {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-04-09T22:31:16.590178+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "MAHA ELEVATE Model Tables Template",
+          "04/09/2026 12:14 PM"
+        ],
+        "full": [
+          "MAHA ELEVATE Model Tables Template",
+          "04/09/2026 12:14 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "MAHA ELEVATE Model Budget Narrative Table",
+          "04/08/2026 04:20 PM"
+        ],
+        "full": [
+          "MAHA ELEVATE Model Budget Narrative Table",
+          "04/08/2026 04:20 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "MAHA ELEVATE Model Tables Template",
+          "url": "https://www.cms.gov/priorities/innovation/files/maha-elevate-tables-template.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [
+        {
+          "title": "MAHA ELEVATE Model Budget Narrative Table",
+          "url": "https://www.cms.gov/priorities/innovation/files/maha-elevate-budget-narrative-table.pdf",
+          "type": "document"
+        }
+      ],
+      "total_current": 5
+    }
+  },
+  {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-04-08T22:29:16.288314+00:00",
     "changes": [
       {
