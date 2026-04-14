@@ -1,5 +1,52 @@
 [
   {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-04-14T19:05:12.399941+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "The Letter of Intent Portal is now closed. Organizations that submitted an LOI must submit their full application package by Friday, May 15, 2026 as detailed in the",
+          "Notice of Funding Opportunity",
+          ".",
+          "04/14/2026 02:19 PM"
+        ],
+        "full": [
+          "The Letter of Intent Portal is now closed. Organizations that submitted an LOI must submit their full application package by Friday, May 15, 2026 as detailed in the",
+          "Notice of Funding Opportunity",
+          ".",
+          "04/14/2026 02:19 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 6,
+        "preview": [
+          "The NOFO is now available at:",
+          "https://grants.gov/search-results-detail/361494",
+          ". Applicants must submit a mandatory",
+          "Letter of Intent",
+          "by April 10, 2026. The application deadline is May 15, 2026."
+        ],
+        "full": [
+          "The NOFO is now available at:",
+          "https://grants.gov/search-results-detail/361494",
+          ". Applicants must submit a mandatory",
+          "Letter of Intent",
+          "by April 10, 2026. The application deadline is May 15, 2026.",
+          "04/09/2026 12:14 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-04-14T15:09:44.175068+00:00",
