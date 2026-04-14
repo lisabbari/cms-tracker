@@ -1,5 +1,63 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-04-14T15:09:44.175068+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "On April 10, 2026, CMS published the",
+          "FY 2027 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) proposed rule",
+          ", which includes proposed updates to TEAM policies.",
+          "2027 IPPS Proposed Rule",
+          "04/14/2026 10:16 AM"
+        ],
+        "full": [
+          "On April 10, 2026, CMS published the",
+          "FY 2027 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) proposed rule",
+          ", which includes proposed updates to TEAM policies.",
+          "2027 IPPS Proposed Rule",
+          "04/14/2026 10:16 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 4,
+        "preview": [
+          "On July 31, 2025, CMS published the",
+          "FY 2026 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) final rule",
+          ", which included final updates to TEAM policies.",
+          "03/04/2026 10:14 AM"
+        ],
+        "full": [
+          "On July 31, 2025, CMS published the",
+          "FY 2026 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) final rule",
+          ", which included final updates to TEAM policies.",
+          "03/04/2026 10:14 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "FY 2027 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) proposed rule",
+          "url": "https://www.federalregister.gov/documents/2026/04/14/2026-07203/medicare-program-hospital-inpatient-prospective-payment-systems-for-acute-care-hospitals-ipps-and",
+          "type": "guidance"
+        }
+      ],
+      "removed": [
+        {
+          "title": "FY 2026 Inpatient Prospective Payment System (IPPS) and Long-Term Care Hospital Prospective Payment System (LTCH PPS) final rule",
+          "url": "https://www.federalregister.gov/d/2025-14681",
+          "type": "guidance"
+        }
+      ],
+      "total_current": 31
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-04-14T02:02:05.078350+00:00",
