@@ -2,6 +2,48 @@
   {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-04-15T16:57:31.132272+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "- updated March 2026",
+          "- updated April 2026",
+          "TEAM DRG Mapping Specifications",
+          "- added April 2026",
+          "04/15/2026 12:16 PM"
+        ],
+        "full": [
+          "- updated March 2026",
+          "- updated April 2026",
+          "TEAM DRG Mapping Specifications",
+          "- added April 2026",
+          "04/15/2026 12:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "- updated August 2025",
+          "04/14/2026 10:16 AM"
+        ],
+        "full": [
+          "- updated August 2025",
+          "04/14/2026 10:16 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 31
+    }
+  },
+  {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-04-15T07:23:44.268595+00:00",
     "changes": [],
     "resource_changes": {
