@@ -4,7 +4,7 @@
   "resources": [
     {
       "title": "AHEAD Model Participant Resources",
-      "url": "https://www.cms.gov/ahead-model-participant-resources",
+      "url": "https://www.cms.gov/priorities/innovation/ahead-model-participant-resources",
       "type": "resource"
     },
     {
@@ -23,11 +23,6 @@
       "type": "announcement"
     },
     {
-      "title": "AHEAD Model Participant Resources",
-      "url": "https://www.cms.gov/priorities/innovation/ahead-model-participant-resources",
-      "type": "resource"
-    },
-    {
       "title": "CMS Innovation Center listserv",
       "url": "https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_617",
       "type": "resource"
@@ -38,5 +33,5 @@
       "type": "resource"
     }
   ],
-  "fetched_at": "2026-03-19T23:28:51.917685+00:00"
+  "fetched_at": "2026-04-15T07:23:43.415616+00:00"
 }

@@ -1,5 +1,78 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-04-15T07:23:44.268595+00:00",
+    "changes": [],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "2026 Proposed Rule",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-long-term-care-hospital-prospective",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "2026 Final Rule Fact Sheet",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-long-term-care-hospital-prospective-0",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [
+        {
+          "title": "2026 Proposed Rule",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-and-long-term-care-hospital-prospective",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "2026 Final Rule Fact Sheet",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/fy-2026-hospital-inpatient-prospective-payment-system-ipps-and-long-term-care-hospital-prospective-0",
+          "type": "fact_sheet"
+        }
+      ],
+      "total_current": 31
+    }
+  },
+  {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-04-15T07:23:43.414604+00:00",
+    "changes": [],
+    "resource_changes": {
+      "added": [],
+      "removed": [
+        {
+          "title": "AHEAD Model Participant Resources",
+          "url": "https://www.cms.gov/ahead-model-participant-resources",
+          "type": "resource"
+        }
+      ],
+      "total_current": 6
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-04-15T07:23:40.159059+00:00",
+    "changes": [],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Press Release: 2026 PFS Proposed Rule",
+          "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-physician-payment-rule-significantly-cut-spending-waste-enhance-quality-measures",
+          "type": "announcement"
+        }
+      ],
+      "removed": [
+        {
+          "title": "Press Release: 2026 PFS Proposed Rule",
+          "url": "https://www.cms.gov/newsroom/press-releases/cms-proposes-physician-payment-rule-significantly-cut-spending-waste-enhance-quality-measures-and",
+          "type": "announcement"
+        }
+      ],
+      "total_current": 10
+    }
+  },
+  {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-04-14T19:05:12.399941+00:00",
