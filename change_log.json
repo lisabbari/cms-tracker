@@ -1,5 +1,70 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-17T22:33:17.249913+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 13,
+        "preview": [
+          "LEAD Model Letter of Intent (LOI)",
+          "Past Events",
+          "LEAD Model Overview Webinar - March 17, 2026",
+          "Slides (PDF)",
+          "|"
+        ],
+        "full": [
+          "LEAD Model Letter of Intent (LOI)",
+          "Past Events",
+          "LEAD Model Overview Webinar - March 17, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "Helpful Resources",
+          "Application Checklist (PDF)",
+          "Payment Factsheet (PDF)",
+          "Overview Factsheet (PDF)",
+          "Value Factsheet (PDF)",
+          "CMS-Administered Risk Arrangements Factsheet (PDF)",
+          "04/17/2026 04:32 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 14,
+        "preview": [
+          "Application Checklist",
+          "|",
+          "Payment Factsheet",
+          "|",
+          "LEAD Model Overview Webinar Slides"
+        ],
+        "full": [
+          "Application Checklist",
+          "|",
+          "Payment Factsheet",
+          "|",
+          "LEAD Model Overview Webinar Slides",
+          "|",
+          "LEAD Model Overview Webinar Transcript",
+          "|",
+          "LEAD Model Overview Factsheet",
+          "|",
+          "LEAD Model Value Factsheet",
+          "|",
+          "CMS-Administered Risk Arrangements Factsheet",
+          "03/31/2026 02:04 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-04-15T16:57:31.132272+00:00",
