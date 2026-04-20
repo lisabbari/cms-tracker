@@ -2,6 +2,72 @@
   {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-20T15:13:51.891360+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 11,
+        "preview": [
+          "Participant Resources",
+          "Events Archive",
+          "LEAD Model RFA Webinar - April 9, 2026",
+          "Slides",
+          "|"
+        ],
+        "full": [
+          "Participant Resources",
+          "Events Archive",
+          "LEAD Model RFA Webinar - April 9, 2026",
+          "Slides",
+          "|",
+          "Transcript",
+          "LEAD Model Overview Webinar - March 17, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "04/20/2026 10:16 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 6,
+        "preview": [
+          "Past Events",
+          "LEAD Model Overview Webinar - March 17, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)"
+        ],
+        "full": [
+          "Past Events",
+          "LEAD Model Overview Webinar - March 17, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "04/17/2026 04:32 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-model-rfa-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Transcript",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-model-rfa-trans.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-17T22:33:17.249913+00:00",
     "changes": [
       {
