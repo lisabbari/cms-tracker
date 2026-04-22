@@ -2,6 +2,99 @@
   {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-22T19:06:05.128446+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "|",
+          "Recording",
+          "04/22/2026 02:19 PM"
+        ],
+        "full": [
+          "|",
+          "Recording",
+          "04/22/2026 02:19 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/22/2026 12:20 PM"
+        ],
+        "full": [
+          "04/22/2026 12:20 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Recording",
+          "url": "https://youtu.be/Ys3_mYnzFPs",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 15
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-04-22T19:06:04.157735+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "ASM Participant Office Hours (4/8/26):",
+          "Slides",
+          "|",
+          "Recording",
+          "04/22/2026 02:19 PM"
+        ],
+        "full": [
+          "ASM Participant Office Hours (4/8/26):",
+          "Slides",
+          "|",
+          "Recording",
+          "04/22/2026 02:19 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "03/30/2026 10:16 AM"
+        ],
+        "full": [
+          "03/30/2026 10:16 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-participantoh-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Recording",
+          "url": "https://www.youtube.com/watch?v=eFxX5Zojjx4",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-22T16:53:49.238688+00:00",
     "changes": [
       {
