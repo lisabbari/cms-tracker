@@ -2,6 +2,42 @@
   {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-22T16:53:49.238688+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "LEAD Model Letter of Interest (LOI)",
+          "04/22/2026 12:20 PM"
+        ],
+        "full": [
+          "LEAD Model Letter of Interest (LOI)",
+          "04/22/2026 12:20 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "LEAD Model Letter of Intent (LOI)",
+          "04/20/2026 10:16 AM"
+        ],
+        "full": [
+          "LEAD Model Letter of Intent (LOI)",
+          "04/20/2026 10:16 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-20T15:13:51.891360+00:00",
     "changes": [
       {
