@@ -1,5 +1,47 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-04-23T20:45:45.411976+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "For additional information and updates specifically about the ASM Model, please subscribe to the",
+          "ASM Model listserv",
+          "04/23/2026 04:14 PM"
+        ],
+        "full": [
+          "For additional information and updates specifically about the ASM Model, please subscribe to the",
+          "ASM Model listserv",
+          "04/23/2026 04:14 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/22/2026 02:19 PM"
+        ],
+        "full": [
+          "04/22/2026 02:19 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ASM Model listserv",
+          "url": "https://public.govdelivery.com/accounts/USCMS/subscriber/new?topic_id=USCMS_13383",
+          "type": "resource"
+        }
+      ],
+      "removed": [],
+      "total_current": 13
+    }
+  },
+  {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-04-23T19:00:58.895901+00:00",
