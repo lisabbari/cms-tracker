@@ -1,5 +1,101 @@
 [
   {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-04-23T19:00:58.895901+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "MAHA ELEVATE Frequently Asked Questions",
+          "04/23/2026 02:18 PM"
+        ],
+        "full": [
+          "MAHA ELEVATE Frequently Asked Questions",
+          "04/23/2026 02:18 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 47,
+        "preview": [
+          "Frequently Asked Questions",
+          "Where can the required letter of intent (LOI) and Notice of Funding Opportunity (NOFO) application be found? When are they due?",
+          "Before applying, a letter of intent (LOI) is required. LOIs must be submitted to the",
+          "MAHA ELEVATE Letter of Intent Portal",
+          "by Friday, April 10, 2026. The"
+        ],
+        "full": [
+          "Frequently Asked Questions",
+          "Where can the required letter of intent (LOI) and Notice of Funding Opportunity (NOFO) application be found? When are they due?",
+          "Before applying, a letter of intent (LOI) is required. LOIs must be submitted to the",
+          "MAHA ELEVATE Letter of Intent Portal",
+          "by Friday, April 10, 2026. The",
+          "Notice of Funding Opportunity and MAHA ELEVATE Model Application will be available on grants.gov",
+          "through Friday, May 15, 2026.",
+          "How will CMS evaluate proposal submissions?",
+          "Proposals should include whole-person care, including functional or lifestyle services not already covered by Original Medicare but with documented scientific evidence of the intervention\u2019s safety, efficacy and cost impact for the target population. Each proposal must include a nutrition or physical activity component. Applicants should also provide data showing outcomes from their own program implementation prior to applying. Applicants must demonstrate past experience with data collection or the ability to accurately collect and report all required data from beneficiary enrollees in a timely manner, with appropriate data protections in place for beneficiaries and an understanding of how to store and analyze data with model goals in mind.",
+          "Can I speak with CMS to get more information or brief CMS about my proposal during the application period? How can I stay up to date on developments regarding this NOFO and model?",
+          "To keep this competitive process fair, CMS does not hold individual meetings, calls, or briefings with applicants during the open application period. All questions must be submitted in writing through the channels listed in the Notice of Funding Opportunity (NOFO). Answers to common questions may be posted publicly so all applicants have access to the same information. \u00a0CMS may also host public informational webinars. Visit the",
+          "MAHA ELEVATE webpage",
+          "and subscribe to the",
+          "MAHA ELEVATE Model listserv",
+          "for updates.",
+          "Is my specific type of organization eligible for this model?",
+          "Applicants must confirm their organization\u2019s eligibility by reading all eligibility requirements and selection criteria in the",
+          "NOFO",
+          ". Some types of organizations that may be eligible,",
+          "pending all other criteria outlined in the NOFO",
+          ", include:",
+          "Organizations serving Medicare Advantage patients; however, cooperative agreement funds awarded under this model are only for the provision of services to Original Medicare patients.",
+          "Health systems serving Veterans Affairs (VA) patients and local and state government facilities",
+          "Assisted living facilities, senior living communities, skilled nursing facilities, and home health agencies",
+          "Digital health companies, mobile app entities, or similar technology-focused organizations; however, because this model has significant recruitment, data, and reporting requirements, these organizations may want to consider partnering with other health care entities to help meet all program expectations.",
+          "Can organizations submit multiple applications?",
+          "Yes. While CMS aims to fund a wide range of applicants for comprehensive testing, individual organizations may submit multiple proposals and receive multiple awards; however, each proposed intervention must be substantially distinct. CMS may ask single applicant organizations to combine related proposals into a single, comprehensive proposal.",
+          "What are the expectations around clinical oversight, partnerships, or interpersonal collaboration within applicant organizations?",
+          "Applicants do not need to be a clinical organization to apply. However, all applicants will be required to confirm that patients enrolled in their program are Original Medicare beneficiaries, and organizations that do not directly provide clinical care are strongly encouraged to partner with a provider or care organization that does. Partnership documentation will be required as part of the application when applicable.",
+          "Are there specific credentialing or team composition requirements for staff working under this model?",
+          "MAHA ELEVATE does not have additional credentialing or team composition requirements for applicants, however, all staff members working within the applicant organization must hold the appropriate credentials for their role and scope of practice as applicable. This includes holding any required licensure, certifications, and any other applicable qualifications. \u00a0Applicant organizations are responsible for ensuring that their staff meet these standards.",
+          "Is Medicare enrollment required to apply and participate in MAHA-ELEVATE?",
+          "Medicare enrollment is not required to apply for this model. \u00a0However, if you will provide covered Medicare services to patients as part of your program, you must be enrolled in Medicare by the model start date.",
+          "What kinds of services can MAHA ELEVATE funds be used for?",
+          "MAHA ELEVATE funds can be used to pay for the provision of whole-person functional or lifestyle (whole-person FLM) services for Original Medicare beneficiaries that are not currently covered by Original Medicare. These funds may be used to cover administrative costs, data collection and reporting, and infrastructure as appropriate.",
+          "These funds may not be used to provide covered services to Original Medicare beneficiaries. Covered services that are part of the proposed intervention should be paid through normal Medicare billing procedures. These funds also cannot be used to cover food. Please see the",
+          "NOFO",
+          "for full details on allowable and unallowable costs.",
+          "Does current participation in another Innovation Center model disqualify an entity from applying for MAHA ELEVATE?",
+          "Organizations participating in other active CMS Innovation Center models may apply for MAHA ELEVATE and will be assessed for participation on a case-by-case basis.",
+          "Will receiving services from a MAHA ELEVATE recipient change Original Medicare coverage or costs?",
+          "No, receiving functional or lifestyle medicine services from MAHA ELEVATE recipients does not change Medicare benefits, coverage or rights. Patients keep all standard Medicare protections and can continue to see any Original Medicare provider. Further, these interventions are designed to complement or augment, but not replace, traditional medical care.",
+          "How does MAHA ELEVATE support patient safety?",
+          "MAHA ELEVATE embeds strong safeguards to support beneficiary safety and choice, beginning with the application process.\u00a0Proposals including interventions with evidence of, or substantial risk of, harm will be excluded. CMS will monitor recipient programs for patient safety concerns\u00a0and may disenroll recipients who fail to meet quality or safety standards. Additional details regarding patient safety requirements will be available in the Notice of Funding Opportunity.",
+          "How will CMS protect my personal health information?",
+          "MAHA ELEVATE recipients must comply with all Health Insurance Portability and Accountability Act (HIPAA) privacy and security requirements. CMS follows strict federal standards to protect beneficiary information used for care coordination, reporting, and evaluation.",
+          "04/14/2026 02:19 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "MAHA ELEVATE Frequently Asked Questions",
+          "url": "https://www.cms.gov/priorities/innovation/maha-elevate-frequently-asked-questions",
+          "type": "faq"
+        }
+      ],
+      "removed": [
+        {
+          "title": "Notice of Funding Opportunity and MAHA ELEVATE Model Application will be available on grants.gov",
+          "url": "https://grants.gov/search-results-detail/361494",
+          "type": "announcement"
+        }
+      ],
+      "total_current": 5
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-22T19:06:05.128446+00:00",
