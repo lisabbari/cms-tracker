@@ -2,6 +2,40 @@
   {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-27T15:44:01.083283+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "LEAD Frequently Asked Questions",
+          "04/27/2026 10:31 AM"
+        ],
+        "full": [
+          "LEAD Frequently Asked Questions",
+          "04/27/2026 10:31 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/24/2026 12:19 PM"
+        ],
+        "full": [
+          "04/24/2026 12:19 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 15
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-24T16:50:00.978698+00:00",
     "changes": [
       {
