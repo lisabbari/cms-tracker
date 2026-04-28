@@ -1,5 +1,49 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-04-28T19:26:07.244859+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "04/28/2026 02:18 PM"
+        ],
+        "full": [
+          "04/28/2026 02:18 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/13/2026 02:48 PM"
+        ],
+        "full": [
+          "04/13/2026 02:48 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS API Operations Manual",
+          "url": "https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [
+        {
+          "title": "ACCESS API Operations Manual",
+          "url": "https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS API Operations Manual v0.9.1.pdf",
+          "type": "document"
+        }
+      ],
+      "total_current": 8
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-27T15:44:01.083283+00:00",
