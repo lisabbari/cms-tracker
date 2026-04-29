@@ -1,5 +1,37 @@
 [
   {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-04-29T20:58:05.120136+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "04/29/2026 04:16 PM"
+        ],
+        "full": [
+          "04/29/2026 04:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "02/20/2026 01:20 PM"
+        ],
+        "full": [
+          "02/20/2026 01:20 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 6
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-04-28T19:26:07.244859+00:00",
