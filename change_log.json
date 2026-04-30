@@ -1,5 +1,28 @@
 [
   {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-04-30T19:11:43.005936+00:00",
+    "changes": [],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "AHEAD Model Overlaps Fact Sheet (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/ahead-overlaps-fs.pdf-0",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [
+        {
+          "title": "AHEAD Model Overlaps Fact Sheet (PDF)",
+          "url": "https://www.cms.gov/files/document/ahead-overlaps-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "total_current": 7
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-04-30T15:44:53.429489+00:00",
