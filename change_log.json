@@ -1,5 +1,56 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-04-30T15:44:53.429489+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "LEAD Model Application Office Hours - April 21, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "04/30/2026 11:12 AM"
+        ],
+        "full": [
+          "LEAD Model Application Office Hours - April 21, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "04/30/2026 11:12 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/27/2026 10:31 AM"
+        ],
+        "full": [
+          "04/27/2026 10:31 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-app-office-hours-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Transcript (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-app-office-hours-transcript.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 17
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-04-30T13:29:19.282561+00:00",
