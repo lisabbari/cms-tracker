@@ -2,6 +2,46 @@
   {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-05-04T21:02:44.418312+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "AHEAD Model Choice and Competition Playbook",
+          "05/04/2026 04:21 PM"
+        ],
+        "full": [
+          "AHEAD Model Choice and Competition Playbook",
+          "05/04/2026 04:21 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/30/2026 08:21 AM"
+        ],
+        "full": [
+          "04/30/2026 08:21 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "AHEAD Model Choice and Competition Playbook",
+          "url": "https://www.cms.gov/priorities/innovation/files/ahead-choice-competition-pb.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 8
+    }
+  },
+  {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-04-30T19:11:43.005936+00:00",
     "changes": [],
     "resource_changes": {
