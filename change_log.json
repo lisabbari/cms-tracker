@@ -2,6 +2,54 @@
   {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-05-08T19:09:41.409175+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "LEAD Model Application",
+          "LEAD Model Letter of Interest (LOI)",
+          "Frequently Asked Questions",
+          "ACO Model Comparison (PDF)",
+          "05/08/2026 02:16 PM"
+        ],
+        "full": [
+          "LEAD Model Application",
+          "LEAD Model Letter of Interest (LOI)",
+          "Frequently Asked Questions",
+          "ACO Model Comparison (PDF)",
+          "05/08/2026 02:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 5,
+        "preview": [
+          "LEAD Model Application (PDF)",
+          "LEAD Model Letter of Interest (LOI)\u00a0(PDF)",
+          "Frequently Asked Questions (PDF)",
+          "ACO Model Comparison(PDF)",
+          "05/08/2026 12:16 PM"
+        ],
+        "full": [
+          "LEAD Model Application (PDF)",
+          "LEAD Model Letter of Interest (LOI)\u00a0(PDF)",
+          "Frequently Asked Questions (PDF)",
+          "ACO Model Comparison(PDF)",
+          "05/08/2026 12:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 18
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-05-08T17:08:37.791475+00:00",
     "changes": [
       {
