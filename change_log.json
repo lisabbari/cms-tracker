@@ -1,5 +1,79 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-05-08T17:08:37.791475+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 15,
+        "preview": [
+          "Request for Applications (RFA) (PDF)",
+          "LEAD Model Application (PDF)",
+          "LEAD Model Letter of Interest (LOI)\u00a0(PDF)",
+          "ACO Model Comparison (PDF)",
+          "Application Checklist (PDF)"
+        ],
+        "full": [
+          "Request for Applications (RFA) (PDF)",
+          "LEAD Model Application (PDF)",
+          "LEAD Model Letter of Interest (LOI)\u00a0(PDF)",
+          "ACO Model Comparison (PDF)",
+          "Application Checklist (PDF)",
+          "Payment Factsheet (PDF)",
+          "Overview Factsheet (PDF)",
+          "Value Factsheet (PDF)",
+          "CMS-Administered Risk Arrangements Factsheet (PDF)",
+          "Frequently Asked Questions (PDF)",
+          "Overview Factsheet (PDF)",
+          "LEAD Frequently Asked Questions",
+          "Overview Factsheet (PDF)",
+          "ACO Model Comparison(PDF)",
+          "05/08/2026 12:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 15,
+        "preview": [
+          "Overview Materials",
+          "LEAD Model Value Factsheet",
+          "LEAD Model Overview Webinar Slides",
+          "LEAD Model Overview Webinar Transcript",
+          "LEAD Model Overview"
+        ],
+        "full": [
+          "Overview Materials",
+          "LEAD Model Value Factsheet",
+          "LEAD Model Overview Webinar Slides",
+          "LEAD Model Overview Webinar Transcript",
+          "LEAD Model Overview",
+          "Request for Applications (RFA)",
+          "LEAD Model Application",
+          "LEAD Model Checklist",
+          "LEAD Model Frequently Asked Questions",
+          "Payment Factsheet (PDF)",
+          "Overview Factsheet (PDF)",
+          "Value Factsheet (PDF)",
+          "CMS-Administered Risk Arrangements Factsheet (PDF)",
+          "LEAD Frequently Asked Questions",
+          "04/30/2026 11:12 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACO Model Comparison (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/aco-model-comparison.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 18
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-05-04T21:02:44.418312+00:00",
