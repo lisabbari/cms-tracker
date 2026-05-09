@@ -1,5 +1,22 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-05-09T02:26:00.527898+00:00",
+    "changes": [],
+    "resource_changes": {
+      "added": [],
+      "removed": [
+        {
+          "title": "Frequently Asked Questions",
+          "url": "https://www.cms.gov/team-frequently-asked-questions",
+          "type": "faq"
+        }
+      ],
+      "total_current": 30
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-05-08T19:09:41.409175+00:00",
