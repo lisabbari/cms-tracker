@@ -1,5 +1,62 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-05-12T14:07:50.770354+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 7,
+        "preview": [
+          "LEAD Model Alignment and Financial Methodology Office Hours - May 5, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "Slides (PDF)"
+        ],
+        "full": [
+          "LEAD Model Alignment and Financial Methodology Office Hours - May 5, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "Slides (PDF)",
+          "Transcript (PDF)",
+          "05/12/2026 08:31 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "Slides",
+          "Transcript",
+          "05/08/2026 02:16 PM"
+        ],
+        "full": [
+          "Slides",
+          "Transcript",
+          "05/08/2026 02:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-alignment-financial-methodology-oh-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Transcript (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-alignment-financial-methodology-oh-trans.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 20
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-05-09T02:26:00.527898+00:00",
