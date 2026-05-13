@@ -1,5 +1,53 @@
 [
   {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-05-13T17:57:31.367388+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "05/13/2026 10:19 AM"
+        ],
+        "full": [
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "05/13/2026 10:19 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "ACO REACH Quarterly Transparency Report - updated August 2025 (PDF)",
+          "03/20/2026 12:22 PM"
+        ],
+        "full": [
+          "ACO REACH Quarterly Transparency Report - updated August 2025 (PDF)",
+          "03/20/2026 12:22 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/aco-reach-qrty-trans-rpt.pdf",
+          "type": "report"
+        }
+      ],
+      "removed": [
+        {
+          "title": "ACO REACH Quarterly Transparency Report - updated August 2025 (PDF)",
+          "url": "https://www.cms.gov/files/document/aco-reach-qrty-trans-rpt.pdf",
+          "type": "report"
+        }
+      ],
+      "total_current": 30
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-05-12T21:14:07.044200+00:00",
