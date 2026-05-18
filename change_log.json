@@ -2,6 +2,48 @@
   {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-05-18T15:17:00.259476+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "The application deadline for Cohort 1 has now passed. CMS will not consider any applications submitted after May 15, 2026,11:59 pm ET, eligible for Cohort 1. Please check your Grants.gov account to find confirmation that CMS received your application.",
+          "All applicants will receive a notification from CMS regardless of selection. Selected applicants will receive a Notice of Award in Fall 2026. Non-selected applicants will be notified after recipients. CMS is not able to provide status updates on any applications during review.",
+          "05/18/2026 08:23 AM"
+        ],
+        "full": [
+          "The application deadline for Cohort 1 has now passed. CMS will not consider any applications submitted after May 15, 2026,11:59 pm ET, eligible for Cohort 1. Please check your Grants.gov account to find confirmation that CMS received your application.",
+          "All applicants will receive a notification from CMS regardless of selection. Selected applicants will receive a Notice of Award in Fall 2026. Non-selected applicants will be notified after recipients. CMS is not able to provide status updates on any applications during review.",
+          "05/18/2026 08:23 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 4,
+        "preview": [
+          "The Letter of Intent Portal is now closed. Organizations that submitted an LOI must submit their full application package by Friday, May 15, 2026 as detailed in the",
+          "Notice of Funding Opportunity",
+          ".",
+          "05/15/2026 10:36 AM"
+        ],
+        "full": [
+          "The Letter of Intent Portal is now closed. Organizations that submitted an LOI must submit their full application package by Friday, May 15, 2026 as detailed in the",
+          "Notice of Funding Opportunity",
+          ".",
+          "05/15/2026 10:36 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 6
+    }
+  },
+  {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-05-15T16:00:39.373529+00:00",
     "changes": [
       {
