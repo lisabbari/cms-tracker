@@ -1,5 +1,53 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-05-19T18:00:01.967382+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "LEAD is a 10-year voluntary model that runs from January 1, 2027, through December 31, 2036.",
+          "05/19/2026 11:11 AM"
+        ],
+        "full": [
+          "LEAD is a 10-year voluntary model that runs from January 1, 2027, through December 31, 2036.",
+          "05/19/2026 11:11 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 11,
+        "preview": [
+          "The LEAD Model",
+          "Request for Applications",
+          "is now available. Accountable care organizations interested in participating in LEAD have until May 17, 2026, to submit an application at",
+          "https://app.innovation.cms.gov/LEAD/IDMLogin",
+          "."
+        ],
+        "full": [
+          "The LEAD Model",
+          "Request for Applications",
+          "is now available. Accountable care organizations interested in participating in LEAD have until May 17, 2026, to submit an application at",
+          "https://app.innovation.cms.gov/LEAD/IDMLogin",
+          ".",
+          "Now Available:",
+          "LEAD Model Letter of Interest (LOI)",
+          "LEAD is a 10-year voluntary model that runs from January 1, 2027, through December 31, 2036. ACOs can apply to participate in the model by responding to a",
+          "Request for Applications",
+          ".",
+          "05/12/2026 08:31 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 20
+    }
+  },
+  {
     "model": "MAHA ELEVATE",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
     "detected_at": "2026-05-18T15:17:00.259476+00:00",
