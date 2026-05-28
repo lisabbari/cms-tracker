@@ -1,5 +1,43 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-05-28T18:31:59.900831+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "LEAD, a successor to the ACO REACH Model, builds upon the CMS Innovation Center\u2019s earlier accountable care work and utilizes improved",
+          "Request for Applications (PDF)",
+          "05/28/2026 12:17 PM"
+        ],
+        "full": [
+          "LEAD, a successor to the ACO REACH Model, builds upon the CMS Innovation Center\u2019s earlier accountable care work and utilizes improved",
+          "Request for Applications (PDF)",
+          "05/28/2026 12:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "LEAD builds upon the CMS Innovation Center\u2019s earlier accountable care work and utilizes improved",
+          "05/19/2026 11:11 AM"
+        ],
+        "full": [
+          "LEAD builds upon the CMS Innovation Center\u2019s earlier accountable care work and utilizes improved",
+          "05/19/2026 11:11 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 20
+    }
+  },
+  {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-05-20T21:47:15.924190+00:00",
