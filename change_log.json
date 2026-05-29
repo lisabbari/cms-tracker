@@ -1,5 +1,47 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-05-29T21:49:10.441107+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "ACCESS OAP Billing Guidelines",
+          "ACCESS Care Update Template",
+          "05/29/2026 04:28 PM"
+        ],
+        "full": [
+          "ACCESS OAP Billing Guidelines",
+          "ACCESS Care Update Template",
+          "05/29/2026 04:28 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "05/15/2026 10:18 AM"
+        ],
+        "full": [
+          "05/15/2026 10:18 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS Care Update Template",
+          "url": "https://www.cms.gov/priorities/innovation/files/access-care-update-template.docx",
+          "type": "resource"
+        }
+      ],
+      "removed": [],
+      "total_current": 9
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-05-28T18:31:59.900831+00:00",
