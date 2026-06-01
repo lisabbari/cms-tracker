@@ -38,9 +38,14 @@
       "type": "document"
     },
     {
+      "title": "ACCESS OAP Billing Guidelines",
+      "url": "https://www.cms.gov/priorities/innovation/files/access-oap-billing-guidelines.pdf",
+      "type": "document"
+    },
+    {
       "title": "ACCESS Care Update Template",
-      "url": "https://www.cms.gov/priorities/innovation/files/access-care-update-template.docx",
-      "type": "resource"
+      "url": "https://www.cms.gov/priorities/innovation/files/access-care-update-template.pdf",
+      "type": "document"
     },
     {
       "title": "CMS Innovation Center listserv",
@@ -48,5 +53,5 @@
       "type": "resource"
     }
   ],
-  "fetched_at": "2026-05-29T21:49:10.443452+00:00"
+  "fetched_at": "2026-06-01T15:51:16.636655+00:00"
 }
