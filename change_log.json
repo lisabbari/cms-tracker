@@ -2,6 +2,46 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-04T16:50:05.045533+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ACCESS Beneficiary Notices Reference",
+          "06/04/2026 10:15 AM"
+        ],
+        "full": [
+          "ACCESS Beneficiary Notices Reference",
+          "06/04/2026 10:15 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "05/29/2026 04:28 PM"
+        ],
+        "full": [
+          "05/29/2026 04:28 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS Beneficiary Notices Reference",
+          "url": "https://www.cms.gov/priorities/innovation/files/access-bene-notices-reference.pdf",
+          "type": "announcement"
+        }
+      ],
+      "removed": [],
+      "total_current": 11
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-06-01T15:51:16.634333+00:00",
     "changes": [],
     "resource_changes": {
