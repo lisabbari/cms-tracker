@@ -2,6 +2,48 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-04T19:57:35.808625+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "ACCESS is designed to complement traditional care. PCPs and referring clinicians can refer patients to ACCESS organizations and will receive regular electronic updates on patient progress. PCPs and referring clinicians may also bill a new co-management payment for documented review of patient updates and associated coordination activities, such as medication adjustments or problem list updates, strengthening collaboration between ACCESS organizations and traditional providers. More information is available on the",
+          "ACCESS for Primary Care Providers and Referring Clinicians web page",
+          ".",
+          "ACCESS for Providers and Referring Clinicians",
+          "06/04/2026 02:42 PM"
+        ],
+        "full": [
+          "ACCESS is designed to complement traditional care. PCPs and referring clinicians can refer patients to ACCESS organizations and will receive regular electronic updates on patient progress. PCPs and referring clinicians may also bill a new co-management payment for documented review of patient updates and associated coordination activities, such as medication adjustments or problem list updates, strengthening collaboration between ACCESS organizations and traditional providers. More information is available on the",
+          "ACCESS for Primary Care Providers and Referring Clinicians web page",
+          ".",
+          "ACCESS for Providers and Referring Clinicians",
+          "06/04/2026 02:42 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "ACCESS is designed to complement traditional care. PCPs and referring clinicians can refer patients to ACCESS organizations and will receive regular electronic updates on patient progress. PCPs and referring clinicians may also bill a new co-management payment for documented review of patient updates and associated coordination activities, such as medication adjustments or problem list updates, strengthening collaboration between ACCESS organizations and traditional providers.",
+          "06/04/2026 10:15 AM"
+        ],
+        "full": [
+          "ACCESS is designed to complement traditional care. PCPs and referring clinicians can refer patients to ACCESS organizations and will receive regular electronic updates on patient progress. PCPs and referring clinicians may also bill a new co-management payment for documented review of patient updates and associated coordination activities, such as medication adjustments or problem list updates, strengthening collaboration between ACCESS organizations and traditional providers.",
+          "06/04/2026 10:15 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 11
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-06-04T16:50:05.045533+00:00",
     "changes": [
       {
