@@ -1,5 +1,70 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-09T23:14:50.602800+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 19,
+        "preview": [
+          "ACCESS for PCPs and Referring Clinicians",
+          "Find out how ACCESS can help you support your patients with the most common chronic conditions.",
+          "Visit the dedicated webpage",
+          ".",
+          "Apply to ACCESS"
+        ],
+        "full": [
+          "ACCESS for PCPs and Referring Clinicians",
+          "Find out how ACCESS can help you support your patients with the most common chronic conditions.",
+          "Visit the dedicated webpage",
+          ".",
+          "Apply to ACCESS",
+          "offers rolling start dates. Review eligibility requirements and submission details in the",
+          "Request for Applications",
+          "and apply through the the",
+          ". See the list of",
+          "accepted applicants",
+          ".",
+          "How does ACCESS interact with Accountable Care Organizations (ACOs) and other shared savings models?",
+          "ACCESS complements ACO and other risk-bearing arrangements by empowering risk-bearing entities with new care options to support their patients with chronic conditions and meet quality and savings goals.",
+          "For 2026 and 2027, CMS will be making system changes to support model operations, and CMS anticipates that there will be no impact from ACCESS OAPs on ACO benchmark and performance year calculations for the Medicare Shared Savings Program and ACO REACH. Beginning in 2028, expenditures associated with ACCESS OAPs will be included in ACO benchmark and performance year calculations.",
+          "Risk-bearing entities may refer their aligned beneficiaries to ACCESS participants\u2014who are all Medicare Part B-enrolled providers or suppliers\u2014 and should consider applicable legal requirements including compliance with the Anti-Kickback Statute and Physician Self-Referral Law. CMS will maintain a public directory of ACCESS participants, the conditions they treat, and their risk-adjusted outcomes to help ACOs make informed referral decisions.",
+          "ACCESS provides an outcome-aligned payment option that replaces traditional fee-for-service billing for ACCESS Participants for beneficiaries for whom the Participant bills ACCESS codes. To preserve model integrity and prevent duplicative Medicare payments, ACCESS Participants and their affiliated entities may not submit Medicare Fee-For-Service (FFS) claims (directly, or indirectly through another organization for which they provide contracted services) for other services furnished to their ACCESS-aligned beneficiaries during an active care period. Only ACCESS G-codes may be billed for aligned beneficiaries during active care periods. See the Request for Applications for more information.",
+          "Overall, ACCESS expands the set of options available to ACOs. For example, a primary care organization participating in an ACO may support its patients with chronic conditions by coordinating care with ACCESS participants serving its geography and billing ACCESS co-management codes for documented review of patient updates. If that primary care organization also offers its own technology-enabled chronic care program, such as a virtual musculoskeletal program, it may choose to also join ACCESS as a participant to expand its reach. As an ACCESS Participant, the organization could offer ACCESS services (billed using ACCESS G-codes) to beneficiaries who are not aligned to its ACO, while continuing to bill traditional Medicare FFS claims for its ACO-aligned beneficiaries who are not enrolled in ACCESS.",
+          "ACCESS for Providers and Referring Clinicians",
+          "06/09/2026 04:15 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 8,
+        "preview": [
+          "To be considered for the model's first performance period beginning July 5, 2026, applications must be submitted via the",
+          "by May 15, 2026. Applications received after this date will be considered for a January 1, 2027 start. For more information, visit the",
+          "ACCESS Model Request for Applications",
+          ". Complete the",
+          "ACCESS Model Interest Form"
+        ],
+        "full": [
+          "To be considered for the model's first performance period beginning July 5, 2026, applications must be submitted via the",
+          "by May 15, 2026. Applications received after this date will be considered for a January 1, 2027 start. For more information, visit the",
+          "ACCESS Model Request for Applications",
+          ". Complete the",
+          "ACCESS Model Interest Form",
+          "to be notified about model updates.",
+          "ACCESS for Providers and Referring Clinicians",
+          "06/04/2026 02:42 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 11
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-06-09T14:36:53.298996+00:00",
