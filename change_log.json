@@ -1,5 +1,39 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-06-09T14:36:53.298996+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "3-Day SNF Waiver - Qualified SNF List Q3 2026",
+          "06/09/2026 10:18 AM"
+        ],
+        "full": [
+          "3-Day SNF Waiver - Qualified SNF List Q3 2026",
+          "06/09/2026 10:18 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "05/12/2026 04:15 PM"
+        ],
+        "full": [
+          "05/12/2026 04:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 30
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-06-04T19:57:35.808625+00:00",
