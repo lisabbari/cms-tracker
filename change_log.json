@@ -2,6 +2,42 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-10T16:55:11.135886+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "Model Updates",
+          "06/10/2026 10:20 AM"
+        ],
+        "full": [
+          "Model Updates",
+          "06/10/2026 10:20 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "Application Deadline Extended",
+          "06/09/2026 04:15 PM"
+        ],
+        "full": [
+          "Application Deadline Extended",
+          "06/09/2026 04:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 11
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-06-09T23:14:50.602800+00:00",
     "changes": [
       {
