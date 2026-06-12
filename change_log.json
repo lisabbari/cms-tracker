@@ -2,6 +2,38 @@
   {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-06-12T16:40:26.393714+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "06/12/2026 10:18 AM"
+        ],
+        "full": [
+          "06/12/2026 10:18 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "06/12/2026 08:19 AM"
+        ],
+        "full": [
+          "06/12/2026 08:19 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-06-12T12:51:08.945981+00:00",
     "changes": [
       {
