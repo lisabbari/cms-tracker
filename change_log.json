@@ -1,5 +1,45 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-06-12T12:51:08.945981+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ASM Performance Categories Technical Fact Sheet",
+          "06/12/2026 08:19 AM"
+        ],
+        "full": [
+          "ASM Performance Categories Technical Fact Sheet",
+          "06/12/2026 08:19 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "04/23/2026 04:14 PM"
+        ],
+        "full": [
+          "04/23/2026 04:14 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ASM Performance Categories Technical Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-prf-ctg-rpt-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-06-11T20:13:15.264793+00:00",
