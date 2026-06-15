@@ -1,5 +1,41 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-15T15:43:40.242009+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ACCESS Primary Care Physician and Referring Clinician Webinar Slides - June 4, 2026 (PDF)",
+          "06/15/2026 08:25 AM"
+        ],
+        "full": [
+          "ACCESS Primary Care Physician and Referring Clinician Webinar Slides - June 4, 2026 (PDF)",
+          "06/15/2026 08:25 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "ACCESS Primary Care Physician and Referring Clinician Webinar Slides - June 4, 2029 (PDF)",
+          "06/11/2026 02:15 PM"
+        ],
+        "full": [
+          "ACCESS Primary Care Physician and Referring Clinician Webinar Slides - June 4, 2029 (PDF)",
+          "06/11/2026 02:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-06-12T16:40:26.393714+00:00",
