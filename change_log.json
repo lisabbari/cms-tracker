@@ -1,5 +1,37 @@
 [
   {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-06-17T16:52:09.436171+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "06/17/2026 10:47 AM"
+        ],
+        "full": [
+          "06/17/2026 10:47 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "02/06/2026 11:54 AM"
+        ],
+        "full": [
+          "02/06/2026 11:54 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 6
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-06-16T14:56:54.685942+00:00",
