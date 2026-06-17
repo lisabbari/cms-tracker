@@ -2,6 +2,65 @@
   {
     "model": "ACO Primary Care Flex",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-06-17T20:06:12.084126+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 8,
+        "preview": [
+          "PY 2025 Preliminary Rate Book (XLSX)",
+          "PY 2025 Updated Rate Book (XLSX)",
+          "PY 2026 Rate Book (XLSX)",
+          "PY 2025 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Financial Paper: Rate Book Development (PDF)"
+        ],
+        "full": [
+          "PY 2025 Preliminary Rate Book (XLSX)",
+          "PY 2025 Updated Rate Book (XLSX)",
+          "PY 2026 Rate Book (XLSX)",
+          "PY 2025 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Model Participants (PDF)",
+          "PY 2025 Model Participants (PDF)",
+          "06/17/2026 02:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 7,
+        "preview": [
+          "PY25 Preliminary Rate Book (XLSX)",
+          "PY25 Updated Rate Book (XLSX)",
+          "PY26 Rate Book (XLSX)",
+          "Financial Paper: Rate Book Development (PDF)",
+          "PY26 Model Participants (PDF)"
+        ],
+        "full": [
+          "PY25 Preliminary Rate Book (XLSX)",
+          "PY25 Updated Rate Book (XLSX)",
+          "PY26 Rate Book (XLSX)",
+          "Financial Paper: Rate Book Development (PDF)",
+          "PY26 Model Participants (PDF)",
+          "PY25 Model Participants (PDF)",
+          "06/17/2026 10:47 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "PY 2026 Financial Paper: Rate Book Development (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/aco-pc-flex-2026-fin-meth-ratebook-dev.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 7
+    }
+  },
+  {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
     "detected_at": "2026-06-17T16:52:09.436171+00:00",
     "changes": [
       {
