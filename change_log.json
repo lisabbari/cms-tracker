@@ -1,5 +1,41 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-06-25T14:13:24.318997+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "|",
+          "Video",
+          "06/25/2026 08:17 AM"
+        ],
+        "full": [
+          "|",
+          "Video",
+          "06/25/2026 08:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "06/15/2026 08:25 AM"
+        ],
+        "full": [
+          "06/15/2026 08:25 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-06-24T17:49:36.104280+00:00",
