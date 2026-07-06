@@ -1,5 +1,59 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-07-06T19:47:33.596413+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 8,
+        "preview": [
+          "ACCESS For Beneficiaries",
+          "Learn how ACCESS can support beneficiaries with chronic health conditions. Visit Medicare.gov/ACCESS.",
+          "Find out how ACCESS can clinicians support their patients with common chronic conditions.",
+          "To participate in the model, review eligibility requirements and submission details in the",
+          ". The 10-year model offers rolling start dates, with the next start dates on August 17, 2026 and October 1, 2026."
+        ],
+        "full": [
+          "ACCESS For Beneficiaries",
+          "Learn how ACCESS can support beneficiaries with chronic health conditions. Visit Medicare.gov/ACCESS.",
+          "Find out how ACCESS can clinicians support their patients with common chronic conditions.",
+          "To participate in the model, review eligibility requirements and submission details in the",
+          ". The 10-year model offers rolling start dates, with the next start dates on August 17, 2026 and October 1, 2026.",
+          "The ACCESS Model will address this gap by testing Outcome-Aligned Payments (OAPs), a payment option for Medicare-enrolled care organizations. Participating organizations will receive recurring payments for managing patients\u2019 qualifying conditions, with full payment tied to achieving measurable health outcomes. The model focuses on clinical improvement or control of a condition based on each person\u2019s starting point, for example, helping a patient with hypertension lower their blood pressure by 15 mmHg. By rewarding outcomes rather than defined activities (or volume of services delivered), ACCESS gives clinicians greater flexibility to deliver modern technology-supported care in ways that best improve patient health.",
+          "Active",
+          "07/06/2026 02:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 8,
+        "preview": [
+          "Find out how ACCESS can help you support your patients with the most common chronic conditions.",
+          "offers rolling start dates. Review eligibility requirements and submission details in the",
+          ". See the list of",
+          "accepted applicants",
+          "."
+        ],
+        "full": [
+          "Find out how ACCESS can help you support your patients with the most common chronic conditions.",
+          "offers rolling start dates. Review eligibility requirements and submission details in the",
+          ". See the list of",
+          "accepted applicants",
+          ".",
+          "The ACCESS Model will address this gap by testing Outcome-Aligned Payments (OAPs), a payment option for Medicare-enrolled care organizations. Participating organizations will receive recurring payments for managing patients\u2019 qualifying conditions, with full payment tied to achieving measurable health outcomes. The model focuses on clinical improvement or control of a condition based on each person\u2019s starting point, for example, helping a patient with hypertension lower their blood pressure by 10 mmHg. By rewarding outcomes rather than defined activities (or volume of services delivered), ACCESS gives clinicians greater flexibility to deliver modern technology-supported care in ways that best improve patient health.",
+          "Announced",
+          "06/25/2026 08:17 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-07-06T16:49:06.883186+00:00",
