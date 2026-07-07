@@ -2,6 +2,42 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-07-07T22:55:24.467551+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "Find out how ACCESS can help clinicians support their patients with common chronic conditions.",
+          "07/07/2026 04:17 PM"
+        ],
+        "full": [
+          "Find out how ACCESS can help clinicians support their patients with common chronic conditions.",
+          "07/07/2026 04:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "Find out how ACCESS can clinicians support their patients with common chronic conditions.",
+          "07/07/2026 02:15 PM"
+        ],
+        "full": [
+          "Find out how ACCESS can clinicians support their patients with common chronic conditions.",
+          "07/07/2026 02:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-07-07T19:46:28.208656+00:00",
     "changes": [
       {
