@@ -2,6 +2,42 @@
   {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-09T21:17:14.479707+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "PY2024 ACO REACH Financial and Quality Results (XLSX)",
+          "07/09/2026 04:16 PM"
+        ],
+        "full": [
+          "PY2024 ACO REACH Financial and Quality Results (XLSX)",
+          "07/09/2026 04:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "PY2024 ACO REACH Financial and Quality Results",
+          "07/09/2026 02:07 PM"
+        ],
+        "full": [
+          "PY2024 ACO REACH Financial and Quality Results",
+          "07/09/2026 02:07 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-07-09T19:28:46.266721+00:00",
     "changes": [
       {
