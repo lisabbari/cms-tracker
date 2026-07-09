@@ -2,6 +2,59 @@
   {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-09T19:28:46.266721+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 8,
+        "preview": [
+          "Latest Evaluation Reports",
+          "ACO REACH 3rd Evaluation Report (PDF)",
+          "Findings At-A-Glance (PDF)",
+          "Executive Summary (PDF)",
+          "Appendices (PDF)"
+        ],
+        "full": [
+          "Latest Evaluation Reports",
+          "ACO REACH 3rd Evaluation Report (PDF)",
+          "Findings At-A-Glance (PDF)",
+          "Executive Summary (PDF)",
+          "Appendices (PDF)",
+          "CMS Perspective (PDF)",
+          "Prior Evaluation Report",
+          "07/09/2026 02:07 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "Latest Evaluation Report",
+          "Prior Evaluation Report",
+          "07/09/2026 12:17 PM"
+        ],
+        "full": [
+          "Latest Evaluation Report",
+          "Prior Evaluation Report",
+          "07/09/2026 12:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACO REACH 3rd Evaluation Report (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/data-and-reports/2026/aco-reach-3rd-eval-report",
+          "type": "report"
+        }
+      ],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-07-09T17:50:18.451637+00:00",
     "changes": [
       {
