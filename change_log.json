@@ -1,5 +1,61 @@
 [
   {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-09T17:50:18.451637+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 6,
+        "preview": [
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "Financial and Quality Results",
+          "PY2024 ACO REACH Financial and Quality Results",
+          "PY 2024 ACO REACH Financial and Quality Results Fact Sheet",
+          "PY2023 ACO REACH Financial Results (XLSX)"
+        ],
+        "full": [
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "Financial and Quality Results",
+          "PY2024 ACO REACH Financial and Quality Results",
+          "PY 2024 ACO REACH Financial and Quality Results Fact Sheet",
+          "PY2023 ACO REACH Financial Results (XLSX)",
+          "07/09/2026 12:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 6,
+        "preview": [
+          "CMS is committed to providing greater transparency into the ACO REACH Model and will share the following information regarding each REACH ACO participating in the model. ACO organizational characteristics, model elections, and market areas will be provided in Public Use Files annually.",
+          "CMS will also share aggregate information for all REACH ACOs on quality and financial performance based on operations data and financial benchmarks, not evaluation, which will be updated quarterly. It is important to note that the quality information presented will be for two claims-based measures: All Cause Readmissions and Unplanned Admissions for Multiple Chronic Conditions. In addition, information will be shared on the payments being made to REACH ACOs on a quarterly basis.",
+          "Financial and Quality Results",
+          "PY2023 ACO REACH Financial Results (XLSX)",
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)"
+        ],
+        "full": [
+          "CMS is committed to providing greater transparency into the ACO REACH Model and will share the following information regarding each REACH ACO participating in the model. ACO organizational characteristics, model elections, and market areas will be provided in Public Use Files annually.",
+          "CMS will also share aggregate information for all REACH ACOs on quality and financial performance based on operations data and financial benchmarks, not evaluation, which will be updated quarterly. It is important to note that the quality information presented will be for two claims-based measures: All Cause Readmissions and Unplanned Admissions for Multiple Chronic Conditions. In addition, information will be shared on the payments being made to REACH ACOs on a quarterly basis.",
+          "Financial and Quality Results",
+          "PY2023 ACO REACH Financial Results (XLSX)",
+          "ACO REACH Quarterly Transparency Report - updated May 2026 (PDF)",
+          "05/20/2026 02:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "PY 2024 ACO REACH Financial and Quality Results Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/acoreach-py2024-financialquality-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 31
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-07-09T14:43:54.959886+00:00",
