@@ -2,6 +2,173 @@
   {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-13T19:16:47.003744+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "07/13/2026 02:16 PM"
+        ],
+        "full": [
+          "07/13/2026 02:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "07/09/2026 04:16 PM"
+        ],
+        "full": [
+          "07/09/2026 04:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-07-13T19:16:42.745163+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 47,
+        "preview": [
+          "ASM (Ambulatory Specialty Model) Updates Proposed",
+          "Updates to ASM were proposed in the 2027 Physician Fee Schedule Notice of Proposed Rulemaking on July 13, 2026. Comments are due by XXpm on August XX, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve \u00a0to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "ASM is a mandatory model with five performance years that run from January 1, 2027, through December 31, 2031.",
+          "People with chronic conditions often see multiple, unconnected clinicians, which can lead to fragmented care, delayed diagnoses and treatment, unnecessary procedures and hospitalization, and poor health outcomes."
+        ],
+        "full": [
+          "ASM (Ambulatory Specialty Model) Updates Proposed",
+          "Updates to ASM were proposed in the 2027 Physician Fee Schedule Notice of Proposed Rulemaking on July 13, 2026. Comments are due by XXpm on August XX, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve \u00a0to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "ASM is a mandatory model with five performance years that run from January 1, 2027, through December 31, 2031.",
+          "People with chronic conditions often see multiple, unconnected clinicians, which can lead to fragmented care, delayed diagnoses and treatment, unnecessary procedures and hospitalization, and poor health outcomes.",
+          "Solution",
+          ":\u202fASM will promote",
+          "and more effective upstream chronic disease management by rewarding ASM participants that are heart failure and low back pain specialists for improving patient health outcomes and coordinating with primary care providers.",
+          "Successful outcomes include reducing avoidable hospitalizations and unnecessary procedures, improving patient experience, and lowering costs to Original Medicare.",
+          "ASM will help to achieve President Trump\u2019s directive to Make America Healthy Again by promoting preventive care through screenings, increasing transparency by making medical provider performance data more widely available, and protecting American taxpayers by holding select specialists accountable for the cost and quality of care they deliver.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare costs. Heart failure and low back pain are among the costliest conditions with annual Medicare spending of $10-13 billion and $6-$8 billion respectively. People with these conditions often see multiple clinicians and their care can become fragmented. This leads to challenges in care coordination across medical providers and care settings, leading to treatment delays, unnecessary procedures and hospitalizations, and higher spending without improved health outcomes.",
+          "ASM will test how different incentives, primarily performance-based payment adjustments, can transform specialist care delivery to improve chronic disease prevention, early diagnosis, and disease management.",
+          "Increasing active collaboration between select specialists and primary care providers",
+          "Improving chronic disease management and preventing development of additional disease through better risk assessment",
+          "Reducing avoidable hospitalizations and unnecessary procedures",
+          "Offering greater transparency in ASM participant performance",
+          "Measuring outcomes that center on patient priorities",
+          "Empowering select specialists by aligning performance measures with factors they are better able to control",
+          "ASM leverages the CMS",
+          "framework. Like MVPs, ASM\u2019s performance measures and activities are tailored to the provider type and condition being treated. ASM goes further by offering a more focused set of measures and activities to simplify reporting and compare performance among peers treating the same chronic condition.",
+          "For each ASM performance year, ASM will evaluate eligible ASM participants\u2019 performance across four categories:",
+          ", a focused set of clinical measures relevant to each chronic condition and specialty type, such as controlling blood pressure of patients with heart failure or improving functional status of patients with low back pain.",
+          ", validated episode-based cost measures (EBCMs) specific to each chronic condition, with a focus on reducing avoidable and unnecessary care.",
+          "Improvement activities,",
+          "efforts to improve screening for health-related social needs and strengthen care coordination between ASM participant specialists and primary care providers.",
+          "Improving interoperability,",
+          "measures and activities that encourage the adoption and use of certified electronic health record technology (CEHRT) to support electronic communication and data sharing.",
+          "The model uses a two-sided",
+          ", meaning that ASM participants will be subject to financial gains or losses. Based on performance relative to their peers, ASM participants will receive a positive, neutral, or negative payment adjustment on future Medicare Part B claims for covered professional services.",
+          "Payment adjustments range from -9% to +9% in the first two ASM performance years, increasing to -12% to +12% by the final ASM performance year.",
+          "ASM tests tools designed to improve collaboration, including Collaborative Care Arrangements in which ASM participants and primary care providers have clearly defined roles, responsibilities and expectations for data sharing, co-management of patient care and referral processes. Both ASM participants and primary care providers may contribute to screening for health-related social needs and will jointly prepare plans for patient transitions between care settings, such as an outpatient treatment facility and home.",
+          "ASM participants will be incentivized to use CEHRT to communicate and share data with collaborating medical providers. Under ASM, CMS intends to offer ASM participants access to enhanced performance data related to episode-based costs, utilization, and quality, enabling deeper insight into patients\u2019 care patterns and needs.",
+          "Specialists who meet ASM\u2019s participant eligibility criteria are required to participate in ASM and meet all model requirements for each ASM performance year, with limited exceptions. ASM participants are individual specialists identified based on a combination of Taxpayer Identification Number (TIN) and National Provider Identifier (NPI).",
+          "ASM cohorts are:",
+          "ASM heart failure cohort:",
+          "Physicians specializing in cardiology",
+          "ASM low back pain cohort:",
+          "Physicians specializing in anesthesiology, pain management, interventional pain management, neurosurgery, orthopedic surgery, or physical medicine and rehabilitation",
+          "ASM will include select specialists who have historically been attributed at least 20 heart failure or low back pain episodes per year as identified by the episode-based cost measure methodology. To be selected, ASM participants must also practice in a select mandatory geographic area (roughly one-quarter of core-based statistical areas (CBSAs) and metropolitan divisions).",
+          "ASM Participant dataset",
+          "Events Archive",
+          "Rulemaking",
+          "Additional Information",
+          "Frequently Asked Questions",
+          "ASM Model Fact Sheet (PDF)",
+          "ASM Model Infographic (PDF)",
+          "07/13/2026 02:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 50,
+        "preview": [
+          "Announced",
+          "The",
+          "list of ASM participants",
+          "is now available.",
+          "ASM Participants:"
+        ],
+        "full": [
+          "Announced",
+          "The",
+          "list of ASM participants",
+          "is now available.",
+          "ASM Participants:",
+          "Please complete the",
+          "ASM Participant Contact Information Form",
+          "to help ensure the ASM Model team has up-to-date contact information for all model participants.",
+          "The Ambulatory Specialty Model (ASM) aims to improve prevention and upstream management of chronic disease, which would lead to reductions in avoidable hospitalizations and unnecessary procedures. Participation in ASM will be mandatory for",
+          "specialists",
+          "who commonly treat people with Original Medicare for heart failure or low back pain in an outpatient setting across selected regions. ASM will begin on January 1, 2027 and run for five performance years through December 31, 2031.",
+          "Delayed detection of chronic conditions, financial incentives that encourage unnecessary procedures, and the lack of",
+          "care coordination",
+          "among specialists and primary care providers all contribute to poor health outcomes for people who are at risk for or living with chronic disease. These include delayed diagnosis and poor disease management.",
+          "Solution:",
+          "ASM will promote",
+          "and more effective upstream chronic disease management by rewarding specialists for improving patient health outcomes and coordination with primary care providers.",
+          "ASM will reduce avoidable hospitalizations and unnecessary procedures, improve patient experience and outcomes, and lower costs to Original Medicare.",
+          "ASM will help to Make America Healthy Again by promoting preventive care through interventions like screening, increasing transparency by making provider performance assessments more widely available, and protecting American taxpayers by holding specialists accountable for the cost of care.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare costs. Heart failure and low back pain are among the costliest conditions to Original Medicare, with annual spending of $10-13 billion and $6-$8 billion on each, respectively. People with these chronic conditions often experience fragmented care that can impede their ability to manage their health, leading to \u201clow-value\u201d care expenditures. Low-value care includes avoidable hospitalization and unnecessary procedures and can increase spending without resulting in long-term benefits or improved health outcomes.",
+          "ASM will focus on interventions that are low cost with high patient benefits. It will test how different incentives, primarily payment adjustments, could transform specialist care delivery to improve chronic disease prevention, early diagnosis, and disease management.",
+          "Increase active collaboration between specialists and primary care providers to support better outcomes for patients at risk for and living with heart disease or low back pain",
+          "Improve management of chronic disease and prevent development of additional disease through better risk assessment",
+          "Reduce avoidable hospitalizations and unnecessary procedures that provide little benefit or could lead to harm",
+          "Offer greater transparency in performance among participants and their peers",
+          "Measure outcomes that center on the patient\u2019s priorities",
+          "Empower participating specialists by aligning performance measures with factors they are better able to control",
+          "ASM will leverage the CMS",
+          "framework to target heart failure and low back pain.",
+          "Under ASM, participants\u2019 performance will be assessed across four categories:",
+          ", for instance controlling the blood pressure of patients with heart failure or improving functional status for patients with low back pain",
+          ", especially from reductions in avoidable, unnecessary care",
+          "Improvement activities",
+          "focusing on clinical care processes and patient engagement and ensuring that all patients are screened for health-related social needs",
+          "Improving interoperability",
+          "by encouraging the adoption of technology, including certified electronic health record technology (CEHRT), that allows specialists to communicate and share data electronically",
+          "Like MVPs, these performance measures will be specific to the type of provider and the treatment of a specific condition. However, ASM goes a step beyond MVPs in offering an even more focused set of performance measures to simplify reporting for providers. ASM's performance measures also enable physicians \u2013 and CMS \u2013 to see how they compare against other physicians of the same specialty in the same geographic region. Such transparency should drive competition among providers, which will ultimately benefit patients.",
+          "The model will use a two-sided",
+          ", meaning that a participant will be subject to financial gains or losses. Based on performance relative to their peers, a participant will receive a higher rate (positive payment adjustment), the standard rate (neutral payment adjustment), or a lower rate (negative payment adjustment) on their future Medicare Part B claims for covered services.",
+          "ASM will test tools designed to improve collaboration, such as a Collaborative Care Arrangement in which each provider will have clearly defined roles, responsibilities and expectations for data sharing, co-management of patient care and referral processes with primary care providers. Both specialists and primary care providers will contribute to screening for health-related social needs, and they will jointly prepare plans for patient transitions between care settings, such as an outpatient treatment facility and home.",
+          "Technology will play a major role in aiding ASM participants to transform their care delivery. Participating specialists will be incentivized to use CEHRT so they can efficiently communicate and share data with collaborating providers.",
+          "Additionally, ASM intends to offer participants the opportunity to request enhanced performance data related to episode-based costs, utilization, and quality, enabling physicians to gain deeper insight into their patient population\u2019s care patterns and care needs.",
+          "Initially, ASM will include specialists in roughly one-quarter of core-based statistical areas (CBSAs) and metropolitan divisions who treat one of two conditions: heart failure or low back pain.",
+          "For heart failure, participants will be physicians who specialize in general cardiology. For low back pain, participants will be physicians who specialize in anesthesiology, pain management, interventional pain management, neurosurgery, orthopedic surgery, or physical medicine and rehabilitation. The model will only include physicians who have historically treated at least 20 heart failure or low back episodes per year as identified by the episode-based cost measure methodology.",
+          "ASM Participant dataset",
+          "Additional Information",
+          "Frequently Asked Questions",
+          "ASM Model Fact Sheet (PDF)",
+          "ASM Model Infographic (PDF)",
+          "06/12/2026 10:18 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-07-09T21:17:14.479707+00:00",
     "changes": [
       {
