@@ -1,5 +1,37 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-07-14T20:54:00.324892+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "07/14/2026 04:51 PM"
+        ],
+        "full": [
+          "07/14/2026 04:51 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "07/13/2026 02:16 PM"
+        ],
+        "full": [
+          "07/13/2026 02:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-07-13T19:16:47.003744+00:00",
