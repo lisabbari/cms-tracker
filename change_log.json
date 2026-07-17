@@ -2,6 +2,42 @@
   {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-07-17T20:46:48.380269+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "on July 14, 2026. Comments are due by 11:59 PM on September 14, 2026.",
+          "07/17/2026 04:16 PM"
+        ],
+        "full": [
+          "on July 14, 2026. Comments are due by 11:59 PM on September 14, 2026.",
+          "07/17/2026 04:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "on July 14, 2026. Comments are due by 11:59 PM on August 14, 2026.",
+          "07/17/2026 02:15 PM"
+        ],
+        "full": [
+          "on July 14, 2026. Comments are due by 11:59 PM on August 14, 2026.",
+          "07/17/2026 02:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 15
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-07-17T18:58:47.824664+00:00",
     "changes": [
       {
