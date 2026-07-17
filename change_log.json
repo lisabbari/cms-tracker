@@ -2,6 +2,71 @@
   {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-07-17T18:58:47.824664+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 11,
+        "preview": [
+          "Updates to ASM were proposed in the",
+          "2027 Physician Fee Schedule Notice of Proposed Rulemaking",
+          "on July 14, 2026. Comments are due by 11:59 PM on August 14, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve upstream management of chronic disease to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare spending. Heart failure and low back pain are among the costliest conditions with annual Medicare spending of $10-13 billion and $6-$8 billion respectively. People with these conditions often see multiple clinicians and their care can become fragmented. This leads to challenges in care coordination across medical providers and care settings, leading to treatment delays, unnecessary procedures and hospitalizations, and higher spending without improved health outcomes."
+        ],
+        "full": [
+          "Updates to ASM were proposed in the",
+          "2027 Physician Fee Schedule Notice of Proposed Rulemaking",
+          "on July 14, 2026. Comments are due by 11:59 PM on August 14, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve upstream management of chronic disease to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare spending. Heart failure and low back pain are among the costliest conditions with annual Medicare spending of $10-13 billion and $6-$8 billion respectively. People with these conditions often see multiple clinicians and their care can become fragmented. This leads to challenges in care coordination across medical providers and care settings, leading to treatment delays, unnecessary procedures and hospitalizations, and higher spending without improved health outcomes.",
+          "ASM aims to improve health outcomes and lower costs for patients with heart failure or low back pain by:",
+          "2027 PFS Proposed Rule (Federal Register)",
+          "PFS Proposed Rule (Federal Register)",
+          "2026 PFS Final Rule (Federal Register)",
+          "2026 PFS Proposed Rule (Federal Register)",
+          "07/17/2026 02:15 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 10,
+        "preview": [
+          "Updates to ASM were proposed in the 2027 Physician Fee Schedule Notice of Proposed Rulemaking on July 13, 2026. Comments are due by XXpm on August XX, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve \u00a0to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "Under ASM, specialists who frequently treat people with Original Medicare for low back pain or heart failure in the outpatient setting within a selected geographic areas will be financially responsible for the outcomes of their care and incentivized to better prevent and manage these conditions.",
+          "ASM will promote greater coordination between specialists and primary care providers, including those in accountable care organizations (ACOs). ASM will also prioritize transparency about provider performance in the areas of quality, care improvement, cost, and interoperability.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare costs. Heart failure and low back pain are among the costliest conditions with annual Medicare spending of $10-13 billion and $6-$8 billion respectively. People with these conditions often see multiple clinicians and their care can become fragmented. This leads to challenges in care coordination across medical providers and care settings, leading to treatment delays, unnecessary procedures and hospitalizations, and higher spending without improved health outcomes."
+        ],
+        "full": [
+          "Updates to ASM were proposed in the 2027 Physician Fee Schedule Notice of Proposed Rulemaking on July 13, 2026. Comments are due by XXpm on August XX, 2026.",
+          "The Ambulatory Specialty Model (ASM) aims to improve \u00a0to reduce avoidable hospitalizations and unnecessary procedures in Original Medicare. It tests whether performance-based payment adjustments for select specialists who care for beneficiaries with heart failure or low back pain will encourage stronger care coordination and chronic disease management.",
+          "Under ASM, specialists who frequently treat people with Original Medicare for low back pain or heart failure in the outpatient setting within a selected geographic areas will be financially responsible for the outcomes of their care and incentivized to better prevent and manage these conditions.",
+          "ASM will promote greater coordination between specialists and primary care providers, including those in accountable care organizations (ACOs). ASM will also prioritize transparency about provider performance in the areas of quality, care improvement, cost, and interoperability.",
+          "More than two-thirds of people with Original Medicare live with at least one chronic condition, and their care accounts for most Original Medicare costs. Heart failure and low back pain are among the costliest conditions with annual Medicare spending of $10-13 billion and $6-$8 billion respectively. People with these conditions often see multiple clinicians and their care can become fragmented. This leads to challenges in care coordination across medical providers and care settings, leading to treatment delays, unnecessary procedures and hospitalizations, and higher spending without improved health outcomes.",
+          "2026 PFS Final Rule",
+          "(Federal Register)",
+          "2026 PFS Proposed Rule",
+          "(Federal Register)",
+          "07/14/2026 04:51 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "2027 Physician Fee Schedule Notice of Proposed Rulemaking",
+          "url": "https://www.federalregister.gov/documents/2026/07/16/2026-14327/medicare-and-medicaid-programs-cy-2027-payment-policies-under-the-physician-fee-schedule-and-other",
+          "type": "announcement"
+        }
+      ],
+      "removed": [],
+      "total_current": 15
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-07-14T20:54:00.324892+00:00",
     "changes": [
       {
