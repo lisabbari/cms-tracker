@@ -1,5 +1,49 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-07-20T21:05:24.919135+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "Alignment and Finance Paper (PDF)",
+          "Alignment and Finance Paper (PDF)",
+          "07/20/2026 04:18 PM"
+        ],
+        "full": [
+          "Alignment and Finance Paper (PDF)",
+          "Alignment and Finance Paper (PDF)",
+          "07/20/2026 04:18 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "Application Checklist (PDF)",
+          "05/28/2026 12:17 PM"
+        ],
+        "full": [
+          "Application Checklist (PDF)",
+          "05/28/2026 12:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Alignment and Finance Paper (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-alignment-finance-paper.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 21
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-07-20T17:30:12.096916+00:00",
