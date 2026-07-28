@@ -1,5 +1,73 @@
 [
   {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-28T21:02:44.646591+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "07/28/2026 04:15 PM"
+        ],
+        "full": [
+          "07/28/2026 04:15 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "07/13/2026 02:16 PM"
+        ],
+        "full": [
+          "07/13/2026 02:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-07-28T21:02:35.032544+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "716",
+          "07/28/2026 04:48 PM"
+        ],
+        "full": [
+          "716",
+          "07/28/2026 04:48 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "721",
+          "07/06/2026 10:15 AM"
+        ],
+        "full": [
+          "721",
+          "07/06/2026 10:15 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 30
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-07-20T21:05:24.919135+00:00",
