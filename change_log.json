@@ -2,6 +2,38 @@
   {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-07-29T19:04:14.791965+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "07/29/2026 01:48 PM"
+        ],
+        "full": [
+          "07/29/2026 01:48 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "07/28/2026 04:15 PM"
+        ],
+        "full": [
+          "07/28/2026 04:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-07-28T21:02:44.646591+00:00",
     "changes": [
       {
