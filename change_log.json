@@ -2,6 +2,46 @@
   {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-08-11T18:54:08.526136+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "Register & submit questions",
+          "for Geo AHEAD Participation Perspectives (GAPP) Survey webinar to be held",
+          "August 25, 2026 3-4PM ET/9-10HST",
+          ".",
+          "08/11/2026 02:18 PM"
+        ],
+        "full": [
+          "Register & submit questions",
+          "for Geo AHEAD Participation Perspectives (GAPP) Survey webinar to be held",
+          "August 25, 2026 3-4PM ET/9-10HST",
+          ".",
+          "08/11/2026 02:18 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "08/11/2026 12:17 PM"
+        ],
+        "full": [
+          "08/11/2026 12:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-08-11T16:52:52.076542+00:00",
     "changes": [
       {
