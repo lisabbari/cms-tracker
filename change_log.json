@@ -1,5 +1,181 @@
 [
   {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-08-11T20:37:10.608998+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-08-11T20:37:09.939669+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 7
+    }
+  },
+  {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-08-11T20:37:09.337546+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 31
+    }
+  },
+  {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-08-11T20:37:07.858330+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-08-11T20:37:07.375544+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 6
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-08-11T20:37:06.545349+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 21
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-08-11T20:37:06.095109+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 15
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-08-11T20:37:03.297185+00:00",
+    "changes": [
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "Help with File Formats and Plug-Ins"
+        ],
+        "full": [
+          "Help with File Formats and Plug-Ins"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 12
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-08-11T18:54:08.526136+00:00",
