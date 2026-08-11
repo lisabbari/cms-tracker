@@ -1,5 +1,66 @@
 [
   {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-08-11T16:52:52.076542+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "Primary care practices can participate in the AHEAD Model through one of four PC AHEAD pathways, each offering different levels of financial risk, care transformation requirements, and payment flexibility. Alternatively, practices may join Geo AHEAD, collaborating with Geo Entities to reduce costs and improve quality outcomes within a geographic-based risk-bearing structure. Participating primary care practices are required to engage in state-led Medicaid transformation efforts that align with the Medicare PC AHEAD program.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their and shared savings.",
+          "08/11/2026 12:17 PM"
+        ],
+        "full": [
+          "Primary care practices can participate in the AHEAD Model through one of four PC AHEAD pathways, each offering different levels of financial risk, care transformation requirements, and payment flexibility. Alternatively, practices may join Geo AHEAD, collaborating with Geo Entities to reduce costs and improve quality outcomes within a geographic-based risk-bearing structure. Participating primary care practices are required to engage in state-led Medicaid transformation efforts that align with the Medicare PC AHEAD program.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their and shared savings.",
+          "08/11/2026 12:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 6,
+        "preview": [
+          "Primary care practices can participate in the AHEAD Model through one of four PC AHEAD pathways, each offering different levels of financial risk, care transformation requirements, and payment flexibility. Alternatively, practices may join Geo AHEAD, collaborating with Geo Entities to reduce costs and improve quality outcomes within a geographic-based risk-bearing structure. \u00a0Participating primary care practices are required to engage in state-led Medicaid transformation efforts that align with the Medicare PC AHEAD program.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their \u00a0and shared savings.",
+          "Geo AHEAD Fact Sheet (PDF)",
+          "AHEAD Model Overlaps Fact Sheet (PDF)",
+          "AHEAD Model Choice and Competition Playbook"
+        ],
+        "full": [
+          "Primary care practices can participate in the AHEAD Model through one of four PC AHEAD pathways, each offering different levels of financial risk, care transformation requirements, and payment flexibility. Alternatively, practices may join Geo AHEAD, collaborating with Geo Entities to reduce costs and improve quality outcomes within a geographic-based risk-bearing structure. \u00a0Participating primary care practices are required to engage in state-led Medicaid transformation efforts that align with the Medicare PC AHEAD program.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their \u00a0and shared savings.",
+          "Geo AHEAD Fact Sheet (PDF)",
+          "AHEAD Model Overlaps Fact Sheet (PDF)",
+          "AHEAD Model Choice and Competition Playbook",
+          "07/09/2026 10:22 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [
+        {
+          "title": "Geo AHEAD Fact Sheet (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/geo-ahead-fs.pdf",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "AHEAD Model Overlaps Fact Sheet (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/ahead-overlaps-fs.pdf-0",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "AHEAD Model Choice and Competition Playbook",
+          "url": "https://www.cms.gov/priorities/innovation/files/ahead-choice-competition-pb.pdf",
+          "type": "document"
+        }
+      ],
+      "total_current": 5
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-08-04T14:27:46.210239+00:00",
