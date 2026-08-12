@@ -1,5 +1,49 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-08-12T18:53:48.541445+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "ACCESS Health IT and Interoperability Requirements Webinar Slides - July 23, 2026 (PDF)",
+          "|",
+          "Video",
+          "08/12/2026 02:17 PM"
+        ],
+        "full": [
+          "ACCESS Health IT and Interoperability Requirements Webinar Slides - July 23, 2026 (PDF)",
+          "|",
+          "Video",
+          "08/12/2026 02:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "07/20/2026 12:45 PM"
+        ],
+        "full": [
+          "07/20/2026 12:45 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS Health IT and Interoperability Requirements Webinar Slides - July 23, 2026 (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/access-interop-webinar-slides.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 13
+    }
+  },
+  {
     "model": "ACO REACH",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
     "detected_at": "2026-08-11T20:37:10.608998+00:00",
