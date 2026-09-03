@@ -2,6 +2,52 @@
   {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-09-03T14:02:56.126464+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "Register & Submit Questions",
+          "for the AHEAD Hospital Global Budgets: Strategic Considerations & Medicare Fee-for-Service Methodology Updates Webinar to be held",
+          "September 22, 2026, 3-4PM ET/9-10AM HST.",
+          "09/03/2026 08:19 AM"
+        ],
+        "full": [
+          "Register & Submit Questions",
+          "for the AHEAD Hospital Global Budgets: Strategic Considerations & Medicare Fee-for-Service Methodology Updates Webinar to be held",
+          "September 22, 2026, 3-4PM ET/9-10AM HST.",
+          "09/03/2026 08:19 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 5,
+        "preview": [
+          "Register & submit questions",
+          "for Geo AHEAD Participation Perspectives (GAPP) Survey webinar to be held",
+          "August 25, 2026 3-4PM ET/9-10HST",
+          ".",
+          "08/24/2026 02:16 PM"
+        ],
+        "full": [
+          "Register & submit questions",
+          "for Geo AHEAD Participation Perspectives (GAPP) Survey webinar to be held",
+          "August 25, 2026 3-4PM ET/9-10HST",
+          ".",
+          "08/24/2026 02:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-08-24T18:30:39.194991+00:00",
     "changes": [
       {
