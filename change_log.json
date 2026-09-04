@@ -1,5 +1,49 @@
 [
   {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-09-04T17:20:10.488966+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "PY 2026 Participant Management Guidance Document",
+          "PY 2025 Model Participants (PDF)",
+          "09/04/2026 12:08 PM"
+        ],
+        "full": [
+          "PY 2026 Participant Management Guidance Document",
+          "PY 2025 Model Participants (PDF)",
+          "09/04/2026 12:08 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "PY 2025 Model Participants (PDF)",
+          "06/17/2026 02:17 PM"
+        ],
+        "full": [
+          "PY 2025 Model Participants (PDF)",
+          "06/17/2026 02:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "PY 2026 Participant Management Guidance Document",
+          "url": "https://www.cms.gov/priorities/innovation/files/aco-pc-flex-participant-mngt.pdf",
+          "type": "guidance"
+        }
+      ],
+      "removed": [],
+      "total_current": 8
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-09-03T14:02:56.126464+00:00",
