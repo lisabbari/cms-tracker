@@ -1,5 +1,156 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-09-15T17:52:46.533548+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 14,
+        "preview": [
+          "Final Ambulatory Specialty Model Participants Announced",
+          "The list of final ASM participants for the 2027 performance year is now available. Access the",
+          "ASM Participants dataset",
+          ".",
+          "Register for the"
+        ],
+        "full": [
+          "Final Ambulatory Specialty Model Participants Announced",
+          "The list of final ASM participants for the 2027 performance year is now available. Access the",
+          "ASM Participants dataset",
+          ".",
+          "Register for the",
+          "ASM Participant September 2026 Office Hour",
+          "to learn how to prepare for participation in ASM.",
+          "ASM tests tools designed to improve collaboration, including Collaborative Care Arrangements in which ASM participants and primary care providers have clearly defined roles, responsibilities and expectations for data sharing, co-management of patient care and referral processes. Both ASM participants and primary care providers may contribute to screening for health-related social needs and may jointly prepare plans for patient transitions between care settings, such as an outpatient treatment facility and home.",
+          "ASM Participant Portal User Guide",
+          "Getting Started with ASM:",
+          "Slides",
+          "|",
+          "Recording",
+          "09/15/2026 09:49 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 7,
+        "preview": [
+          "ASM (Ambulatory Specialty Model) Updates Proposed",
+          "Updates to ASM were proposed in the",
+          "2027 Physician Fee Schedule Notice of Proposed Rulemaking",
+          "on July 14, 2026. Comments are due by 11:59 PM on September 14, 2026.",
+          "ASM tests tools designed to improve collaboration, including Collaborative Care Arrangements in which ASM participants and primary care providers have clearly defined roles, responsibilities and expectations for data sharing, co-management of patient care and referral processes. Both ASM participants and primary care providers may contribute to screening for health-related social needs and will jointly prepare plans for patient transitions between care settings, such as an outpatient treatment facility and home."
+        ],
+        "full": [
+          "ASM (Ambulatory Specialty Model) Updates Proposed",
+          "Updates to ASM were proposed in the",
+          "2027 Physician Fee Schedule Notice of Proposed Rulemaking",
+          "on July 14, 2026. Comments are due by 11:59 PM on September 14, 2026.",
+          "ASM tests tools designed to improve collaboration, including Collaborative Care Arrangements in which ASM participants and primary care providers have clearly defined roles, responsibilities and expectations for data sharing, co-management of patient care and referral processes. Both ASM participants and primary care providers may contribute to screening for health-related social needs and will jointly prepare plans for patient transitions between care settings, such as an outpatient treatment facility and home.",
+          "ASM Participant Roadmap",
+          "07/17/2026 04:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ASM Participant Portal User Guide",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-participant-portal-user-manual.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Slides",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-getting-started-webcast-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Recording",
+          "url": "https://youtu.be/avn4HwHrEJ0",
+          "type": "webinar"
+        }
+      ],
+      "removed": [
+        {
+          "title": "ASM Participant Roadmap",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-participant-readiness-rm.pdf",
+          "type": "document"
+        }
+      ],
+      "total_current": 17
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-09-15T17:52:45.820997+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 20,
+        "preview": [
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "ACCESS for PCPs and Referring Clinicians:",
+          "Apply to ACCESS:",
+          "To participate in the model, review the"
+        ],
+        "full": [
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "ACCESS for PCPs and Referring Clinicians:",
+          "Apply to ACCESS:",
+          "To participate in the model, review the",
+          "and apply through the",
+          ". The 10-year model offers rolling start dates. Visit the",
+          "participating organizations webpage",
+          ".",
+          "Health Care Leaders Align Around ACCESS:",
+          "New Tracks Available:",
+          "New tracks for heart failure, chronic obstructive pulmonary disease (COPD), substance use disorder, tobacco cessation, and chronic musculoskeletal (MSK) pain (follow-on period) start April 1, 2027. Complete the",
+          "ACCESS Model Interest Form",
+          "to receive updates. Current participants and applicants will not need to reapply to participate in the new tracks.",
+          "focuses on conditions affecting more than two-thirds of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "ACCESS focuses on four initial clinical tracks addressing many of the most common chronic conditions:",
+          "Starting April 1, 2027, ACCESS will include tracks for heart failure, chronic obstructive pulmonary disease (COPD), substance use disorder, and tobacco cessation. Current participants and applicants will not need to reapply to participate in the new tracks. Complete the",
+          "ACCESS Model Interest Form",
+          "to receive updates about the new tracks.",
+          "09/15/2026 09:46 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 12,
+        "preview": [
+          "ACCESS For People with Medicare",
+          "Learn how ACCESS can support people with Medicare with chronic health conditions. Visit",
+          "ACCESS for PCPs and Referring Clinicians",
+          "Find out how ACCESS can help clinicians support their patients with common chronic conditions.",
+          "Apply to ACCESS"
+        ],
+        "full": [
+          "ACCESS For People with Medicare",
+          "Learn how ACCESS can support people with Medicare with chronic health conditions. Visit",
+          "ACCESS for PCPs and Referring Clinicians",
+          "Find out how ACCESS can help clinicians support their patients with common chronic conditions.",
+          "Apply to ACCESS",
+          "To participate in the model, review eligibility requirements and submission details in the",
+          "and apply through the the",
+          ". The 10-year model offers rolling start dates, with the next start dates on August 17, 2026 and October 1, 2026.",
+          "Health Care Leaders Align Around ACCESS",
+          "focuses on conditions affecting more than two-thirds of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It will run for 10 years beginning July 5, 2026.",
+          "ACCESS will focus on four clinical tracks addressing many of the most common chronic conditions:",
+          "08/12/2026 02:17 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 13
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-09-09T14:05:36.250330+00:00",
