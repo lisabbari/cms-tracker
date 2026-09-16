@@ -1,5 +1,43 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-09-16T19:17:43.276749+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "Building a Healthier America: CMS ACCESS and a New Chapter in Health Innovation (Video)",
+          "ACCESS Participants",
+          "09/16/2026 02:16 PM"
+        ],
+        "full": [
+          "Building a Healthier America: CMS ACCESS and a New Chapter in Health Innovation (Video)",
+          "ACCESS Participants",
+          "09/16/2026 02:16 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "Accepted Applicants",
+          "09/15/2026 09:46 AM"
+        ],
+        "full": [
+          "Accepted Applicants",
+          "09/15/2026 09:46 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 13
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-09-16T14:31:14.575507+00:00",
