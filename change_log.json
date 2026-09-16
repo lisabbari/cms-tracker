@@ -1,5 +1,45 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-09-16T14:31:14.575507+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "Quality Measurement Methodology Report: 2027 (PDF)",
+          "09/16/2026 10:17 AM"
+        ],
+        "full": [
+          "Quality Measurement Methodology Report: 2027 (PDF)",
+          "09/16/2026 10:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "08/18/2026 12:16 PM"
+        ],
+        "full": [
+          "08/18/2026 12:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Quality Measurement Methodology Report: 2027 (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-py27-qual-meas-meth-report.pdf",
+          "type": "report"
+        }
+      ],
+      "removed": [],
+      "total_current": 24
+    }
+  },
+  {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-09-15T20:45:13.668522+00:00",
