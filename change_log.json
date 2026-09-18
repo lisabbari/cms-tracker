@@ -2,6 +2,42 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-09-18T18:47:41.408508+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "160+",
+          "09/18/2026 10:17 AM"
+        ],
+        "full": [
+          "160+",
+          "09/18/2026 10:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "N/A",
+          "09/16/2026 02:16 PM"
+        ],
+        "full": [
+          "N/A",
+          "09/16/2026 02:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 13
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-09-16T19:17:43.276749+00:00",
     "changes": [
       {
