@@ -1,5 +1,87 @@
 [
   {
+    "model": "ACO REACH",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-reach",
+    "detected_at": "2026-09-21T21:33:56.771770+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "2025 Version A (XLSX)",
+          "|",
+          "2025 Version B (XLSX)",
+          "09/21/2026 12:17 PM"
+        ],
+        "full": [
+          "2025 Version A (XLSX)",
+          "|",
+          "2025 Version B (XLSX)",
+          "09/21/2026 12:17 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "2025 (XLSX)",
+          "08/18/2026 12:16 PM"
+        ],
+        "full": [
+          "2025 (XLSX)",
+          "08/18/2026 12:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 32
+    }
+  },
+  {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-09-21T21:33:55.313398+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "- updated September 2026",
+          "- updated September 2026",
+          "3-Day SNF Waiver - Qualified SNF List Q4 2026",
+          "09/21/2026 01:47 PM"
+        ],
+        "full": [
+          "- updated September 2026",
+          "- updated September 2026",
+          "3-Day SNF Waiver - Qualified SNF List Q4 2026",
+          "09/21/2026 01:47 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "- updated June 2026",
+          "- updated June 2026",
+          "09/09/2026 09:24 AM"
+        ],
+        "full": [
+          "- updated June 2026",
+          "- updated June 2026",
+          "09/09/2026 09:24 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 31
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-09-18T18:47:41.408508+00:00",
