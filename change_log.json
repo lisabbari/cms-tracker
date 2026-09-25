@@ -1,5 +1,45 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-09-25T14:54:59.812317+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "LEAD Model Implementation Period Participant List (PDF)",
+          "09/25/2026 10:16 AM"
+        ],
+        "full": [
+          "LEAD Model Implementation Period Participant List (PDF)",
+          "09/25/2026 10:16 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "09/16/2026 10:17 AM"
+        ],
+        "full": [
+          "09/16/2026 10:17 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "LEAD Model Implementation Period Participant List (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-imp-participant-list.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 25
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-09-23T14:36:11.456213+00:00",
