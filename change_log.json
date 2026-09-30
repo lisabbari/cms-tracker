@@ -1,5 +1,90 @@
 [
   {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-09-30T20:27:12.862860+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 6,
+        "preview": [
+          "On September 3, 2025, CMS",
+          "Register & submit questions",
+          "for the Geo AHEAD Technical Specifications Webinar to be held on",
+          "October 20, 2026, 3:00-4:30 PM ET/9-10:30 AM HST.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their shared savings."
+        ],
+        "full": [
+          "On September 3, 2025, CMS",
+          "Register & submit questions",
+          "for the Geo AHEAD Technical Specifications Webinar to be held on",
+          "October 20, 2026, 3:00-4:30 PM ET/9-10:30 AM HST.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their shared savings.",
+          "09/30/2026 02:18 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 4,
+        "preview": [
+          "On September 3, 2025, \u00a0CMS",
+          "CMS will offer the opportunity for up to 2 new states to join AHEAD in July 2026 and begin performance in 2028 or 2029.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their and shared savings.",
+          "09/23/2026 08:18 AM"
+        ],
+        "full": [
+          "On September 3, 2025, \u00a0CMS",
+          "CMS will offer the opportunity for up to 2 new states to join AHEAD in July 2026 and begin performance in 2028 or 2029.",
+          "AHEAD will provide participating hospitals located in participating states and sub-state regions annual, prospective Medicare fee-for-service global budgets, covering inpatient and outpatient services. The global budget methodology includes adjustments for performance on quality and health outcomes. AHEAD offers opportunities for hospitals to collaborate with Geo Entities to amplify their and shared savings.",
+          "09/23/2026 08:18 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-09-30T20:27:10.894015+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 1,
+        "preview": [
+          "09/30/2026 04:21 PM"
+        ],
+        "full": [
+          "09/30/2026 04:21 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 4,
+        "preview": [
+          "Register for the",
+          "ASM Participant September 2026 Office Hour",
+          "to learn how to prepare for participation in ASM.",
+          "09/15/2026 02:15 PM"
+        ],
+        "full": [
+          "Register for the",
+          "ASM Participant September 2026 Office Hour",
+          "to learn how to prepare for participation in ASM.",
+          "09/15/2026 02:15 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 18
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-09-25T14:54:59.812317+00:00",
