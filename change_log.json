@@ -1,5 +1,59 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-10-20T18:14:00.357399+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "SNF 3-Day Rule Waiver Billing Fact Sheet",
+          "Telehealth Waiver Billing Fact Sheet",
+          "Post-Acute Care Providers Fact Sheet",
+          "10/20/2026 10:19 AM"
+        ],
+        "full": [
+          "SNF 3-Day Rule Waiver Billing Fact Sheet",
+          "Telehealth Waiver Billing Fact Sheet",
+          "Post-Acute Care Providers Fact Sheet",
+          "10/20/2026 10:19 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "09/23/2026 10:15 AM"
+        ],
+        "full": [
+          "09/23/2026 10:15 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "SNF 3-Day Rule Waiver Billing Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-snf-waiver-billing-fs.pdf",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "Telehealth Waiver Billing Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-telehealth-waiver-billing-fs.pdf",
+          "type": "fact_sheet"
+        },
+        {
+          "title": "Post-Acute Care Providers Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-pac-providers-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 34
+    }
+  },
+  {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-10-13T17:17:35.866852+00:00",
