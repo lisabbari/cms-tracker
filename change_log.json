@@ -1,5 +1,45 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-10-27T15:39:33.157332+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ACCESS Pharmacy Billing Co-Management Waiver",
+          "10/27/2026 08:28 AM"
+        ],
+        "full": [
+          "ACCESS Pharmacy Billing Co-Management Waiver",
+          "10/27/2026 08:28 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "10/08/2026 02:09 PM"
+        ],
+        "full": [
+          "10/08/2026 02:09 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ACCESS Pharmacy Billing Co-Management Waiver",
+          "url": "https://www.cms.gov/priorities/innovation/files/access-pharma-billing-cmp-waiver.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-10-20T18:14:00.357399+00:00",
