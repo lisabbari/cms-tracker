@@ -2,6 +2,46 @@
   {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-10-28T20:43:04.370735+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "focuses on conditions affecting three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "ACCESS participants must be Medicare Part B\u2013enrolled organizations (excluding Durable Medical Equipment, Prosthetics, Orthotics, and Supplies and laboratory suppliers) and designate a Medicare-enrolled Medical Director to oversee care quality and compliance. Organizations not enrolled in Medicare Part B must enroll to participate in ACCESS. ACCESS health care providers manage all qualifying conditions within a clinical track, including eCKM (Early Cardio-Kidney-Metabolic), CKM (Cardio-Kidney-Metabolic), BH (Behavioral Health), or MSK (Musculoskeletal). For more information about participant requirements and responsibilities, please see the",
+          "10/28/2026 04:04 PM"
+        ],
+        "full": [
+          "focuses on conditions affecting three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "ACCESS participants must be Medicare Part B\u2013enrolled organizations (excluding Durable Medical Equipment, Prosthetics, Orthotics, and Supplies and laboratory suppliers) and designate a Medicare-enrolled Medical Director to oversee care quality and compliance. Organizations not enrolled in Medicare Part B must enroll to participate in ACCESS. ACCESS health care providers manage all qualifying conditions within a clinical track, including eCKM (Early Cardio-Kidney-Metabolic), CKM (Cardio-Kidney-Metabolic), BH (Behavioral Health), or MSK (Musculoskeletal). For more information about participant requirements and responsibilities, please see the",
+          "10/28/2026 04:04 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 3,
+        "preview": [
+          "focuses on conditions affecting more than three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "ACCESS participants must be Medicare Part B\u2013enrolled organizations (excluding Durable Medical Equipment, Prosthetics, Orthotics, and Supplies and laboratory suppliers) and designate a Medicare-enrolled Medical Director to oversee care quality and compliance. Organizations not enrolled in Medicare Part B must enroll to participate in ACCESS. For more information about participant requirements and responsibilities, please see the",
+          "10/28/2026 10:13 AM"
+        ],
+        "full": [
+          "focuses on conditions affecting more than three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "ACCESS participants must be Medicare Part B\u2013enrolled organizations (excluding Durable Medical Equipment, Prosthetics, Orthotics, and Supplies and laboratory suppliers) and designate a Medicare-enrolled Medical Director to oversee care quality and compliance. Organizations not enrolled in Medicare Part B must enroll to participate in ACCESS. For more information about participant requirements and responsibilities, please see the",
+          "10/28/2026 10:13 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-10-28T14:45:45.220072+00:00",
     "changes": [
       {
