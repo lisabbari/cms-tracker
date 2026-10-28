@@ -1,5 +1,99 @@
 [
   {
+    "model": "ACCESS",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
+    "detected_at": "2026-10-28T14:45:45.220072+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 28,
+        "preview": [
+          "focuses on conditions affecting more than three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "Model Updates",
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "Medicare.gov/ACCESS"
+        ],
+        "full": [
+          "focuses on conditions affecting more than three-quarters of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "Model Updates",
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "Medicare.gov/ACCESS",
+          ".",
+          "ACCESS for PCPs and Referring Clinicians:",
+          "Visit the dedicated webpage",
+          ".",
+          "Apply to ACCESS:",
+          "To participate in the model, review the",
+          "Request for Applications",
+          "and apply through the",
+          "Participant Portal",
+          ". The 10-year model offers rolling start dates. Visit the",
+          "participating organizations webpage",
+          ".",
+          "Health Care Leaders Align Around ACCESS:",
+          "Leading medical societies have",
+          "expressed support",
+          "for CMS' efforts, and",
+          "major health plans have pledged",
+          "to offer an ACCESS-aligned payment option for technology-supported chronic care.",
+          "New Tracks Available:",
+          "New tracks for heart failure, chronic obstructive pulmonary disease (COPD), substance use disorder, tobacco cessation, and chronic musculoskeletal (MSK) pain (follow-on period) start April 1, 2027. Complete the",
+          "ACCESS Model Interest Form",
+          "to receive updates. Current participants and applicants will not need to reapply to participate in the new tracks.",
+          "10/28/2026 10:13 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 28,
+        "preview": [
+          "Model Updates",
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "Medicare.gov/ACCESS",
+          "."
+        ],
+        "full": [
+          "Model Updates",
+          "ACCESS for People with Medicare:",
+          "Learn how ACCESS can support chronic health conditions. Visit",
+          "Medicare.gov/ACCESS",
+          ".",
+          "ACCESS for PCPs and Referring Clinicians:",
+          "Visit the dedicated webpage",
+          ".",
+          "Apply to ACCESS:",
+          "To participate in the model, review the",
+          "Request for Applications",
+          "and apply through the",
+          "Participant Portal",
+          ". The 10-year model offers rolling start dates. Visit the",
+          "participating organizations webpage",
+          ".",
+          "Health Care Leaders Align Around ACCESS:",
+          "Leading medical societies have",
+          "expressed support",
+          "for CMS' efforts, and",
+          "major health plans have pledged",
+          "to offer an ACCESS-aligned payment option for technology-supported chronic care.",
+          "New Tracks Available:",
+          "New tracks for heart failure, chronic obstructive pulmonary disease (COPD), substance use disorder, tobacco cessation, and chronic musculoskeletal (MSK) pain (follow-on period) start April 1, 2027. Complete the",
+          "ACCESS Model Interest Form",
+          "to receive updates. Current participants and applicants will not need to reapply to participate in the new tracks.",
+          "focuses on conditions affecting more than two-thirds of people with Medicare, including high blood pressure, diabetes, chronic musculoskeletal pain, and depression. It runs for 10 years and began July 5, 2026.",
+          "10/27/2026 08:28 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 14
+    }
+  },
+  {
     "model": "AHEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
     "detected_at": "2026-10-27T20:21:37.083204+00:00",
