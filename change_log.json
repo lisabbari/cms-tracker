@@ -1,5 +1,79 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-11-05T23:08:19.286470+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "- updated September 2026",
+          "- updated September 2026",
+          "- updated September 2026",
+          "- updated October 2026",
+          "11/05/2026 02:06 PM"
+        ],
+        "full": [
+          "- updated September 2026",
+          "- updated September 2026",
+          "- updated September 2026",
+          "- updated October 2026",
+          "11/05/2026 02:06 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "- added April 2026",
+          "10/20/2026 10:19 AM"
+        ],
+        "full": [
+          "- added April 2026",
+          "10/20/2026 10:19 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Risk Adjustment and Preliminary Target Price Specifications (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-risk-adj-prelim-target-specs.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Clinical Episode Construction Specifications (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-cdi-ep-constr-specs.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Community Deprivation Index Calculation Specifications (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/team-cdi-calc-specs.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [
+        {
+          "title": "Risk Adjustment and Preliminary Target Price Specifications (PDF)",
+          "url": "https://www.cms.gov/files/document/team-risk-adj-prelim-target-specs.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Clinical Episode Construction Specifications (PDF)",
+          "url": "https://www.cms.gov/files/document/team-cdi-ep-constr-specs.pdf",
+          "type": "document"
+        },
+        {
+          "title": "Community Deprivation Index Calculation Specifications (PDF)",
+          "url": "https://www.cms.gov/files/document/team-cdi-calc-specs.pdf",
+          "type": "document"
+        }
+      ],
+      "total_current": 34
+    }
+  },
+  {
     "model": "ASM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
     "detected_at": "2026-11-05T17:47:54.526113+00:00",
