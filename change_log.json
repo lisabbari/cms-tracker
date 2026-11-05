@@ -1,5 +1,61 @@
 [
   {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-11-05T17:47:54.526113+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "Press Release: 2027 PFS Final Rule",
+          "2027 PFS Final Rule (Federal Register)",
+          "ASM 2027 Physician Fee Schedule Fact Sheet (PDF)",
+          "11/05/2026 10:24 AM"
+        ],
+        "full": [
+          "Press Release: 2027 PFS Final Rule",
+          "2027 PFS Final Rule (Federal Register)",
+          "ASM 2027 Physician Fee Schedule Fact Sheet (PDF)",
+          "11/05/2026 10:24 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "PFS Proposed Rule (Federal Register)",
+          "10/13/2026 10:59 AM"
+        ],
+        "full": [
+          "PFS Proposed Rule (Federal Register)",
+          "10/13/2026 10:59 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Press Release: 2027 PFS Final Rule",
+          "url": "https://www.cms.gov/newsroom/press-releases/cms-finalizes-cy-2027-physician-fee-schedule-shift-sick-care-healthcare-curb-waste",
+          "type": "announcement"
+        },
+        {
+          "title": "2027 PFS Final Rule (Federal Register)",
+          "url": "https://www.federalregister.gov/d/2026-22743",
+          "type": "guidance"
+        },
+        {
+          "title": "ASM 2027 Physician Fee Schedule Fact Sheet (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-cy27-pfs-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 24
+    }
+  },
+  {
     "model": "ACCESS",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access",
     "detected_at": "2026-10-28T20:43:04.370735+00:00",
