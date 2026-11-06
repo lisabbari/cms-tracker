@@ -2,6 +2,98 @@
   {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-11-06T20:11:47.136543+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 4,
+        "preview": [
+          "- updated November 2026",
+          "Preliminary Target Prices PY2",
+          "TEAM Exclusion List - Performance Year 2",
+          "11/06/2026 02:09 PM"
+        ],
+        "full": [
+          "- updated November 2026",
+          "Preliminary Target Prices PY2",
+          "TEAM Exclusion List - Performance Year 2",
+          "11/06/2026 02:09 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "- updated September 2026",
+          "11/05/2026 02:06 PM"
+        ],
+        "full": [
+          "- updated September 2026",
+          "11/05/2026 02:06 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 34
+    }
+  },
+  {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-11-06T20:11:45.437935+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 11,
+        "preview": [
+          "Substance Access Beneficiary Engagement Incentive (BEI)",
+          "The Substance Access BEI will give model participants the option of consulting with their patients about the possible use of eligible hemp products. The implementation of this BEI and any related dispensing would be funded entirely at the participant\u2019s expense; CMS would not cover the cost of such products. Further, CMS will have strict program integrity safeguards to ensure that these incentives do not result in program or patient abuse.",
+          "The\u202fSubstance Access\u202fBEI is only available to participants in states where the eligible hemp products are considered legal.",
+          "The Substance Access BEI is also being made available to participants in the",
+          "ACO REACH Model"
+        ],
+        "full": [
+          "Substance Access Beneficiary Engagement Incentive (BEI)",
+          "The Substance Access BEI will give model participants the option of consulting with their patients about the possible use of eligible hemp products. The implementation of this BEI and any related dispensing would be funded entirely at the participant\u2019s expense; CMS would not cover the cost of such products. Further, CMS will have strict program integrity safeguards to ensure that these incentives do not result in program or patient abuse.",
+          "The\u202fSubstance Access\u202fBEI is only available to participants in states where the eligible hemp products are considered legal.",
+          "The Substance Access BEI is also being made available to participants in the",
+          "ACO REACH Model",
+          "in PY 2026 and the",
+          "Enhancing Oncology Model",
+          "starting in performance period 6. More information is available in the",
+          "Substance Access BEI Frequently Asked Questions",
+          ".",
+          "11/06/2026 12:08 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "09/25/2026 10:16 AM"
+        ],
+        "full": [
+          "09/25/2026 10:16 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Substance Access BEI Frequently Asked Questions",
+          "url": "https://www.cms.gov/priorities/innovation/substance-access-beneficiary-engagement-incentive",
+          "type": "faq"
+        }
+      ],
+      "removed": [],
+      "total_current": 26
+    }
+  },
+  {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-11-05T23:08:19.286470+00:00",
     "changes": [
       {
