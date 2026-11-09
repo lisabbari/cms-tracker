@@ -1,5 +1,41 @@
 [
   {
+    "model": "AHEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/ahead",
+    "detected_at": "2026-11-09T20:20:41.954650+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 3,
+        "preview": [
+          "Register & submit questions",
+          "for the Finding Your Path in AHEAD: Participation Options for Primary Care Webinar to be held on December 8, 2026, 3-4 PM EST/10-11 AM HST.",
+          "11/09/2026 10:18 AM"
+        ],
+        "full": [
+          "Register & submit questions",
+          "for the Finding Your Path in AHEAD: Participation Options for Primary Care Webinar to be held on December 8, 2026, 3-4 PM EST/10-11 AM HST.",
+          "11/09/2026 10:18 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "10/27/2026 12:16 PM"
+        ],
+        "full": [
+          "10/27/2026 12:16 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 5
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-11-06T20:11:47.136543+00:00",
