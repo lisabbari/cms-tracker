@@ -2,6 +2,88 @@
   {
     "model": "ACO Primary Care Flex",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-11-18T18:34:31.181253+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "PY 2025 ACO PC Flex Model Financial and Quality Results Summary (PDF)",
+          "11/18/2026 08:18 AM"
+        ],
+        "full": [
+          "PY 2025 ACO PC Flex Model Financial and Quality Results Summary (PDF)",
+          "11/18/2026 08:18 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "PY 2025 ACO PC Flex Model Financial and Quality Results",
+          "11/17/2026 04:09 PM"
+        ],
+        "full": [
+          "PY 2025 ACO PC Flex Model Financial and Quality Results",
+          "11/17/2026 04:09 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "PY 2025 ACO PC Flex Model Financial and Quality Results Summary (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/pc-ahead-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 9
+    }
+  },
+  {
+    "model": "ASM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/asm",
+    "detected_at": "2026-11-18T18:34:28.262013+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "ASM Participant Portal Quick Start Guide",
+          "11/18/2026 12:04 PM"
+        ],
+        "full": [
+          "ASM Participant Portal Quick Start Guide",
+          "11/18/2026 12:04 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "11/05/2026 10:24 AM"
+        ],
+        "full": [
+          "11/05/2026 10:24 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "ASM Participant Portal Quick Start Guide",
+          "url": "https://www.cms.gov/priorities/innovation/files/asm-participant-portal-quick-start-guide.pdf",
+          "type": "document"
+        }
+      ],
+      "removed": [],
+      "total_current": 25
+    }
+  },
+  {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
     "detected_at": "2026-11-18T00:22:10.289101+00:00",
     "changes": [
       {
