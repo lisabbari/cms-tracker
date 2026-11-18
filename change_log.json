@@ -1,5 +1,71 @@
 [
   {
+    "model": "ACO Primary Care Flex",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
+    "detected_at": "2026-11-18T00:22:10.289101+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 22,
+        "preview": [
+          "Announcement",
+          "CMS released the financial and quality results for the 24 ACO PC Flex Model participants for performance year 2025 (PY 2025).",
+          "Learn more",
+          ".",
+          "Financial and Quality Results"
+        ],
+        "full": [
+          "Announcement",
+          "CMS released the financial and quality results for the 24 ACO PC Flex Model participants for performance year 2025 (PY 2025).",
+          "Learn more",
+          ".",
+          "Financial and Quality Results",
+          "PY 2025 ACO PC Flex Model Financial and Quality Results",
+          "Participant List by Performance Year:",
+          "PY 2025 (PDF)",
+          "|",
+          "PY 2026 (PDF)",
+          "Methodology Papers",
+          "Rate Books:",
+          "|",
+          "|",
+          "Rate Book Development:",
+          "PY 2025 (PDF)",
+          "|",
+          "PY 2026 (PDF)",
+          "Participant Management:",
+          "PY 2026",
+          "Press Release: PY 2025 Financial and Quality Results",
+          "11/17/2026 04:09 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 6,
+        "preview": [
+          "PY 2025 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Participant Management Guidance Document",
+          "PY 2025 Model Participants (PDF)",
+          "PY 2026 Model Participants (PDF)"
+        ],
+        "full": [
+          "PY 2025 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Financial Paper: Rate Book Development (PDF)",
+          "PY 2026 Participant Management Guidance Document",
+          "PY 2025 Model Participants (PDF)",
+          "PY 2026 Model Participants (PDF)",
+          "09/04/2026 12:08 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 8
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-11-12T21:59:44.636367+00:00",
