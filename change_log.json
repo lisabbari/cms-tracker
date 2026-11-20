@@ -1,5 +1,79 @@
 [
   {
+    "model": "MAHA ELEVATE",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/maha-elevate",
+    "detected_at": "2026-11-20T18:12:08.674553+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 16,
+        "preview": [
+          "MAHA ELEVATE Model Cohort Update",
+          "The CMS Innovation Center announced the Cohort 1 awardees for MAHA ELEVATE on Friday, November 20. All applicants should have received a notification regarding their award status. Cohort 1 applicants may apply for Cohort 2 once the revised Notice of Funding Opportunity is published in 2027. Learn more about the",
+          "Cohort 1 awardees",
+          ".",
+          "to reform America\u2019s health systems to address the chronic disease epidemic. The model will provide approximately $100 million to fund 3-year cooperative agreements for up to 30 proposals that promote health and prevention for Original Medicare beneficiaries. Awardees will utilize evidence-based, whole-person care approaches \u2014 including functional or lifestyle medicine interventions \u2014 currently not covered by Original Medicare. These approaches are intended to support, not replace, the medical care received by people with Medicare. MAHA ELEVATE will also gather and evaluate new data on cost and quality to inform future interventions promoting healthy lifestyle behaviors and ultimately reduce spending in Original Medicare."
+        ],
+        "full": [
+          "MAHA ELEVATE Model Cohort Update",
+          "The CMS Innovation Center announced the Cohort 1 awardees for MAHA ELEVATE on Friday, November 20. All applicants should have received a notification regarding their award status. Cohort 1 applicants may apply for Cohort 2 once the revised Notice of Funding Opportunity is published in 2027. Learn more about the",
+          "Cohort 1 awardees",
+          ".",
+          "to reform America\u2019s health systems to address the chronic disease epidemic. The model will provide approximately $100 million to fund 3-year cooperative agreements for up to 30 proposals that promote health and prevention for Original Medicare beneficiaries. Awardees will utilize evidence-based, whole-person care approaches \u2014 including functional or lifestyle medicine interventions \u2014 currently not covered by Original Medicare. These approaches are intended to support, not replace, the medical care received by people with Medicare. MAHA ELEVATE will also gather and evaluate new data on cost and quality to inform future interventions promoting healthy lifestyle behaviors and ultimately reduce spending in Original Medicare.",
+          "MAHA ELEVATE aims to:",
+          "MAHA ELEVATE recipients are organizations that either provide services directly to patients or partner with other organizations to deliver services. Eligible MAHA ELEVATE applicants may include:",
+          "MAHA ELEVATE Cohort 1 Awardees",
+          "MAHA ELEVATE Cohort 1 Awardees Announcement Press Release",
+          "MAHA ELEVATE Overview Fact Sheet",
+          "Helpful Resources",
+          "Frequently Asked Questions",
+          "Overview Fact Sheet",
+          "Active",
+          "15",
+          "11/20/2026 12:07 PM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 9,
+        "preview": [
+          "MAHA ELEVATE Model Notice of Funding Opportunity (NOFO)",
+          "The application deadline for Cohort 1 has now passed. CMS will not consider any applications submitted after May 15, 2026,11:59 pm ET, eligible for Cohort 1. Please check your Grants.gov account to find confirmation that CMS received your application.",
+          "All applicants will receive a notification from CMS regardless of selection. Selected applicants will receive a Notice of Award in Fall 2026. Non-selected applicants will be notified after recipients. CMS is not able to provide status updates on any applications during review.",
+          "to reform America\u2019s health systems to address the chronic disease epidemic. The model will provide approximately $100 million to fund 3-year cooperative agreements for up to 30 proposals that promote health and prevention for Original Medicare beneficiaries. The proposals will utilize evidence-based, whole-person care approaches \u2014 including functional or lifestyle medicine interventions \u2014 currently not covered by Original Medicare. These approaches are intended to support, not replace, the medical care received by people with Medicare. MAHA ELEVATE will also gather and evaluate new data on cost and quality to inform future interventions promoting healthy lifestyle behaviors and ultimately reduce spending in Original Medicare. The first cohort of this voluntary model will launch October 2026.",
+          "MAHA Elevate aims to:"
+        ],
+        "full": [
+          "MAHA ELEVATE Model Notice of Funding Opportunity (NOFO)",
+          "The application deadline for Cohort 1 has now passed. CMS will not consider any applications submitted after May 15, 2026,11:59 pm ET, eligible for Cohort 1. Please check your Grants.gov account to find confirmation that CMS received your application.",
+          "All applicants will receive a notification from CMS regardless of selection. Selected applicants will receive a Notice of Award in Fall 2026. Non-selected applicants will be notified after recipients. CMS is not able to provide status updates on any applications during review.",
+          "to reform America\u2019s health systems to address the chronic disease epidemic. The model will provide approximately $100 million to fund 3-year cooperative agreements for up to 30 proposals that promote health and prevention for Original Medicare beneficiaries. The proposals will utilize evidence-based, whole-person care approaches \u2014 including functional or lifestyle medicine interventions \u2014 currently not covered by Original Medicare. These approaches are intended to support, not replace, the medical care received by people with Medicare. MAHA ELEVATE will also gather and evaluate new data on cost and quality to inform future interventions promoting healthy lifestyle behaviors and ultimately reduce spending in Original Medicare. The first cohort of this voluntary model will launch October 2026.",
+          "MAHA Elevate aims to:",
+          "MAHA ELEVATE recipients will be organizations that either provide whole-person functional or lifestyle medicine services directly to patients or partner with other organizations to deliver services. Eligible MAHA ELEVATE applicants may include:",
+          "Announced",
+          "N/A",
+          "05/18/2026 08:23 AM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "MAHA ELEVATE Cohort 1 Awardees Announcement Press Release",
+          "url": "https://www.cms.gov/newsroom/press-releases/hhs-announces-47-million-maha-elevate-awards-15-organizations-test-chronic-disease-prevention",
+          "type": "announcement"
+        },
+        {
+          "title": "MAHA ELEVATE Overview Fact Sheet",
+          "url": "https://www.cms.gov/priorities/innovation/files/maha-elevate-fs.pdf",
+          "type": "fact_sheet"
+        }
+      ],
+      "removed": [],
+      "total_current": 8
+    }
+  },
+  {
     "model": "ACO Primary Care Flex",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/aco-primary-care-flex-model",
     "detected_at": "2026-11-18T18:34:31.181253+00:00",
