@@ -1,5 +1,56 @@
 [
   {
+    "model": "LEAD",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
+    "detected_at": "2026-11-24T21:49:50.999101+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 5,
+        "preview": [
+          "LEAD Model CMS-Administered Risk Arrangements (CARA) Office Hours - October 28, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "11/24/2026 10:17 AM"
+        ],
+        "full": [
+          "LEAD Model CMS-Administered Risk Arrangements (CARA) Office Hours - October 28, 2026",
+          "Slides (PDF)",
+          "|",
+          "Transcript (PDF)",
+          "11/24/2026 10:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 1,
+        "preview": [
+          "11/06/2026 12:08 PM"
+        ],
+        "full": [
+          "11/06/2026 12:08 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [
+        {
+          "title": "Slides (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-care-oh-slides.pdf",
+          "type": "webinar"
+        },
+        {
+          "title": "Transcript (PDF)",
+          "url": "https://www.cms.gov/priorities/innovation/files/lead-care-oh-trans.pdf",
+          "type": "webinar"
+        }
+      ],
+      "removed": [],
+      "total_current": 28
+    }
+  },
+  {
     "model": "TEAM",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
     "detected_at": "2026-11-24T01:27:47.509517+00:00",
