@@ -1,5 +1,41 @@
 [
   {
+    "model": "TEAM",
+    "url": "https://www.cms.gov/priorities/innovation/innovation-models/team-model",
+    "detected_at": "2026-11-25T16:38:52.325113+00:00",
+    "changes": [
+      {
+        "type": "added",
+        "count": 2,
+        "preview": [
+          "- updated October, 2026",
+          "11/25/2026 10:17 AM"
+        ],
+        "full": [
+          "- updated October, 2026",
+          "11/25/2026 10:17 AM"
+        ]
+      },
+      {
+        "type": "removed",
+        "count": 2,
+        "preview": [
+          "- updated October, 2026",
+          "11/23/2026 04:09 PM"
+        ],
+        "full": [
+          "- updated October, 2026",
+          "11/23/2026 04:09 PM"
+        ]
+      }
+    ],
+    "resource_changes": {
+      "added": [],
+      "removed": [],
+      "total_current": 34
+    }
+  },
+  {
     "model": "LEAD",
     "url": "https://www.cms.gov/priorities/innovation/innovation-models/lead",
     "detected_at": "2026-11-24T21:49:50.999101+00:00",
